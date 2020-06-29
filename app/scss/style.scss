@@ -101,7 +101,7 @@
         align-items: center;
         justify-content:center;
         padding: 40px 80px;
-        background-color: #464a53;
+        background-color: #767a82;
         margin-bottom: -90px;
         border-radius: 10px;
     }
@@ -290,12 +290,12 @@
 }
 .form{
     
-    background-image: url(../img/head-bg.jpg);
+    background-image: url(../img/board.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     &__bg{
-        background-color: rgba($color: #464a53, $alpha: .71);
+        background-color: rgba($color: #464a53, $alpha: .85);
         padding: 60px 0;
 
     }
@@ -324,6 +324,7 @@
     &__input{
         padding: 15px 10px;
         flex: 0 0 47%;
+        border-radius:10px;
         border: 1px solid #fff;
         background-color: transparent;
         outline: none;
