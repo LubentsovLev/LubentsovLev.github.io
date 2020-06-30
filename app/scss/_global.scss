@@ -17,8 +17,10 @@ ul,li{
     padding: 0;
 }
 a{
-    display: inline-block;
+    display:inline;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
@@ -30,7 +32,7 @@ h1,h2,h3,h4,h5,h6,p{
     max-width: 1000px;
 }
 .title{
-    font-family: Cambria;
+    font-family: Segoe UI !important;
     font-size: 35px;
     line-height: 40px;
     font-weight: 400;
@@ -49,6 +51,7 @@ h1,h2,h3,h4,h5,h6,p{
     text-align: center;
     transition: all 0.3s;
     border: 2px solid transparent;
+    outline: none;
     &:hover{
         border: 2px solid #fff;
         background-color: #464a53;

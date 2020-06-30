@@ -9,27 +9,28 @@
   <link rel="stylesheet" href="css/fontawesome1/fontawesome/all.min.css">
 </head>
 <body>
-    <header class="header">
-      <div class="header__container container">
-        <a href="index.html" class="header__logo">
-          #FrontEnd
-        </a>
-        <div class="header__menu">
-          <a href="#" class="header__menu-items">Главная</a>
-          <a href="#" class="header__menu-items">Портфолио</a>
-          <a href="#" class="header__menu-items">Обо мне</a>
-          <a href="#" class="header__menu-items">Инструменты</a>
-        </div>
-        <div class="burger__burger">
-          <span></span>
-        </div>
-        <div class="header__contact">
-          <a href="" class="header__contact-item"><span><i class="fab fa-instagram"></i></span></a>
-          <a href="https://tlgg.ru/@levLubentsov" class="header__contact-item"><span><i class="fab fa-telegram-plane"></i></span></a>
-          <a href="mailto:levchill2017l@gmail.com" class="header__contact-item"><span><i class="fas fa-envelope"></i></span></a>
-        </div>
+  <header class="header">
+    <div class="header__container container">
+      <a href="index.html" class="header__logo">
+        #FrontEnd
+      </a>
+      <div class="header__menu">
+        <a href="index.html#main" class="header__menu-items">Главная</a>
+        <a href="#" class="header__menu-items header__menu-items--port">Портфолио</a>
+        <a href="index.html#about" class="header__menu-items">Обо мне</a>
+        <a href="index.html#tools" class="header__menu-items">Инструменты</a>
+        <a href="#form" class="header__menu-items">Заказать</a>
       </div>
-    </header>
+      <div class="burger__burger">
+        <span></span>
+      </div>
+      <div class="header__contact">
+        <a href="" class="header__contact-item"><span><i class="fab fa-instagram"></i></span></a>
+        <a href="https://tlgg.ru/@levLubentsov" class="header__contact-item"><span><i class="fab fa-telegram-plane"></i></span></a>
+        <a href="mailto:levchill2017l@gmail.com" class="header__contact-item"><span><i class="fas fa-envelope"></i></span></a>
+      </div>
+    </div>
+  </header>
     <section class="portfolio">
         <div class="container">
           <div class="portfolio__inner">
@@ -86,6 +87,7 @@
           </div>
         </div>
       </section>
+      <a id=form></a>
       <section class="form">
         <div class="form__bg">
           <div class="form__container container">
@@ -96,13 +98,17 @@
               Оставьте заявку или свяжитесь
               со мной по укананным контактам  
             </h2>
-            <form action="" class="form__form">
+            <form class="form__form">
               <div class="form__input-inner">
-                <input type="text" class="form__input form__input--1" placeholder="Имя">
-                <input type="text" class="form__input form__input--2" placeholder="Почта">
+                <input type="hidden" name="project_name" value="portfolio">
+                <input type="hidden" name="admin_email" value="levchill2017l@gmail.com">
+                <input type="hidden" name="form_subject" value="Form">
+                
+                <input type="text"  name="Name" class="form__input form__input--1" placeholder="Имя">
+                <input type="text"  name="e-mail"class="form__input form__input--2" placeholder="Почта">
               </div>
-              <textarea name="" id="" cols="30" rows="10" class="form__input form__input-big" placeholder="Сообщение"></textarea>
-              <a href="#" class="form__btn btn">Заказать разработку</a>
+              <textarea  name="message" id="gg" cols="30" rows="10" class="form__input form__input-big" placeholder="Сообщение"></textarea>
+              <button  class="form__btn btn">Заказать разработку</button>
             </form>
             <div class="why__contact">
               <div class="why__contact-item">
