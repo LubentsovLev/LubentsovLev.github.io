@@ -554,6 +554,13 @@
     ::-moz-selection {
         background: #ffc4eb; /* Firefox */
     }
+    ::-webkit-scrollbar { width: 4px; height: 3px;}
+    ::-webkit-scrollbar-button {  background-color: #30373f; }
+    ::-webkit-scrollbar-track {  background-color: #30373f;}
+    ::-webkit-scrollbar-track-piece { background-color: #30373f;}
+    ::-webkit-scrollbar-thumb { height: 50px; background-color: #f043b6; border-radius: 50px;}
+    ::-webkit-scrollbar-corner { background-color: transparent;}
+    ::-webkit-resizer { background-color: transparent;}
 
 
 
