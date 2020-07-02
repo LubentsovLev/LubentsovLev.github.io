@@ -18,7 +18,7 @@ $(function(){
 		});
 		return false;
 	});
-	$(".header__menu").on("click",".a-1", function (event) {
+	$(".header__menu,.order__container").on("click",".a-1", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
