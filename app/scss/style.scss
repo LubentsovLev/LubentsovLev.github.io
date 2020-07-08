@@ -467,7 +467,8 @@
     background-color: transparent;
     margin-bottom: 10px;
     margin-right: 10px;
-    font-family:rubik;
+    border-radius:20px;
+
 
     &:nth-of-type(2n+1){
         margin-right: 10px;
@@ -497,10 +498,13 @@
         }
         &:hover{
             transition: all 0.3s;
+            border-radius:20px;
+
             .portfolio__item-inner{
                 background-color: rgba( #1D1D1D, .55);
                 opacity: 1;
                 transition: all 0.3s;
+                border-radius:20px;
             }
         }
         &-title{
@@ -558,6 +562,13 @@
         outline: none;
         border:2px solid transparent;
 
+    }
+    .portfolio__btn.hide{
+        display: none;
+        
+    }
+    .portfolio__items.hide{
+        padding-bottom: 0px;
     }
 }
     ::selection {

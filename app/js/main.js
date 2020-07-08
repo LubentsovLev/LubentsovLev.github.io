@@ -27,7 +27,8 @@ $(function(){
 
 	$(".portfolio__btn").click(function() {
 		$('.portfolio__item').show();
-		$('.portfolio__btn').hide();
+		$('.portfolio__btn').addClass('hide');
+		$('.portfolio__items').addClass('hide');
 	  });
 
 
