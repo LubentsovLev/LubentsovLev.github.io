@@ -83,7 +83,7 @@
         padding-bottom: 40px;
         color: #fff;
         span{
-            color: #f043b6;
+            color: #ff83d5;
         }
     }
     &__btn--1{
@@ -381,11 +381,22 @@
 }
 .footer{
     background-color: #30373f;
-    padding: 40px 0;
+    padding: 40px 0 20px;
     text-align: center;
     &__title{
         font-size: 15px;
         color: #fff;
+    }
+    &__arr{
+        width: 100%;
+        height: auto;
+        
+        img{
+            margin-top: 20px;
+            width: auto;
+            height: 50px; 
+        }
+        
     }
 }
 .why__contact-link--3,
@@ -401,6 +412,7 @@
     }
 }
 .portfolio{
+    background-color: #f5f4f9;
     padding: 100px 0;
     .container{
         max-width:100%;
