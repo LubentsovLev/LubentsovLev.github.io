@@ -7,6 +7,7 @@
 .q-form {
   padding: 70px 0;
   font-family: Sora;
+  background:#fff;
 
   &__inner {
     display: flex;
@@ -165,7 +166,7 @@
       color: #acb3b9;
       margin-top: 26px;
       text-align: center;
-      &-span {
+      &--span {
         color: #2f4050;
         text-decoration: underline;
         transition: all 0.3s;
