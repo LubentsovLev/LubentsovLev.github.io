@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="q-wrapper">
+      <div class="q-content-wrapper">
+        <header class="q-header _inner-header js-header">
+          <div class="q-header__top">
+            <div class="q-inner">
+              <div class="q-choose-city js-q-choose-city">
+                <div class="q-choose-city__button js-q-choose-city-button">
+                  <span class="q-choose-city__text">Город доставки:</span>
+                  <span class="q-choose-city__value js-q-choose-city-current-value">Москва</span>
+                </div>
+                <div class="q-choose-city__dropdown js-q-choose-city-dropdown">
+                  <span class="q-choose-city__dropdown--title">Выберите город доставки:</span>
+                  <ul class="q-choose-city__list">
+                    <li data-city-name="Москва" class="q-choose-city__list--item _active js-q-choose-city-item">Москва</li>
+                    <li data-city-name="Химки" class="q-choose-city__list--item js-q-choose-city-item">Химки</li>
+                    <li data-city-name="Долгопрудный" class="q-choose-city__list--item js-q-choose-city-item">Долгопрудный</li>
+                    <li data-city-name="Домодедово" class="q-choose-city__list--item js-q-choose-city-item">Домодедово</li>
+                    <li data-city-name="Дмитров" class="q-choose-city__list--item js-q-choose-city-item">Дмитров</li>
+                    <li data-city-name="Подольск" class="q-choose-city__list--item js-q-choose-city-item">Подольск</li>
+                    <li data-city-name="Серпухов" class="q-choose-city__list--item js-q-choose-city-item">Серпухов</li>
+                    <li data-city-name="Чехов" class="q-choose-city__list--item js-q-choose-city-item">Чехов</li>
+                    <li data-city-name="Протвино" class="q-choose-city__list--item js-q-choose-city-item">Протвино</li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="q-header-menu">
+                <li class="q-header-menu__item">
+                  <a href="#" class="q-header-menu__item--link">О нас</a>
+                </li>
+                <li class="q-header-menu__item">
+                  <a href="#" class="q-header-menu__item--link">Доставка</a>
+                </li>
+                <li class="q-header-menu__item _active">
+                  <a href="#" class="q-header-menu__item--link">Оплата</a>
+                </li>
+                <li class="q-header-menu__item">
+                  <a href="#" class="q-header-menu__item--link">Гарантии</a>
+                </li>
+                <li class="q-header-menu__item">
+                  <a href="#" class="q-header-menu__item--link">Услуги</a>
+                </li>
+                <li class="q-header-menu__item">
+                  <a href="#" class="q-header-menu__item--link">Контакты</a>
+                </li>
+                <li class="q-header-menu__item">
+                  <a href="#" class="q-header-menu__item--link">Вопросы</a>
+                </li>
+              </ul>
+              <div class="q-header-settings _mobile">
+                <a href="#" class="q-header-settings__item _favorite-item"></a>
+                <a href="#" class="q-header-settings__item _cart-item"></a>
+              </div>
+            </div>
+          </div>
+          <div style="background-image: url(img/header_bg.png)" class="q-header__bottom">
+            <div class="q-inner">
+              <div class="q-header__bottom--top-row">
+                <a href="#" class="q-header__logo--container js-header-logo">
+                  <img src="img/logo.png" alt="" class="q-header__logo _white">
+                  <img src="img/logo_black.png" alt="" class="q-header__logo _black">
+                </a>
+                <div class="q-header-contacts">
+                  <div class="q-header-contacts__col">
+                    <span class="q-header-contacts__title">Круглосуточно</span>
+                    <div class="q-header-contacts__list">
+                      <span class="q-header-contacts__list--item">8-800-800-88-88</span>
+                      <span class="q-header-contacts__list--item">8-800-800-88-00</span>
+                    </div>
+                  </div>
+                  <div class="q-header-contacts__col">
+                    <div class="q-header-contacts__list">
+                      <a href="#" class="q-header-contacts__list--item _with-icon _whatsup-item">8-800-800-88-88</a>
+                      <a href="#" class="q-header-contacts__list--item _with-icon _viber-item">8-800-800-88-00</a>
+                      <a href="#" class="q-header-contacts__list--item _with-icon _telegram-item">8-800-800-88-00</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="q-header-settings">
+                  <a href="#" class="q-header-settings__item _search-item"></a>
+                  <a href="#" class="q-header-settings__item _profile-item"></a>
+                  <a href="#" class="q-header-settings__item _favorite-item"></a>
+                  <a href="#" class="q-header-settings__item _cart-item"></a>
+                </div>
+              </div>
+              <div class="q-header__bottom--bottom-row">
+                <div class="q-mobile-search">
+                  <form action="" method="" class="q-mobile-search__form">
+                    <input type="text" placeholder="Поиск по сайту" class="q-mobile-search__form--input">
+                    <button type-"button class="q-mobile-search__form--button"></button>
+                  </form>
+                </div>
+                <ul class="q-header-main-menu">
+                  <li class="q-header-main-menu__item">
+                    <a href="#" class="q-header-main-menu__item--link">Хит продаж</a>
+                  </li>
+                  <li class="q-header-main-menu__item">
+                    <a href="#" class="q-header-main-menu__item--link">классика</a>
+                  </li>
+                  <li class="q-header-main-menu__item">
+                    <a href="#" class="q-header-main-menu__item--link">	в коробках</a>
+                    <ul class="q-header-main-submenu">
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Тюльпаны</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Ромашки</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Розы</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Хризантемы</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Ирисы</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Каллы</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Пионы</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Герберы</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Орхидеи</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Подсолнухи</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Гвоздики</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Лизантусы</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Лилии</a>
+                      </li>
+                      <li class="q-header-main-submenu__item">
+                        <a href="#" class="q-header-main-submenu__item--link"> Комнатные цветы</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="q-header-main-menu__item">
+                    <a href="#" class="q-header-main-menu__item--link">	сладкие</a>
+                  </li>
+                  <li class="q-header-main-menu__item">
+                    <a href="#" class="q-header-main-menu__item--link">	авторские</a>
+                  </li>
+                  <li class="q-header-main-menu__item">
+                    <a href="#" class="q-header-main-menu__item--link">	тематические</a>
+                  </li>
+                  <li class="q-header-main-menu__item">
+                    <a href="#" class="q-header-main-menu__item--link">	без повода</a>
+                  </li>
+                </ul>
+                <div class="q-mobile-auth-and-contacts">
+                  <a href="#" class="q-mobile-auth">Личный кабинет</a>
+                  <div class="q-header-contacts">
+                    <div class="q-header-contacts__col">
+                      <span class="q-header-contacts__title">Круглосуточно</span>
+                      <div class="q-header-contacts__list">
+                        <span class="q-header-contacts__list--item">8-800-800-88-88</span>
+                        <span class="q-header-contacts__list--item">8-800-800-88-00</span>
+                      </div>
+                    </div>
+                    <div class="q-header-contacts__col">
+                      <div class="q-header-contacts__list">
+                        <a href="#" class="q-header-contacts__list--item _with-icon _whatsup-item">8-800-800-88-88</a>
+                        <a href="#" class="q-header-contacts__list--item _with-icon _viber-item">8-800-800-88-00</a>
+                        <a href="#" class="q-header-contacts__list--item _with-icon _telegram-item">8-800-800-88-00</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <i class="q-mobile-burger-close js-toggle-mobile-menu"></i>
+              </div>
+              <i class="q-mobile-burger js-toggle-mobile-menu"></i>
+            </div>
+          </div>
+        </header>
+        <section class="q-ask-question">
+          <div class="q-inner">
+            <ul class="q-breadcrumbs">
+              <li class="q-breadcrumbs__item">
+                <a href="#" class="q-breadcrumbs__item--link">Магазин цветов</a>
+              </li>
+              <li class="q-breadcrumbs__item">
+                <a href="#" class="q-breadcrumbs__item--link">Личный кабинет</a>
+              </li>
+              <li class="q-breadcrumbs__item">
+                <a href="#" class="q-breadcrumbs__item--link">Задать вопрос</a>
+              </li>
+            </ul>
+            <div class="q-ask-question__inner">
+              <div class="q-ask-question__menu">
+                <span class="q-ask-question__title">Задать вопрос</span>
+                <div class="q-ask-question__discount">
+                  <p>ваша скидка: 0%</p>
+                </div>
+                <div class="q-ask-question__links">
+                  <a href="#" class="q-ask-question__link">Заказы</a>
+                  <a href="#" class="q-ask-question__link">Задать вопрос</a>
+                  <a href="#" class="q-ask-question__link">О скидках</a>
+                  <a href="#" class="q-ask-question__link">Настройки</a>
+                </div>
+                <button class="q-ask-question__exit">Выйти</button>
+              </div>
+              <div class="q-ask-question__message">
+                <div class="q-ask-question__ticket-inner">
+                  <span class="q-ask-question__ticket-ticket">
+                    Тикет: 102
+                  </span>
+                  <span class="q-ask-question__ticket-theme">
+                    Тема: Сроки доставки
+                  </span>
+                </div>
+                <div class="q-ask-question__messages-inner">
+                  <div class="q-ask-question__item-inner">
+                    <div class="q-ask-question__item">
+                      <div class="q-ask-question__item-head" style="background-image: url(img/message-bg-green.png);">
+                        <span class="q-ask-question__item-name">
+                          <img src="img/message-user.png" alt="user-logo">
+                          <span>Иван Иванович</span>
+                        </span>
+                        <div class="q-ask-question__date-inner">
+                          <span class="q-ask-question__date">0.8.09.20</span>
+                          <span class="q-ask-question__time">13:40</span>
+                        </div>
+                      </div>
+                      <div class="q-ask-question__item-body">
+                        <div class="q-ask-question__text">
+                          <p>
+                            Добрый день! Я хотел уточнить сроки доставки моего заказа.
+                          </p>  
+                          <a class="q-ask-question__file" href="#">
+                            + Скриншот.jpeg
+                          </a>
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <div class="q-ask-question__item">
+                      <div class="q-ask-question__item-head" style="background-image: url(img/message-bg-red.png);">
+                        <span class="q-ask-question__item-name">
+                          <img src="img/message-user.png" alt="user-logo">
+                          <span>Администратор</span>
+                        </span>
+                        <div class="q-ask-question__date-inner">
+                          <span class="q-ask-question__date">0.8.09.20</span>
+                          <span class="q-ask-question__time">13:50</span>
+                        </div>
+                      </div>
+                      <div class="q-ask-question__item-body">
+                        <div class="q-ask-question__text">
+                          <p>
+                            Добрый день! Сообщите пожалуйста номер вашего заказа.
+                          </p>  
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <div class="q-ask-question__item">
+                      <div class="q-ask-question__item-head" style="background-image: url(img/message-bg-green.png);">
+                        <span class="q-ask-question__item-name">
+                          <img src="img/message-user.png" alt="user-logo">
+                          <span>Иван Иванович</span>
+                        </span>
+                        <div class="q-ask-question__date-inner">
+                          <span class="q-ask-question__date">0.8.09.20</span>
+                          <span class="q-ask-question__time">14:10</span>
+                        </div>
+                      </div>
+                      <div class="q-ask-question__item-body">
+                        <div class="q-ask-question__text">
+                          <p>
+                            Мой заказ 102115.
+                          </p>  
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <div class="q-ask-question__item">
+                      <div class="q-ask-question__item-head" style="background-image: url(img/message-bg-red.png);">
+                        <span class="q-ask-question__item-name">
+                          <img src="img/message-user.png" alt="user-logo">
+                          <span>Администратор</span>
+                        </span>
+                        <div class="q-ask-question__date-inner">
+                          <span class="q-ask-question__date">0.8.09.20</span>
+                          <span class="q-ask-question__time">14:20</span>
+                        </div>
+                      </div>
+                      <div class="q-ask-question__item-body">
+                        <div class="q-ask-question__text">
+                          <p>
+                            Добрый день! Сообщите пожалуйста номер вашего заказа.
+                          </p>  
+                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <form class="q-ask-question__textarea-inner" action="get">
+                    <textarea class="q-ask-question__textarea" placeholder="Ваше Сообщение"></textarea>
+                    <div class="q-ask-question__files">
+                      <a class="q-ask-question__files-file" href="#">+ прикрепить файл</a>
+                      <p>Типы файлов, которые принимаются: jpg, jpeg, doc, docx, xls, odt, pdf, rar, zip, txt, html </p>
+                      
+                    </div>
+                    <button class="q-ask-question__btn" type="submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer style="background-image: url(img/footer_bg.png)" class="q-footer">
+        <div class="q-inner">
+          <div class="q-footer__col _menu-col">
+            <ul class="q-footer-menu">
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">О нас</a>
+              </li>
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">Доставка</a>
+              </li>
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">Оплата</a>
+              </li>
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">Гарантии</a>
+              </li>
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">Услуги</a>
+              </li>
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">Контакты</a>
+              </li>
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">Вопросы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="q-footer__col _menu-col">
+            <ul class="q-footer-menu">
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">Хит продаж</a>
+              </li>
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">Классика</a>
+              </li>
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">В коробках</a>
+              </li>
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">Сладкие</a>
+              </li>
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">Авторские</a>
+              </li>
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">Тематические</a>
+              </li>
+              <li class="q-footer-menu__item">
+                <a href="" class="q-footer-menu__item--link">Без повода</a>
+              </li>
+            </ul>
+          </div>
+          <div class="q-footer__col _logo-col">
+            <div class="q-footer__logo-and-copy">
+              <a href="#" class="q-footer__logo--container">
+                <img src="img/logo.png" alt="" class="q-footer__logo">
+              </a>
+              <div class="q-footer__copyright">
+                <p>© 2020 Buket Moscow.ru<br/> Все права защищены</p>
+              </div>
+            </div>
+          </div>
+          <div class="q-footer__col _info-col">
+            <address class="q-footer__address">г. Москва, ул. Дружбы, д.6 к.5</address>
+            <div class="q-footer__phone">
+              <a href="tel:88008888888" class="q-footer__phone--item">8-800-888-88-88</a>
+              <a href="tel:88008888888" class="q-footer__phone--item">8-800-888-88-88</a>
+            </div>
+            <div class="q-footer-form__container">
+              <span class="q-footer-form__title">Узнавайте о новинках и акциях:</span>
+              <form action="#" method="" class="q-footer-form">
+                <input type="email" placeholder="E-mail" class="q-footer-form__input">
+                <button type="submit" class="q-footer-form__button">Подписаться</button>
+              </form>
+              <span class="q-footer-form__label">Оформляя подписку, я соглашаюсь с Политикой конфиденциальности</span>
+            </div>
+            <div class="q-footer__icons">
+              <a href="#" class="q-footer__icons--item _vk-item"></a>
+              <a href="#" class="q-footer__icons--item _instagram-item"></a>
+              <a href="#" class="q-footer__icons--item _facebook-item"></a>
+              <a href="#" class="q-footer__icons--item _ok-item"></a>
+              <a href="#" class="q-footer__icons--item _telegram-item"></a>
+              <a href="#" class="q-footer__icons--item _viber-item"></a>
+              <a href="#" class="q-footer__icons--item _whatsapp-item"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/jquery.timepicker.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/simpleUpload.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--my-scrips-->
+  </body>
+</html>
