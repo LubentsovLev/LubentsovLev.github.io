@@ -500,9 +500,7 @@ img {
     box-shadow: inset 0px -179px 98px -81px white;
     display: block;
     content: "";
-    z-index: 0;
-    -webkit-transform: translateZ(-1px);
-            transform: translateZ(-1px); }
+    z-index: -1; }
   .q-header__menu {
     padding-top: 15px;
     padding-bottom: 400px;
