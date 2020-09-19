@@ -43,7 +43,9 @@ $(function () {
       form.classList.remove("block");
       form__inn.style.backgroundColor = "transparent";
       document.body.style.overflow = "visible";
-      form__inn.classList.remove("av");
+      setTimeout(() => {
+        form__inn.classList.remove("av");
+      }, 800);
     },
   };
   x.addEventListener("click", () => {
