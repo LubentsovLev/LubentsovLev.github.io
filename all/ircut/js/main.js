@@ -48,6 +48,7 @@ $(function () {
       }, 800);
     },
   };
+
   x.addEventListener("click", () => {
     Pop.close();
   });
