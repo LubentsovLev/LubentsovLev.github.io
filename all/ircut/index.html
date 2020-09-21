@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <div class="head__bg" style="background-image: url(./img/head__bg.png)">
+    <div class="head__bg" style="background-image: url(./img/head__bg.png)" id="top">
       <header class="header">
         <div class="container header__container">
           <div class="header__logo">
@@ -54,7 +54,11 @@
                 name="admin_email"
                 value="levchill2017l@gmail.com"
               />
-              <input type="hidden" name="form_subject" value="head__form" />
+              <input
+                type="hidden"
+                name="form_subject"
+                value="Узнайте_стоимость"
+              />
               <!-- // -->
               <h4 class="head__form-title">
                 <span>Узнайте стоимость</span> <br />
@@ -166,95 +170,113 @@
           <div class="title">Услуги</div>
           <div class="subtitle">металлообработки</div>
           <div class="services__inner">
-            <div class="services__info-inner">
-              <div class="services__links">
-                <div class="services__link">Пескоструйная обработка</div>
-                <div class="services__link">Газоплазменная резка</div>
-                <div class="services__link">Воздушно-дуговая резка</div>
-                <div class="services__link">Вальцовка</div>
-                <div class="services__link">Фрезеровка ЧПУ</div>
-                <div class="services__link">Токарная обработка ЧПУ</div>
-                <div class="services__link">Сверловка и расточка</div>
-                <div class="services__link">Строжка</div>
-                <div class="services__link">Шлифовка</div>
+            <div class="services__inner__inner">
+              <div class="services__info-inner">
+                <div class="services__links">
+                  <div class="services__link services__link_1">
+                    Пескоструйная обработка
+                  </div>
+                  <div class="services__link services__link_2">
+                    Газоплазменная резка
+                  </div>
+                  <div class="services__link services__link_3">
+                    Воздушно-дуговая резка
+                  </div>
+                  <div class="services__link services__link_4">Вальцовка</div>
+                  <div class="services__link services__link_5">
+                    Фрезеровка ЧПУ
+                  </div>
+                  <div class="services__link services__link_6">
+                    Токарная обработка ЧПУ
+                  </div>
+                  <div class="services__link services__link_7">
+                    Сверловка и расточка
+                  </div>
+                  <div class="services__link services__link_8">Строжка</div>
+                  <div class="services__link services__link_9">Шлифовка</div>
+                </div>
+                <div class="services__info">
+                  <div class="services__info-title">
+                    Фрезеровка металла на станках ЧПУ
+                  </div>
+                  <div class="services__info-subtitle">
+                    4 вида фрезерных станков:
+                  </div>
+                  <div class="services__info-items">
+                    <div class="services__info-item">
+                      <p>
+                        <b></b>
+                        Фрезерные 3-х координатные станки с ЧПУ. Максимальный
+                        размер детали
+                      </p>
+                      <span>1400x900x350 мм;</span>
+                    </div>
+                    <div class="services__info-item">
+                      <p>
+                        <b></b>Фрезерные 4-х координатные станки с ЧПУ.
+                        Максимальный размер детали
+                      </p>
+                      <span>950x600x500 мм;</span>
+                    </div>
+                    <div class="services__info-item">
+                      <p>
+                        <b></b>
+                        Фрезерные универсальные вертикальные станки.
+                        Максимальный размер детали <span>1000x300x400 мм;</span>
+                      </p>
+                    </div>
+                    <div class="services__info-item">
+                      <p>
+                        <b></b>Фрезерные универсальные горизонтальные станки.
+                        Максимальный размер детали <span>600x200x400 мм.</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="services__info">
-                <div class="services__info-title">
-                  Фрезеровка металла на станках ЧПУ
-                </div>
-                <div class="services__info-subtitle">
-                  4 вида фрезерных станков:
-                </div>
-                <div class="services__info-items">
-                  <div class="services__info-item">
-                    <p>
-                      <b></b>
-                      Фрезерные 3-х координатные станки с ЧПУ. Максимальный
-                      размер д етали
-                    </p>
-                    <span>1400x900x350 мм;</span>
-                  </div>
-                  <div class="services__info-item">
-                    <p>
-                      <b></b>Фрезерные 4-х координатные станки с ЧПУ.
-                      Максимальный размер детали
-                    </p>
-                    <span>950x600x500 мм;</span>
-                  </div>
-                  <div class="services__info-item">
-                    <p>
-                      <b></b>
-                      Фрезерные универсальные вертикальные станки. Максимальный
-                      размер детали <span>1000x300x400 мм;</span>
-                    </p>
-                  </div>
-                  <div class="services__info-item">
-                    <p>
-                      <b></b>Фрезерные универсальные горизонтальные станки.
-                      Максимальный размер детали <span>600x200x400 мм.</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <form class="services__form">
-              <input type="hidden" name="project_name" value="Staratel" />
-              <input
-                type="hidden"
-                name="admin_email"
-                value="levchill2017l@gmail.com"
-              />
-              <input type="hidden" name="form_subject" value="services__form" />
-
-              <div class="head__form-input-inn services__form-inn">
-                <h6>Укажите номер телефона</h6>
+              <form class="services__form">
+                <input type="hidden" name="project_name" value="Staratel" />
                 <input
-                  name="Phone"
-                  max="12"
-                  type="tel"
-                  class="head__form-phone"
-                  placeholder=" +7 999 585 95 95"
+                  type="hidden"
+                  name="admin_email"
+                  value="levchill2017l@gmail.com"
                 />
-              </div>
-              <div class="services__form-fig-inn">
-                <div class="services__form-fig"></div>
-                <div class="services__form-fig"></div>
-                <div class="services__form-fig"></div>
-              </div>
+                <input
+                  type="hidden"
+                  name="form_subject"
+                  value="Услуги_металлообработки"
+                />
 
-              <button class="head__form-btn services__form-btn">
-                Узнать стоимость
-              </button>
-              <p class="head__form-butt-text">
-                Нажимая на кнопку "Получить расчет стоимости', я соглашаюсь на
-                обработку моих персональных данных и ознакомлен(а) с политикой
-                конфиденциальности
-              </p>
-            </form>
-            <div class="services__form-mob">
-              <button class="head__form-btn services__form-btn pop__2">
-                Узнать стоимость
-              </button>
+                <div class="head__form-input-inn services__form-inn">
+                  <h6>Укажите номер телефона</h6>
+                  <input
+                    name="Phone"
+                    max="12"
+                    type="tel"
+                    class="head__form-phone"
+                    placeholder=" +7 999 585 95 95"
+                  />
+                </div>
+                <div class="services__form-fig-inn">
+                  <div class="services__form-fig"></div>
+                  <div class="services__form-fig"></div>
+                  <div class="services__form-fig"></div>
+                </div>
+
+                <button class="head__form-btn services__form-btn">
+                  Узнать стоимость
+                </button>
+                <p class="head__form-butt-text">
+                  Нажимая на кнопку "Получить расчет стоимости', я соглашаюсь на
+                  обработку моих персональных данных и ознакомлен(а) с политикой
+                  конфиденциальности
+                </p>
+              </form>
+              <div class="services__form-mob">
+                <button class="pop__2 head__form-btn services__form-btn">
+                  Узнать стоимость
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -286,7 +308,7 @@
               жд транспортом. Оказываем услуги по монтажу и шеф-монтажу
               конструкций.
             </p>
-            <button class="head__form-btn professional__btn pop__3">
+            <button class="pop__3 head__form-btn professional__btn">
               Расчет стоимость
             </button>
           </div>
@@ -298,7 +320,7 @@
               Изготавливаем изделия нестандартных форм и размеров по заданию
               заказчика.
             </p>
-            <button class="head__form-btn professional__btn pop__4">
+            <button class="pop__4 head__form-btn professional__btn">
               Расчет стоимость
             </button>
           </div>
@@ -314,71 +336,147 @@
           <div class="exp__block">
             <div
               class="exp__item-big"
-              style="background-image: url(img/exp.png)"
+              style="background-image: url(img/gallery/1_4pSa8Esxzwc.jpg)"
             >
-              <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+              <a
+                data-fancybox="exp__galerry"
+                href="img/gallery/1_4pSa8Esxzwc.jpg"
+              >
+              </a>
             </div>
             <div class="exp__items-sm">
-              <div class="exp__item" style="background-image: url(img/exp.png)">
-                <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+              <div
+                class="exp__item"
+                style="background-image: url(img/gallery/2_5gqz8xRHcjQ.jpg)"
+              >
+                <a
+                  data-fancybox="exp__galerry"
+                  href="img/gallery/2_5gqz8xRHcjQ.jpg"
+                >
+                </a>
               </div>
-              <div class="exp__item" style="background-image: url(img/exp.png)">
-                <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+              <div
+                class="exp__item"
+                style="background-image: url(img/gallery/3_CQ1vuGsq9wM.jpg)"
+              >
+                <a
+                  data-fancybox="exp__galerry"
+                  href="img/gallery/3_CQ1vuGsq9wM.jpg"
+                >
+                </a>
               </div>
               <div
                 class="exp__item exp__item-hide"
-                style="background-image: url(img/exp.png)"
+                style="background-image: url(img/gallery/4_uNBWVFeCMMA.jpg)"
               >
-                <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+                <a
+                  data-fancybox="exp__galerry"
+                  href="img/gallery/4_uNBWVFeCMMA.jpg"
+                >
+                </a>
               </div>
             </div>
           </div>
           <div class="exp__block">
             <div
               class="exp__item-big"
-              style="background-image: url(img/exp.png)"
+              style="background-image: url(img/gallery/5_cv5RpOHR5nY.jpg)"
             >
-              <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+              <a
+                data-fancybox="exp__galerry"
+                href="img/gallery/5_cv5RpOHR5nY.jpg"
+              >
+              </a>
             </div>
             <div class="exp__items-sm">
-              <div class="exp__item" style="background-image: url(img/exp.png)">
-                <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+              <div
+                class="exp__item"
+                style="background-image: url(img/gallery/6_DvC6JdXug98.jpg)"
+              >
+                <a
+                  data-fancybox="exp__galerry"
+                  href="img/gallery/6_DvC6JdXug98.jpg"
+                >
+                </a>
               </div>
-              <div class="exp__item" style="background-image: url(img/exp.png)">
-                <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+              <div
+                class="exp__item"
+                style="background-image: url(img/gallery/7_e8iwIlgsUOQ.jpg)"
+              >
+                <a
+                  data-fancybox="exp__galerry"
+                  href="img/gallery/7_e8iwIlgsUOQ.jpg"
+                >
+                </a>
               </div>
             </div>
           </div>
           <div class="exp__block">
             <div
               class="exp__item-big"
-              style="background-image: url(img/exp.png)"
+              style="background-image: url(img/gallery/8_GSdiKqZkh1Y.jpg)"
             >
-              <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+              <a
+                data-fancybox="exp__galerry"
+                href="img/gallery/8_GSdiKqZkh1Y.jpg"
+              >
+              </a>
             </div>
             <div class="exp__items-sm">
-              <div class="exp__item" style="background-image: url(img/exp.png)">
-                <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+              <div
+                class="exp__item"
+                style="background-image: url(img/gallery/9_hszotoZCdNg.jpg)"
+              >
+                <a
+                  data-fancybox="exp__galerry"
+                  href="img/gallery/9_hszotoZCdNg.jpg"
+                >
+                </a>
               </div>
-              <div class="exp__item" style="background-image: url(img/exp.png)">
-                <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+              <div
+                class="exp__item"
+                style="background-image: url(img/gallery/10_JdJ4qjWy_80.jpg)"
+              >
+                <a
+                  data-fancybox="exp__galerry"
+                  href="img/gallery/10_JdJ4qjWy_80.jpg"
+                >
+                </a>
               </div>
             </div>
           </div>
           <div class="exp__block">
             <div class="exp__items-sm">
-              <div class="exp__item" style="background-image: url(img/exp.png)">
-                <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+              <div
+                class="exp__item"
+                style="background-image: url(img/gallery/11_m3eMpPSBH6o.jpg)"
+              >
+                <a
+                  data-fancybox="exp__galerry"
+                  href="img/gallery/11_m3eMpPSBH6o.jpg"
+                >
+                </a>
               </div>
-              <div class="exp__item" style="background-image: url(img/exp.png)">
-                <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+              <div
+                class="exp__item"
+                style="background-image: url(img/gallery/12_mX0K5TaA3Kc.jpg)"
+              >
+                <a
+                  data-fancybox="exp__galerry"
+                  href="img/gallery/12_mX0K5TaA3Kc.jpg"
+                >
+                </a>
               </div>
             </div>
             <div
               class="exp__item-big"
-              style="background-image: url(img/exp.png)"
+              style="background-image: url(img/gallery/4_uNBWVFeCMMA.jpg)"
             >
-              <a data-fancybox="exp__galerry" href="img/exp.png"> </a>
+              <a
+                data-fancybox="exp__galerry"
+                href="img/gallery/4_uNBWVFeCMMA.jpg"
+              >
+              </a>
             </div>
           </div>
         </div>
@@ -392,22 +490,34 @@
           <div class="work__photos">
             <div
               class="work__photo-big"
-              style="background-image: url(img/exp.png)"
+              style="background-image: url(img/gallery/14_qDKU7SI0dqQ.jpg)"
             >
-              <a data-fancybox="work__galerry" href="img/exp.png"> </a>
+              <a
+                data-fancybox="work__galerry"
+                href="img/gallery/14_qDKU7SI0dqQ.jpg"
+              >
+              </a>
             </div>
             <div class="work__photos-inner">
               <div
                 class="work__photo"
-                style="background-image: url(img/exp.png)"
+                style="background-image: url(img/gallery/15_rTq-XkAK5TU.jpg)"
               >
-                <a data-fancybox="work__galerry" href="img/exp.png"> </a>
+                <a
+                  data-fancybox="work__galerry"
+                  href="img/gallery/15_rTq-XkAK5TU.jpg"
+                >
+                </a>
               </div>
               <div
                 class="work__photo"
-                style="background-image: url(img/exp.png)"
+                style="background-image: url(img/gallery/13_OGAu6N1MQEw.jpg)"
               >
-                <a data-fancybox="work__galerry" href="img/exp.png"> </a>
+                <a
+                  data-fancybox="work__galerry"
+                  href="img/gallery/13_OGAu6N1MQEw.jpg"
+                >
+                </a>
               </div>
               <div
                 class="work__photo"
@@ -555,43 +665,45 @@
                 на рынок Иркутской области и быстро достигла лидирующих позиций.
               </div>
             </div>
+
             <div class="growth__small-inner">
-              <div class="growth__full-num-big"><b>2012</b></div>
+              <div class="growth__full-num-big"><b>2014</b></div>
               <div class="growth__small-img">
-                <img src="img/ic1111.png" alt="" />
+                <img src="img/ic545.png" alt="" />
               </div>
               <h6 class="growth__small-title">
-                Добыча и реализация инертных материалов
+                Покупка Шелеховского завода железобетонных изделий
               </h6>
               <div class="growth__small-text">
-                Компания "Старатель" организовала поставки инертных материалов
-                на рынок Иркутской области и быстро достигла лидирующих позиций.
+                Расширение сфер деятельности. Старт масштабного производства
+                изделий из металла и бетона.
               </div>
             </div>
             <div class="growth__small-inner">
-              <div class="growth__full-num-big"><b>2012</b></div>
+              <div class="growth__full-num-big"><b>2019</b></div>
               <div class="growth__small-img">
-                <img src="img/ic1111.png" alt="" />
+                <img src="img/ic4454.png" alt="" />
               </div>
               <h6 class="growth__small-title">
-                Добыча и реализация инертных материалов
+                Освоение строительной и дорожной отрасли
               </h6>
               <div class="growth__small-text">
-                Компания "Старатель" организовала поставки инертных материалов
-                на рынок Иркутской области и быстро достигла лидирующих позиций.
+                Организация производства изделий для строительства зданий, дорог
+                и железных дорог.
               </div>
             </div>
             <div class="growth__small-inner">
-              <div class="growth__full-num-big"><b>2012</b></div>
+              <div class="growth__full-num-big"><b>2022</b></div>
               <div class="growth__small-img">
-                <img src="img/ic1111.png" alt="" />
+                <img src="img/ic7878.png" alt="" />
               </div>
               <h6 class="growth__small-title">
-                Добыча и реализация инертных материалов
+                Увеличение производственных мощностей
               </h6>
               <div class="growth__small-text">
-                Компания "Старатель" организовала поставки инертных материалов
-                на рынок Иркутской области и быстро достигла лидирующих позиций.
+                К середине 2022 года ГК "Старатель" планирует увеличить число
+                производственных площадей и оборудования на 80%, а выпускаемой
+                продукции на 150%.
               </div>
             </div>
           </div>
@@ -606,7 +718,11 @@
                 name="admin_email"
                 value="levchill2017l@gmail.com"
               />
-              <input type="hidden" name="form_subject" value="footer__form" />
+              <input
+                type="hidden"
+                name="form_subject"
+                value="Остались_вопросы?"
+              />
 
               <h3 class="growth__form-title">Остались вопросы?</h3>
               <h4 class="growth__form-subtitle">
@@ -727,7 +843,7 @@
         </div>
       </div>
     </div>
-    <div class="form__popup-inner">
+    <!-- <div class="form__popup-inner">
       <form class="form__popup">
         <input type="hidden" name="project_name" value="Staratel" />
         <input
@@ -744,7 +860,7 @@
             <h6>Укажите номер телефона</h6>
             <input
               name="Phone"
-              max = "12"
+              max="12"
               type="tel"
               class="head__form-phone"
               placeholder=" +7 999 585 95 95"
@@ -765,6 +881,171 @@
         </div>
         <div class="x"></div>
       </form>
+    </div> -->
+    <div class="form__popup-inner form__popup-inner_1">
+      <form class="form__popup order__call">
+        <input type="hidden" name="project_name" value="Staratel" />
+        <input
+          type="hidden"
+          name="admin_email"
+          value="levchill2017l@gmail.com"
+        />
+        <input type="hidden" name="form_subject" value="Заказать_звонок" />
+        <div class="head__form">
+          <h4 class="form__popup-title">
+            <span>Закажите</span> звонок
+          </h4>
+          <div class="head__form-input-inn form__popup-input-inn">
+            <h6>Укажите номер телефона</h6>
+            <input
+              name="Phone"
+              max="12"
+              type="tel"
+              class="head__form-phone"
+              placeholder=" +7 999 585 95 95"
+            />
+          </div>
+          <button class="head__form-btn form__popup-btn">
+            Заказать звонок
+          </button>
+          <p class="head__form-butt-text form__popup-text">
+            Нажимая на кнопку "Получить расчет стоимости', я соглашаюсь на
+            обработку моих персональных данных и ознакомлен(а) с политикой
+            конфиденциальности
+          </p>
+          <p class="head__form-text form__popup-text-und">
+            Менеджер перезвонит в рабочее время и назовет предварительную
+            стоимость
+          </p>
+        </div>
+        <div class="x x_1"></div>
+      </form>
+    </div>
+    <div class="form__popup-inner form__popup-inner_2">
+      <form class="form__popup metaloobrabotca">
+        <input type="hidden" name="project_name" value="Staratel" />
+        <input
+          type="hidden"
+          name="admin_email"
+          value="levchill2017l@gmail.com"
+        />
+        <input
+          type="hidden"
+          name="form_subject"
+          value="Услуги_металлообработки"
+        />
+        <div class="head__form">
+          <h4 class="form__popup-title">
+            <span>Услуги </span>металлообработки
+          </h4>
+          <div class="head__form-input-inn form__popup-input-inn">
+            <h6>Узнать стоимость</h6>
+            <input
+              name="Phone"
+              max="12"
+              type="tel"
+              class="head__form-phone"
+              placeholder=" +7 999 585 95 95"
+            />
+          </div>
+          <button class="head__form-btn form__popup-btn">
+            Узнать стоимость
+          </button>
+          <p class="head__form-butt-text form__popup-text">
+            Нажимая на кнопку "Получить расчет стоимости', я соглашаюсь на
+            обработку моих персональных данных и ознакомлен(а) с политикой
+            конфиденциальности
+          </p>
+          <p class="head__form-text form__popup-text-und">
+            Менеджер перезвонит в рабочее время и назовет предварительную
+            стоимость
+          </p>
+        </div>
+        <div class="x x_2"></div>
+      </form>
+    </div>
+    <div class="form__popup-inner form__popup-inner_3">
+      <form class="form__popup delivery">
+        <input type="hidden" name="project_name" value="Staratel" />
+        <input
+          type="hidden"
+          name="admin_email"
+          value="levchill2017l@gmail.com"
+        />
+        <input type="hidden" name="form_subject" value="Доставка_и_монтаж" />
+        <div class="head__form">
+          <h4 class="form__popup-title"><span>Доставка </span>и монтаж</h4>
+          <div class="head__form-input-inn form__popup-input-inn">
+            <h6>Укажите номер телефона</h6>
+            <input
+              name="Phone"
+              max="12"
+              type="tel"
+              class="head__form-phone"
+              placeholder=" +7 999 585 95 95"
+            />
+          </div>
+          <button class="head__form-btn form__popup-btn">
+            Расчет стоимость
+          </button>
+          <p class="head__form-butt-text form__popup-text">
+            Нажимая на кнопку "Получить расчет стоимости', я соглашаюсь на
+            обработку моих персональных данных и ознакомлен(а) с политикой
+            конфиденциальности
+          </p>
+          <p class="head__form-text form__popup-text-und">
+            Менеджер перезвонит в рабочее время и назовет предварительную
+            стоимость
+          </p>
+        </div>
+        <div class="x x_3"></div>
+      </form>
+    </div>
+    <div class="form__popup-inner form__popup-inner_4">
+      <form class="form__popup making_JBI">
+        <input type="hidden" name="project_name" value="Staratel" />
+        <input
+          type="hidden"
+          name="admin_email"
+          value="levchill2017l@gmail.com"
+        />
+        <input type="hidden" name="form_subject" value="Изготовление_ЖБИ" />
+        <div class="head__form">
+          <h4 class="form__popup-title"><span>Изготовление </span>ЖБИ</h4>
+          <div class="head__form-input-inn form__popup-input-inn">
+            <h6>Укажите номер телефона</h6>
+            <input
+              name="Phone"
+              max="12"
+              type="tel"
+              class="head__form-phone"
+              placeholder=" +7 999 585 95 95"
+            />
+          </div>
+          <button class="head__form-btn form__popup-btn">
+            Расчет стоимость
+          </button>
+          <p class="head__form-butt-text form__popup-text">
+            Нажимая на кнопку "Получить расчет стоимости', я соглашаюсь на
+            обработку моих персональных данных и ознакомлен(а) с политикой
+            конфиденциальности
+          </p>
+          <p class="head__form-text form__popup-text-und">
+            Менеджер перезвонит в рабочее время и назовет предварительную
+            стоимость
+          </p>
+        </div>
+        <div class="x x_4"></div>
+      </form>
+    </div>
+    <div class="footer">
+      <div class="footer__container container">
+        <div class="footer__img "  >
+          <a href="#top">
+            <img src="img/icons/down-arrow.svg" alt="">
+          </a>
+        </div>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
