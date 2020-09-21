@@ -119,7 +119,7 @@ $(function () {
       services__info.innerHTML = "";
       services__info.innerHTML = `
       <div class="services__info-title">
-            ${title} ЧПУ
+            ${title}
           </div>
       <div class="services__info-items">
       ${arr.map( (i) =>
