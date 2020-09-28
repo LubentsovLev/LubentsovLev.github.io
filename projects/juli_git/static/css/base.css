@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Geometria';
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geometria-ExtraBoldItalic';
+  src: url('../fonts/Geometria-ExtraBoldItalic.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geometria-Medium';
+  src: url('../fonts/Geometria-Medium.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geometria-Bold';
+  src: url('../fonts/Geometria-Bold.ttf');
+  font-style: normal;
+}
+strong {
+  font-family: 'Geometria-Bold';
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.test {
+  color: red;
+}

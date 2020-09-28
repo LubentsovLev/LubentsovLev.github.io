@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.219" height="39.438" viewBox="0 0 39.219 39.438">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="_22.svg" data-name="22.svg" class="cls-1" d="M401,346l16-15s3.166-1.443,5,1c-0.159-.2,2.852,1.956,0,5,0.11,0.028-15,15-15,15Zm-4,4c-0.183.1,6,0,6,0l1,2h-8A13.988,13.988,0,0,0,397,350Zm-4,5c0.406-.5,2-2,2-2h11l-2,2S392.593,355.505,393,355Zm-2,1h12l-1,2H390Zm-3,3-1,2h12l2-2H388Zm-3,3h13l-2,2H384Zm-1,3h10l-1,2h-9v-2Zm1,3h6l-1,2h-5v-2Z" transform="translate(-384 -330.562)"/>
+</svg>

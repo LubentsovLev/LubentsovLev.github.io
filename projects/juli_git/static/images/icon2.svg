@@ -1,0 +1,37 @@
+<svg id="Группа_7" data-name="Группа 7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135" height="135" viewBox="0 0 135 135">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #88a3d6;
+        filter: url(#filter);
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #c4c4c4;
+        stroke-width: 1px;
+        stroke-dasharray: 4 2;
+      }
+
+      .cls-3 {
+        opacity: 0.45;
+      }
+    </style>
+    <filter id="filter" x="27.5" y="27.5" width="80" height="80" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="27.5" y="27.5" width="80" height="80" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI0MCIgeDI9IjQwIiB5Mj0iODAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSItMC4xMyIgc3RvcC1jb2xvcj0iI2U0ZDg5ZSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEuMTIiIHN0b3AtY29sb3I9IiNkMmE0NzEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxLjEzIiBzdG9wLWNvbG9yPSIjZDJhNDcxIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" stdDeviation="2.333" in="SourceAlpha"/>
+      <feFlood result="flood" flood-color="#f25c12" flood-opacity="0.55"/>
+      <feComposite result="composite-3" operator="out" in2="blur"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="screen" in2="blend"/>
+    </filter>
+  </defs>
+  <g id="Группа_4" data-name="Группа 4">
+    <circle id="Эллипс_15_копия_6" data-name="Эллипс 15 копия 6" class="cls-1" cx="67.5" cy="67.5" r="40"/>
+    <circle id="Эллипс_15_копия_10" data-name="Эллипс 15 копия 10" class="cls-2" cx="67.5" cy="67.5" r="52"/>
+    <circle id="Эллипс_15_копия_10-2" data-name="Эллипс 15 копия 10" class="cls-3" cx="67.5" cy="67.5" r="67"/>
+  </g>
+  <image id="Слой_92" data-name="Слой 92" x="52.5" y="39.5" width="31" height="56" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAA4CAYAAAAFByO3AAAEQ0lEQVRYhdWYS6hcRRCGv5k75c29V/GBaBTjK0p8oYsIghHd+ACRKChocBEXceFCEYKCIq7diK50oYJKFoKSjSsDAYO6UAQfUYMivpAoKpKHiWYqmSMl1WPP6e45Z+7MNfjDcKZPVfV/uqq6+tHp9/s4TgeeBz4BXgJ+ogVEpKikqluB200NMKJtIvJCkMfkG4B3/f8fwIuAKX6R9BqhRK6qHbe9BNgLnA28IyLXB51upD/w51vAbuBh4HPgNeC6pPdmzAGrgA+BC4HvvT1EN9OFkV8LbAR2AHfbFwNvA3cCJyQWefSABeCQiBxxby41kQeFN4FbgGuAV330bwAfAQ8AJyWWo5BA7m8tvvOqOuTMkdfxAbDZY/cUsBp4Dngk0RzFvLv5sL+156J/VGvygK+Bx4CbvL060UjJjeiviHwhDluOvErejOJ3bw0SSUreqY18lb8vkjeh1yCPyYlifthHPXbkneRNXt7koTCtDkbk3SbyWWE+Io0/YjjXc+RNIwryJg8FkgP+3OfPYczbxm85ONltHlRVmyFXeXtxHPmsYm7l9EvgPOBSr3BWtn8OCjm3zwQi8rGPdqv3dz+wXkS+zZEf8ac2kIeicSyR1OA1PUy1AyIy0ndw+1nAFf7flr7LI1mcYFZYzvX2mVZyVfUrERlXcOZqzxHyU4BdwMX+7iH/NeEu3yjcC7zeoJtFz1ex84E9wPao8Fc+2pBgYXRdD42t0fe4p8ahmJg9F/Z80X8i0Shjg5M3xr6EkHDVBJuEgBMj23EoTt2VLK+N6EZT7OiEtm3tip7p+Q7FcCqwLpoaVc1l9Sm31ttrVHVJRA6RR1WzHyHf6R641X+T4nHgIk++HIJnkuJl+/bKN4bfFWp9CcEzWwArNOtjPVXd7LVgrdd2O4z8ALwsItuJyJ4F3iuQNGFjQb7Fd7y/Oukar/VHvZ4MyRcT03bojZlK5plfgMt8PTjDV7lhXQhTrdTBNKg8Mfd7Mu6vJ3G39pwUnTEfPijIh1kfSA8yI9gBUVUXoym7pKoL0UlozuX/xOxK4LNlUlfxSFT1NE+mC6Kld4/rzHkJv8MOoKq6u+fTwc7ivyVdTw47xdzgibbTSeejXj71MFwN3GjkT/o027EMsnpMw7L7iog8mmj/66FtduJdqYUl2bXk5PGSuhxUBdtWgzruS+o0yM1jWpxgR8hzHaw4po15Ca0GM63bSwn3n5CXkPugBNPGvJRwE5HPOuatsFIx//8UmVzc2qAU84mKzHHBrBeW0F+rc9+sR77PNyU/JpIMpr2NGom5iOxV1XXRtddYzHRhUVW7Bn8auDkRZjBtzAc123OA+4DbEs0MAnk/FbXCsRp5+P9ng7EdmToh5s/4mSpOwHFH5Fhu9zm2KzUE+02qalvygPom0w6VAyP/xm8Jba8dj8IM6u3cR9iNot1mGWzL/L73Zdvjkk0f2PU3TA0Nvt4mHO0AAAAASUVORK5CYII="/>
+</svg>
