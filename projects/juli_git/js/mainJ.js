@@ -39,7 +39,7 @@ let change__popUp_personal = function (obj) {
             
           </div>
         </div>
-        <p class="skills-title">Обучение</p>
+        <p class="skills-title">${obj.education.length === 0 ? "" : "Обучение" }</p>
         <div class="skills-list">
         ${obj.education
           .map(
@@ -62,14 +62,14 @@ let personal_arr = [
   {
     id: 0,
     name: "Громченко Елена",
-    img: "static/images/Elena.png",
+    img: "img/personal/1.png",
     special: "Парикмахер-стилист",
     list_head: "Обучение проходила всегда, ориентируясь на",
     skills_text: [
       "потребности конкретного клиента, на индивидуальный подход к каждомуклиенту;",
       "развитие навыков в парикмахерском искусстве, освоение новых технологий, знакомство с новыми материалами и инструментами в профессии, освоение навыков решения задач любого уровня сложности, общение и обмен опытом работы с другими мастерами;",
       "видение задач и направление развития в данном конкретном периоде времени в сфере красоты и здоровья;",
-      "поддержку и развитие общей концепции салона и парикмахерского сегмента в частности."
+      "поддержку и развитие общей концепции салона и парикмахерского сегмента в частности.",
     ],
     education: [
       "Колледж интерсервис",
@@ -87,92 +87,123 @@ let personal_arr = [
       "O'right:: Технический семинар , «Трихология, выпадение волос» - 2019",
     ],
   },
-
   {
     id: 1,
-    name: "Громченко Елена 2",
-    img: "static/images/Elena.png",
-    special: "Парикмахер-стилист",
-    list_head: "Обучение проходила всегда, ориентируясь на",
-    skills_text: [
-      "потребности конкретного клиента, на индивидуальный подход к каждомуклиенту;",
-      "развитие навыков в парикмахерском искусстве, освоение новых технологий, знакомство с новыми материалами и инструментами в профессии, освоение навыков решения задач любого уровня сложности, общение и обмен опытом работы с другими мастерами;",
-      "видение задач и направление развития в данном конкретном периоде времени в сфере красоты и здоровья;",
-      "поддержку и развитие общей концепции салона и парикмахерского сегмента в частности."
-    ],
+    name: "Егорова Марина",
+    img: "img/personal/2.png",
+    special: "Косметолог,  эстетист по телу ",
+    list_head: "",
+    skills_text: [],
     education: [
-      "Колледж интерсервис",
-      "Профессиональный сервис WELLA (1999-2004 гг.).",
-      "Академия парикмахерского искусства «ДОЛОРЕС» (2001-2004 гг.).",
-      "SCHWARZKOPF professionel.",
-      "Московский художественно-педагогический колледж технологий и дизайна.",
-      "Школа Инессы Башкировой «Талант».",
-      "VISIONHAIR.",
-      "Академия L'OREAL professionnel (2009-2020 гг.).",
-      "DAVINES академия (2011-2019 гг.).",
-      "MAKE UP ATELIER Paris (2012-2015 гг.).",
-      "Академия CHI (2015-2016 гг.).",
-      "Organic Colour Systems (2015-2019 гг.). «Вводный курс Organic Colour Systems» «BLONDES WORKSHOP», «FASHION WORKSHOP», « THINK CURL SYSTEM»",
-      "O'right:: Технический семинар , «Трихология, выпадение волос» - 2019",
+      "Базовое среднее медицинское образование",
+      "1992 Международный университет массажа",
+      "Спорт Мед Импорт обучение работе на аппарате  LPG Sуstems и методу кавитации",
+      "«Салон сервис» - «Биоэпиляция», «Бикини-татуаж», «Биотатуаж»",
+      "Проф Эст специальность косметолог-эстетист",
+      "Академия образования «Планета красоты» - «Контурная пластика», «Мезотерапия», «Ботулотоксины типа А»",
+      "Международная Академия красоты и здоровья ЕСКО  - «ЗD лифт массаж лица»",
+      "Академия ERSTA – массаж лица и тела «BABOR EFFECTIVE TОUCH» обучение у ведущего тренера  Ricky Welch - разработчика техники данного  массажа, обладателя престижнейшей премии GALA SPA AWORD ",
     ],
   },
   {
     id: 2,
-    name: "Громченко Елена 3",
-    img: "static/images/Elena.png",
-    special: "Парикмахер-стилист",
-    list_head: "Обучение проходила всегда, ориентируясь на",
-    skills_text: [
-      "потребности конкретного клиента, на индивидуальный подход к каждомуклиенту;",
-      "развитие навыков в парикмахерском искусстве, освоение новых технологий, знакомство с новыми материалами и инструментами в профессии, освоение навыков решения задач любого уровня сложности, общение и обмен опытом работы с другими мастерами;",
-      "видение задач и направление развития в данном конкретном периоде времени в сфере красоты и здоровья;",
-      "поддержку и развитие общей концепции салона и парикмахерского сегмента в частности."
-    ],
+    name: "Калмыкова Оксана",
+    img: "img/personal/3.png",
+    special: "Парикмахер – стилист",
+    list_head: "",
+    skills_text: [],
     education: [
-      "Колледж интерсервис",
-      "Профессиональный сервис WELLA (1999-2004 гг.).",
-      "Академия парикмахерского искусства «ДОЛОРЕС» (2001-2004 гг.).",
-      "SCHWARZKOPF professionel.",
-      "Московский художественно-педагогический колледж технологий и дизайна.",
-      "Школа Инессы Башкировой «Талант».",
-      "VISIONHAIR.",
-      "Академия L'OREAL professionnel (2009-2020 гг.).",
-      "DAVINES академия (2011-2019 гг.).",
-      "MAKE UP ATELIER Paris (2012-2015 гг.).",
-      "Академия CHI (2015-2016 гг.).",
-      "Organic Colour Systems (2015-2019 гг.). «Вводный курс Organic Colour Systems» «BLONDES WORKSHOP», «FASHION WORKSHOP», « THINK CURL SYSTEM»",
-      "O'right:: Технический семинар , «Трихология, выпадение волос» - 2019",
+      "Академия парикмахерского искусства и эстетики по методу by pivot point",
+      "ASK professional",
+      "Школа макияжа Make up Atelier",
+      "Участие в конкурсе Невские Берега",
+      "Академия L’Oréal : семинары  «Ключи к цвету», «Смена цвета», «Акценты блонда» , Ключи к уходу и стайлингу,  Color Workshop Инстатехники , Мастеркласс по брендам , тренинг Majirel High Lift",
+      "Академия Davines : Семинары «Теория цвета»,  «Новый Naturaltech Путешествие в СПА», «Блонд. Смена цвета», «Магия локона»",
+      "Organik color sistems : «Вводный курс Organic Colour Systems», «BLONDES WORKSHOP»,  «FASHION WORKSHOP», « THINK CURL  SYSTEM»",
+      "O’right «Технический семинар»,  «Трихология, выпадение волос» ",
+      "Академия CHI  «CHI Ionic технология ионного безаммиачного окрашивания»",
     ],
   },
   {
     id: 3,
-    name: "Громченко Елена 4",
-    img: "static/images/Elena.png",
-    special: "Парикмахер-стилист",
-    list_head: "Обучение проходила всегда, ориентируясь на",
-    skills_text: [
-      "потребности конкретного клиента, на индивидуальный подход к каждомуклиенту;",
-      "развитие навыков в парикмахерском искусстве, освоение новых технологий, знакомство с новыми материалами и инструментами в профессии, освоение навыков решения задач любого уровня сложности, общение и обмен опытом работы с другими мастерами;",
-      "видение задач и направление развития в данном конкретном периоде времени в сфере красоты и здоровья;",
-      "поддержку и развитие общей концепции салона и парикмахерского сегмента в частности."
-    ],
+    name: "Кочегизова Надежда",
+    img: "img/personal/4.png",
+    special: "Мастер маникюра и педикюра",
+    list_head: "",
+    skills_text: [],
     education: [
-      "Колледж интерсервис",
-      "Профессиональный сервис WELLA (1999-2004 гг.).",
-      "Академия парикмахерского искусства «ДОЛОРЕС» (2001-2004 гг.).",
-      "SCHWARZKOPF professionel.",
-      "Московский художественно-педагогический колледж технологий и дизайна.",
-      "Школа Инессы Башкировой «Талант».",
-      "VISIONHAIR.",
-      "Академия L'OREAL professionnel (2009-2020 гг.).",
-      "DAVINES академия (2011-2019 гг.).",
-      "MAKE UP ATELIER Paris (2012-2015 гг.).",
-      "Академия CHI (2015-2016 гг.).",
-      "Organic Colour Systems (2015-2019 гг.). «Вводный курс Organic Colour Systems» «BLONDES WORKSHOP», «FASHION WORKSHOP», « THINK CURL SYSTEM»",
-      "O'right:: Технический семинар , «Трихология, выпадение волос» - 2019",
+      "Базовое среднее медицинское образование",
+      "Институт ногтевых технологий «La Mirage Beauty Education» Курсы: Современный маникюр, Современный педикюр в салоне",
+      "Семинары по ногтевому сервису в центре Planeta Nails Комбинированный маникюр -  выравнивание ногтевой пластины, покрытие гель-лаком  под кутикулу, восстановление и ремонт ногтей",
+      "Школа маникюра «Бьюти-Стат» укрепление и наращивание ногтей биогелем",
+      "«Компания СПА технологии» мастер-класс японского эко-маникюра P.Shine",
+      "Семинар по работе с продукцией «Akzentz» - линия LUXIO, технические продукты AKZENTZ",
     ],
   },
-  
+  {
+    id: 4,
+    name: "Скальская Татьяна",
+    img: "img/personal/5.png",
+    special: "Мастер маникюра и педикюра",
+    list_head: "",
+    skills_text: [],
+    education: [
+     "В 1995 г. закончила  школу Аллабелла.  Наращивание акрилом",
+     "Школа Иннесы Башкировой.  Курсы: Классический маникюр. Классический педикюр.Моделирование, конструирование и реставрация ногтей. ( гелевая технология).  Семинар «китайская роспись»",
+     "Ортониксия.  Основные методики коррекции ногтей. По технологиям Hellmut RuckGmbH",
+     "Семинары по ногтевому сервису в центре Planeta Naiis ",
+     "Повышение квалификации в Nail art school  SAKRAMEL Комбинированный маникюр -  выравнивание ногтевой пластины, покрытие гель-лаком   под кутикулу, восстановление и ремонт ногтей",
+     "Повышение квалификации в школе Irins «Тонкие линии». «8 видов укрепления и восстановления ногтей»",
+     "«Коррекция деформации ногтей методом применения Titan Sistem”.",
+     "Семинар по работе с продукцией «Akzentz» - линия LUXIO , технические продукты AKZENTZ",
+    ],
+  },
+  {
+    id: 5,
+    name: "Хатрахманова Анна",
+    img: "img/personal/6.png",
+    special: "Парикмахер - стилист",
+    list_head: "",
+    skills_text: [],
+    education: [
+      "Pivot point official member school - октябрь 2012г ",
+      "конкурс «Make up artist Astana 2014»- август 2014",
+      "Revlon professional - международный курс «Лаборатория цвета»- октябрь 2014 ",
+      "Частное учреждение дополнительного профессионального образования «Институт косметологии, эстетической медицины и визажного искусства - Дом Русской Косметики» Факультет косметологии и эстетической медицины. «Новые технологии визажного искусства. Макияж, грим, спецэффекты. - февраль 2015 ",
+      "ITEC - Diploma in Fashion, Theatre and Media Make up - март 2015 ",
+      "Artego - Новинки в окрашивании 2016 - март 2016",
+      "GK HAIR PROFESSIONAL - Профессиональная процедура «Кератиновое выпрямление и восстановление волос» - март 2016 ",
+      "GK HAIR PROFESSIONAL - Технический семинар по использованию красителей GKhair Oil Hair Colors, Cream Color Juvexin - март 2016 ",
+      "Nyx Face Awards Russia  2016 - апрель 2016 ",
+      "Nyx Face Awards Russia  2017 - апрель 2017 ",
+      "Organic Colour Systems - «Колористический курс для профессионалов» - май 2017 ",
+      "Академия Loreal professionnel «Loreal  Pro Start» - январь 2018 ",
+      "GK HAIR PROFESSIONAL - Кератиновое выпрямление Miami Bombshell - февраль 2018 ",
+      "Organic Colour Systems - «Вводный курс Organic Colour Systems» «BLONDES WORKSHOP»,  «FASHION WORKSHOP», « THINK CURL  SYSTEM»  2017- 2019 ",
+      "O’right:  Технический семинар ,  «Трихология, выпадение волос» - 2019",
+      "Эль стиль «Свадебный стилист» 2019 ",
+    ],
+  },
+  {
+    id: 6,
+    name: "Ельцова Екатерина",
+    img: "img/personal/7.png",
+    special: "Aдминистратор",
+    list_head: "",
+    skills_text: [],
+    education: [
+    ],
+  },
+  {
+    id: 7,
+    name: "Волкова Ирина",
+    img: "img/personal/8.png",
+    special: "Aдминистратор",
+    list_head: "",
+    skills_text: [],
+    education: [
+    ],
+  },
 ];
 //personal
 //catalog
@@ -461,7 +492,6 @@ let catalog__cosmetology = [
     functions: ["функция 1", "function 2", "function 3"],
     price: "50 000",
   },
-
 ];
 let catalog__massage = [
   {
@@ -596,7 +626,6 @@ let catalog__eyebrows = [
     functions: ["функция 1", "function 2", "function 3"],
     price: "50 000",
   },
-
 ];
 let catalog__depilation = [
   {
@@ -639,14 +668,14 @@ let catalog__depilation = [
     functions: ["функция 1", "function 2", "function 3"],
     price: "50 000",
   },
-
 ];
 let catalog__body = [
+  
   {
     id: "0",
     catalog: "catalog__body",
-    title: "Уход 1",
-    img: "static/images/nails1.png",
+    title: "Вечерний макияж",
+    img: "img/body/1.jpg",
     text:
       "Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие",
     functions: ["функция 1", "function 2", "function 3"],
@@ -655,8 +684,8 @@ let catalog__body = [
   {
     id: "1",
     catalog: "catalog__body",
-    title: "Уход  2",
-    img: "static/images/nails1.png",
+    title: "Дневной макияж",
+    img: "img/body/2.jpg",
     text:
       "Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие",
     functions: ["функция 1", "function 2", "function 3"],
@@ -665,13 +694,25 @@ let catalog__body = [
   {
     id: "2",
     catalog: "catalog__body",
-    title: "Уход 3",
-    img: "static/images/nails1.png",
+    title: "Экспресс-макияж",
+    img: "img/body/3.jpg",
     text:
       "Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие",
     functions: ["функция 1", "function 2", "function 3"],
     price: "50 000",
   },
+  {
+    id: "3",
+    catalog: "catalog__body",
+    title: "Солярий",
+    img: "img/body/1_1.jpg",
+    text:
+      "Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие",
+    functions: ["функция 1", "function 2", "function 3"],
+    price: "50 000",
+  },
+  
+  
 ];
 let close__popUp_catalog = function () {
   popup_wrap_catalog.classList.add("popUpDis");
@@ -859,7 +900,7 @@ $(function () {
 
   //slider
 
-  let catalog__change = function (catalog, array,link, tg) {
+  let catalog__change = function (catalog, array, link, tg) {
     catalog.addEventListener("click", function () {
       for (let i = 0; i < all__sliders.length; i++) {
         all__catalogs_links[i].classList.remove("main-active");
@@ -925,6 +966,7 @@ $(function () {
       .join("");
   };
   let catalog__slider__shitch = function (catalog, sliderNum, link, tg) {
+    $(".slick__catalog_1").slick("slickPause");
     catalog.addEventListener("click", function () {
       //debugger
       for (let i = 0; i < all__sliders.length; i++) {
@@ -954,13 +996,48 @@ $(function () {
   };
 
   //main section2
-  catalog__change(catalog_1, catalog__barber,all__catalogs_links[0],all__catalogs_tg[0]);
-  catalog__change(catalog_2, catalog__nails,all__catalogs_links[1],all__catalogs_tg[1]);
-  catalog__change(catalog_3, catalog__cosmetology,all__catalogs_links[2],all__catalogs_tg[2]);
-  catalog__change(catalog_4, catalog__massage,all__catalogs_links[3],all__catalogs_tg[3]);
-  catalog__change(catalog_5, catalog__eyebrows,all__catalogs_links[4],all__catalogs_tg[4]);
-  catalog__change(catalog_6, catalog__depilation,all__catalogs_links[5],all__catalogs_tg[5]);
-  catalog__change(catalog_7, catalog__body,all__catalogs_links[6],all__catalogs_tg[6]);
+  catalog__change(
+    catalog_1,
+    catalog__barber,
+    all__catalogs_links[0],
+    all__catalogs_tg[0]
+  );
+  catalog__change(
+    catalog_2,
+    catalog__nails,
+    all__catalogs_links[1],
+    all__catalogs_tg[1]
+  );
+  catalog__change(
+    catalog_3,
+    catalog__cosmetology,
+    all__catalogs_links[2],
+    all__catalogs_tg[2]
+  );
+  catalog__change(
+    catalog_4,
+    catalog__massage,
+    all__catalogs_links[3],
+    all__catalogs_tg[3]
+  );
+  catalog__change(
+    catalog_5,
+    catalog__eyebrows,
+    all__catalogs_links[4],
+    all__catalogs_tg[4]
+  );
+  catalog__change(
+    catalog_6,
+    catalog__depilation,
+    all__catalogs_links[5],
+    all__catalogs_tg[5]
+  );
+  catalog__change(
+    catalog_7,
+    catalog__body,
+    all__catalogs_links[6],
+    all__catalogs_tg[6]
+  );
   //main section2
   //slider section2
   catalog__change__slider(catalog_1, slick__catalog_1, catalog__barber);
@@ -1050,7 +1127,7 @@ $(function () {
       <div class="section4-item">
       <div class="section4-line"></div>
       <div class="section4-img-wrap">
-        <img src="static/images/section4-img.png">
+        <img src="${i.img}">
       </div>
       <p class="section4-name">${i.name}</p>
       <p class="section4-name-line"></p>
@@ -1069,7 +1146,7 @@ $(function () {
         <div class="section4-item ">
         <div class="section4-line"></div>
         <div class="section4-img-wrap">
-          <img src="static/images/section4-img.png">
+          <img src="${i.img}">
         </div>
         <p class="section4-name">${i.name}</p>
         <p class="section4-name-line"></p>

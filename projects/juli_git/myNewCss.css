@@ -8,6 +8,12 @@
   width: 56px;
   height: 58px;
 }
+.section4-img-wrap img{
+  border-radius:20px;
+}
+.main-active .triangle-content .cls-2{
+  fill: #000 !important;
+}
 .wrap {
   position: relative;
   z-index: 2;
@@ -18,6 +24,12 @@
 }
 .section2-left-content {
   padding-right: 20px;
+}
+.slick-list {
+  outline: none;
+}
+.slick-slide{
+  outline: none;
 }
 .slick1__1__item {
   background-color: transparent;
