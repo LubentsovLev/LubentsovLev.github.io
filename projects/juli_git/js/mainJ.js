@@ -768,8 +768,14 @@ $(function () {
 
   //slider
 
-  let catalog__change = function (catalog, array) {
+  let catalog__change = function (catalog, array,link, tg) {
     catalog.addEventListener("click", function () {
+      for (let i = 0; i < all__sliders.length; i++) {
+        all__catalogs_links[i].classList.remove("main-active");
+        all__catalogs_tg[i].classList.remove("triangle-active");
+      }
+      link.classList.add("main-active");
+      tg.classList.add("triangle-active");
       section2_right_content.classList.add("slider__animation");
       setTimeout(() => {
         section2_right_content.classList.remove("slider__animation");
@@ -857,13 +863,13 @@ $(function () {
   };
 
   //main section2
-  catalog__change(catalog_1, catalog__barber);
-  catalog__change(catalog_2, catalog__nails);
-  catalog__change(catalog_3, catalog__cosmetology);
-  catalog__change(catalog_4, catalog__massage);
-  catalog__change(catalog_5, catalog__eyebrows);
-  catalog__change(catalog_6, catalog__depilation);
-  catalog__change(catalog_7, catalog__body);
+  catalog__change(catalog_1, catalog__barber,all__catalogs_links[0],all__catalogs_tg[0]);
+  catalog__change(catalog_2, catalog__nails,all__catalogs_links[1],all__catalogs_tg[1]);
+  catalog__change(catalog_3, catalog__cosmetology,all__catalogs_links[2],all__catalogs_tg[2]);
+  catalog__change(catalog_4, catalog__massage,all__catalogs_links[3],all__catalogs_tg[3]);
+  catalog__change(catalog_5, catalog__eyebrows,all__catalogs_links[4],all__catalogs_tg[4]);
+  catalog__change(catalog_6, catalog__depilation,all__catalogs_links[5],all__catalogs_tg[5]);
+  catalog__change(catalog_7, catalog__body,all__catalogs_links[6],all__catalogs_tg[6]);
   //main section2
   //slider section2
   catalog__change__slider(catalog_1, slick__catalog_1, catalog__barber);
