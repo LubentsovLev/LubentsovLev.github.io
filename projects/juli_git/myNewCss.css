@@ -421,6 +421,9 @@ input[type="number"] {
   .wrap {
     width: 308px;
   }
+  .main-wrap{
+    background-position: left -400px bottom;
+  }
 }
 
 @media (max-width: 800px) {
@@ -472,15 +475,26 @@ input[type="number"] {
     width: 64px !important;
   }
 }
-@media (max-width: 378px) {
+@media (max-width: 370px) {
   .triangle {
     width: 53px;
     height: 44px;
     margin-top: 8px;
     margin-left: -21px;
   }
+  .popup-main .img-wrap {
+    max-width: 250px;
+  }
 }
 @media (max-width: 400px) {
+  .list-head{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .popup-content{
+    width: 90%;
+    height: 95%;
+  }
   .catalog_1 span {
     font-size: 12px;
   }
