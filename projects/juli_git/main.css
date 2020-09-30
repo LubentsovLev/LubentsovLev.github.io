@@ -1093,7 +1093,14 @@
       .nails-img {
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
+        transition: 0.5s;
       }
+      .nails-img:hover{
+        -webkit-filter: none;
+        filter: none;
+        transition: 0.5s;
+      }
+
       .details {
         width: 100%;
         margin-top: 24px;

@@ -416,6 +416,9 @@ input[type="number"] {
 .wrap {
   width: 330px;
 }
+.main-wrap{
+  background-size: cover;
+}
 
 @media (max-width: 1200px) {
   .wrap {
@@ -423,6 +426,10 @@ input[type="number"] {
   }
   .main-wrap{
     background-position: left -400px bottom;
+    max-width: 100%;
+  }
+  .main{
+    
   }
 }
 
