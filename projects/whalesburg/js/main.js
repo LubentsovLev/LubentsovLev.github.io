@@ -117,7 +117,7 @@ $(function () {
     setTimeout(() => {
       switch__slider();
       slider__texts.classList.remove("animat");
-    }, 400);
+    }, 600);
     slider__buttons__dis();
   });
   slick_prev.addEventListener("click", function () {
@@ -130,7 +130,7 @@ $(function () {
     setTimeout(() => {
       switch__slider();
       slider__texts.classList.remove("animat");
-    }, 400);
+    }, 600);
     slider__buttons__dis();
   });
 
@@ -214,6 +214,74 @@ $(function () {
 
   //slider
 
+  ///menu
+  let menu_1 = document.querySelector(".menu_1");
+  let menu_2 = document.querySelector(".menu_2");
+  let menu_3 = document.querySelector(".menu_3");
+  let menu_4 = document.querySelector(".menu_4");
+  let menu_5 = document.querySelector(".menu_5");
+  let menu_6 = document.querySelector(".menu_6");
+  let menu_7 = document.querySelector(".menu_7");
+  let menuArr = [menu_1, menu_2, menu_3, menu_4, menu_5, menu_6, menu_7];
+  let changeMenuArr = function () {
+    switch (content__counter) {
+      case 0:
+        menu_1.classList.add("menu-active");
+        break;
+      case 1:
+        menu_2.classList.add("menu-active");
+        break;
+      case 2:
+        menu_3.classList.add("menu-active");
+        break;
+      case 3:
+        menu_4.classList.add("menu-active");
+        break;
+      case 4:
+        menu_5.classList.add("menu-active");
+        break;
+      case 5:
+        menu_6.classList.add("menu-active");
+        break;
+      case 6:
+        menu_7.classList.add("menu-active");
+        break;
+      default:
+        break;
+    }
+  };
+  let menuDelete = function () {
+    for (let i = 0; i < menuArr.length; i++) {
+      menuArr[i].classList.remove("menu-active");
+    }
+  };
+  let change__counter_menu = function (link, count) {
+    link.addEventListener("click", function () {
+      menuDelete();
+      changeMenuArr();
+
+      //debugger
+      content__counter = count;
+      content.classList.add("animat");
+      content.style.opacity = "0";
+      setTimeout(() => {
+        content.innerHTML = "";
+        change__inner();
+        content.classList.remove("animat");
+        content.style.opacity = "1";
+      }, 600);
+      nav.classList.remove("active_g");
+      menu.classList.remove("active");
+    });
+  };
+  change__counter_menu(menu_1, 0);
+  change__counter_menu(menu_2, 1);
+  change__counter_menu(menu_3, 2);
+  change__counter_menu(menu_4, 3);
+  change__counter_menu(menu_5, 4);
+  change__counter_menu(menu_6, 5);
+  change__counter_menu(menu_7, 6);
+  //menu
   //main__slider
   let content__counter = 0;
   let count__wheels__plus = 0;
@@ -227,12 +295,17 @@ $(function () {
     content.classList.add("hidden");
   };
   let slider__hidden__reverse = function () {
+    //debugger
+    let g = document.querySelector(".slider__hidden")
     document.querySelector(".slider__hidden").classList.add("hidden");
     content.classList.remove("hidden");
   };
 
   function change__inner() {
     window.addEventListener("wheel", findScrollDirectionOtherBrowsers);
+    menuDelete();
+    changeMenuArr();
+
     if (content__counter != 3) {
       //debugger;
       slider__hidden__reverse();
@@ -276,7 +349,8 @@ $(function () {
         майнинг фермы
       </h4>
       <div class="page-2__arrow">
-        <img src="img/icons/arr_left.svg" alt="" />
+        <img class="arrow1 page_2_arr-desc" src="img/icons/arr_left.svg" alt="" />
+        <img class="arrow1 page_2_arr-mob" src="img/icons/arr_left_mob.svg" alt="" />
         <p>Получи инструкцию и помощь в подключении</p>
       </div>
       <div class="page-2__items">
@@ -334,7 +408,6 @@ $(function () {
         </section>`;
         break;
       case 3:
-        slider__hidden();
         slider__hidden();
         break;
       case 4:
@@ -454,10 +527,10 @@ $(function () {
                   <img src="img/seventh__social/3.svg" alt="" />
                 </a>
                 <a href="#" class="page-7__info-item">
-                  <img src="img/seventh__social/4.svg" alt="" />
+                  <img src="img/seventh__social/5.svg" alt="" />
                 </a>
                 <a href="#" class="page-7__info-item">
-                  <img src="img/seventh__social/5.svg" alt="" />
+                  <img src="img/seventh__social/4.svg" alt="" />
                 </a>
               </div>
             </div>
@@ -491,10 +564,10 @@ $(function () {
         count__wheels__plus = count__wheels__plus + 1;
         if (content__counter === 6) {
           // content__counter = content__counter;
-          content__counter = 0
+          content__counter = 0;
           setTimeout(() => {
             one__wheel__plus = one__wheel__plus + 1;
-          }, 100);
+          }, 400);
         } else {
           setTimeout(() => {
             one__wheel__plus = one__wheel__plus + 1;
@@ -503,14 +576,14 @@ $(function () {
               content__counter = content__counter + 1;
             }
             console.log("plus", one__wheel__plus, count__wheels__plus);
-          }, 100);
+          }, 400);
         }
       } else if (delta > 0) {
         count__wheels__min = count__wheels__min + 1;
         if (content__counter === 0) {
           setTimeout(() => {
             one__wheel__min = one__wheel__min + 1;
-          }, 100);
+          }, 400);
           // content__counter = content__counter + 0;
           content__counter = 6;
         } else {
@@ -521,7 +594,7 @@ $(function () {
               content__counter = content__counter - 1;
             }
             console.log("minus", one__wheel__min, count__wheels__min);
-          }, 100);
+          }, 400);
         }
       }
       // one__wheel__min,count__wheels__min,one__wheel__plus,count__wheels__plus = 0
