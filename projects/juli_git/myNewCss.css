@@ -1,8 +1,12 @@
-
+.logo-wrap{
+  border-right:1px solid #3e2f51 ;
+}
 .logo-text{
   color: #3e2f51;
-  font-weight: 500 !important;
-
+  font-weight: bold !important;
+}
+.section5 .logo-text{
+  color: #fff ;
 }
 .main-head .consultation-button span{
   color: #3e2f51;
