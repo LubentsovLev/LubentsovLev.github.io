@@ -1,6 +1,54 @@
+
+.logo-text{
+  color: #3e2f51;
+  font-weight: 500 !important;
+
+}
+.main-head .consultation-button span{
+  color: #3e2f51;
+}
+.sale-button_head{
+  max-width: 210px;
+  max-height: 80px;
+  margin-top: 40px;
+}
+.sale-button_head span{
+  color: #3e2f51;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.percent-img {
+  right: -74px;
+  top: -18px;
+}
+.main-text1{
+  color: #c48d72;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+.salon-text{
+  margin-bottom: 100px;
+}
+.main-text4{
+  color: #3e2f51;
+}
+.main-text4 strong{ 
+  color: #3e2f51;
+  color: #c48d72;
+}
+.info-item_text{
+  color: #3e2f51;
+}
+.phone_head{
+  color: #3e2f51 !important;
+}
 .section2-left-content .main {
   flex-direction: row;
   padding: 0;
+}
+.popup-wrap__consultation .head-text{
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 .triangle {
   margin-top: 11px;
@@ -39,10 +87,7 @@
 .section5-content{
   align-items:center;
 }
-.percent-img{
-  right: -28px;
-  top: -4px;
-}
+
 
 .slick-slide{
   outline: none;
@@ -165,13 +210,14 @@
   width: 7px;
   height: 7px;
 }
+
 .section4-wrap {
 
-  width: 100%;
-  /* background-image: url(/img/other/1.png); */
+   /* width: 100%;
+   background-image: url(/img/other/1.png); 
   position: relative;
   padding-bottom: 40px;
-  /* background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(229 229 230) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(229 229 230) 100%);
   background-image: url(/img/other/1.png); */
   
 }
@@ -215,6 +261,12 @@ input[type="number"] {
   }
 }
 @media (max-width: 768px) {
+  .main-wrap{
+    background-image: url(static/images/fon1.png);
+  }
+  .main-text4,.logo-text{
+    color: #fff;
+  }
   .slick1__1__item{
     padding: 0;
   }
@@ -500,6 +552,10 @@ input[type="number"] {
   }
 }
 @media (max-width: 370px) {
+  .percent-img {
+    right: -40px;
+    top: -18px;
+  }
   .triangle {
     width: 53px;
     height: 44px;
