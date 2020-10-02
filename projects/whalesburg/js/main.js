@@ -66,50 +66,63 @@ $(function () {
         slider__texts__inner(
           0,
           "Удобный интерфейс",
-          "Адаптивный и понятный интерфейс для комфортного использования"
+          "Мы ориентировались на максимальное удобство в использовании, а также оптимизацию для мобильных устройств"
         );
       case 1:
         slider__texts__inner(
           1,
-          "Расширенная статистика",
-          "Информативные графики и расчеты о доходности и отклонениях"
+          "Интересные возможности",
+          "Долгое время мы собирали хотелки наших майнеров и делали пул самым удобным и функциональным"
         );
       case 2:
         slider__texts__inner(
           2,
-          "Прозрачность данных",
-          "Детализация и возможность выгрузки любых отчетов для изучения и анализа"
+          "Расширенная статистика",
+          "Наши удобные графики и расчёты по доходности и отклонениям добавляют функционала пула"
         );
       case 3:
         slider__texts__inner(
           3,
-          "Telegram Bot",
-          "Держит в курсе и оперативно сообщает о доступности ригов и выплатах с пула"
+          "Выгрузка детальных отчётов",
+          "Мы работаем прозрачно и даём возможность любому выгрузить данные для изучения и анализа"
         );
       case 4:
         slider__texts__inner(
           4,
-          "Реферальная программа",
-          "Увеличивай доход, приглашая своих друзей и товарищей по цеху"
+          "Доходность",
+          "Главная цель - получение наибольшего дохода, мы постоянно оптимизируем работу пула, чтобы иметь конкурентное приемущество"
         );
       case 5:
         slider__texts__inner(
           5,
-          "Profit-Switching",
-          "<b>Автоматическое переключение между самыми профитным монетами на алгоритме ETHASH</b>"
+          "Телеграм бот",
+          "Будьте всегда в курсе и получайте оперативную информацию по доступности ваших ригов и выплатам с пула"
         );
       case 6:
         slider__texts__inner(
           6,
-          "<b>Получи полную презентацию</b>",
+          "Реф. программа",
+          "Вы можете увеличить свой доход, если воспользуетесь реф.программой и пригласите своих знакомых к нам на пул"
+        );
+      case 7:
+        slider__texts__inner(
+          7,
+          "Профитсвичинг",
+          "Автоматическое переключение между самыми профитным монетами на алгоритме ETHASH"
+        );
+        case 8:
+        slider__texts__inner(
+          8,
           "",
-          "В любом из мессенджеров"
+          ""
         );
     }
   };
+
+  
   slick_next.addEventListener("click", function () {
-    if (slider__count === 6) {
-      slider__count = 6;
+    if (slider__count === 8) {
+      slider__count = 8;
     } else {
       slider__count = slider__count + 1;
     }
@@ -163,6 +176,14 @@ $(function () {
     slider__count = 6;
     switch__slider();
   };
+  slider__buttons[7].onclick = () => {
+    slider__count = 7;
+    switch__slider();
+  };
+  slider__buttons[8].onclick = () => {
+    slider__count = 8;
+    switch__slider();
+  };
 
   let slider__texts__inner = function (count, title, text, subtitle) {
     if (slider__count === count) {
@@ -175,42 +196,7 @@ $(function () {
           `;
     }
   };
-  slider__texts__inner(
-    0,
-    "Удобный интерфейс",
-    "Адаптивный и понятный интерфейс для комфортного использования"
-  );
-  slider__texts__inner(
-    1,
-    "Расширенная статистика",
-    "Информативные графики и расчеты о доходности и отклонениях"
-  );
-  slider__texts__inner(
-    2,
-    "Прозрачность данных",
-    "Детализация и возможность выгрузки любых отчетов для изучения и анализа"
-  );
-  slider__texts__inner(
-    3,
-    "Telegram Bot",
-    "Держит в курсе и оперативно сообщает о доступности ригов и выплатах с пула"
-  );
-  slider__texts__inner(
-    4,
-    "Реферальная программа",
-    "Увеличивай доход, приглашая своих друзей и товарищей по цеху"
-  );
-  slider__texts__inner(
-    5,
-    "Profit-Switching",
-    "Автоматическое переключение между самыми профитным монетами на алгоритме ETHASH"
-  );
-  slider__texts__inner(
-    6,
-    "Получи полную презентацию",
-    "",
-    "В любом из мессенджеров"
-  );
+
 
   //slider
 
@@ -259,7 +245,7 @@ $(function () {
     link.addEventListener("click", function () {
       menuDelete();
       changeMenuArr();
-
+      document.querySelector(".slider__hidden").style.opacity = "0";
       //debugger
       content__counter = count;
       content.classList.add("animat");
@@ -284,9 +270,7 @@ $(function () {
   //menu
   //main__slider
   if (document.documentElement.clientWidth > 768) {
-
   }
-
 
   let content__counter = 0;
   let count__wheels__plus = 0;
@@ -301,7 +285,7 @@ $(function () {
   };
   let slider__hidden__reverse = function () {
     //debugger
-    let g = document.querySelector(".slider__hidden")
+    let g = document.querySelector(".slider__hidden");
     document.querySelector(".slider__hidden").classList.add("hidden");
     content.classList.remove("hidden");
   };
@@ -316,7 +300,7 @@ $(function () {
       slider__hidden__reverse();
       document.querySelector(".slider__hidden").style.opacity = "0";
     }
-    
+
     switch (content__counter) {
       case 0:
         content.innerHTML = `
@@ -430,8 +414,8 @@ $(function () {
                   таких же майнеров
                 </p>
                 <div class="page-5__item-imgs">
-                  <div class="page-5__item-img"><img src="" alt="" /></div>
-                  <div class="page-5__item-img"><img src="" alt="" /></div>
+                  <div class="page-5__item-img"><img src="img/fifth/1.png" alt="" /></div>
+                  <div class="page-5__item-img"><img src="img/fifth/2.png" alt="" /></div>
                 </div>
               </div>
               <div class="page-5__item">
@@ -441,8 +425,8 @@ $(function () {
                   поддержки, говорящей на одном с тобой языке
                 </p>
                 <div class="page-5__item-imgs">
-                  <div class="page-5__item-img"><img src="" alt="" /></div>
-                  <div class="page-5__item-img"><img src="" alt="" /></div>
+                  <div class="page-5__item-img"><img src="img/fifth/3.png" alt="" /></div>
+                  <div class="page-5__item-img"><img src="img/fifth/4.png" alt="" /></div>
                 </div>
               </div>
             </div>
@@ -550,6 +534,9 @@ $(function () {
   window.addEventListener("wheel", function () {
     content.classList.add("animat");
     document.querySelector(".slider__hidden").style.opacity = "0";
+    if (content__counter === 6 || 0) {
+      content.style.opacity = "1";
+    }
     content.style.opacity = "0";
     setTimeout(() => {
       content.innerHTML = "";
@@ -557,56 +544,77 @@ $(function () {
       content.classList.remove("animat");
       // document.querySelector(".slider__hidden").style.opacity = "1";
       content.style.opacity = "1";
-    }, 600);
+    }, 500);
   });
+  change__inner();
   function findScrollDirectionOtherBrowsers(event) {
-    setTimeout(() => {
-      var delta;
+    //debugger
+    var delta;
+    if (event.wheelDelta) {
+      delta = event.wheelDelta;
+    } else {
+      delta = -1 * event.deltaY;
+    }
 
-      if (event.wheelDelta) {
-        delta = event.wheelDelta;
+    if (delta < 0) {
+      count__wheels__plus = count__wheels__plus + 1;
+      if (content__counter === 6) {
+        content__counter = content__counter;
+        // content__counter = 0;
+        setTimeout(() => {
+          one__wheel__plus = one__wheel__plus + 1;
+        }, 200);
       } else {
-        delta = -1 * event.deltaY;
+        setTimeout(() => {
+          one__wheel__plus = one__wheel__plus + 1;
+          if (one__wheel__plus < count__wheels__plus) {
+          } else {
+            content__counter = content__counter + 1;
+          }
+          console.log("plus", one__wheel__plus, count__wheels__plus);
+        }, 200);
       }
-
-      if (delta < 0) {
-        count__wheels__plus = count__wheels__plus + 1;
-        if (content__counter === 6) {
-          // content__counter = content__counter;
-          content__counter = 0;
-          setTimeout(() => {
-            one__wheel__plus = one__wheel__plus + 1;
-          }, 400);
-        } else {
-          setTimeout(() => {
-            one__wheel__plus = one__wheel__plus + 1;
-            if (one__wheel__plus < count__wheels__plus) {
-            } else {
-              content__counter = content__counter + 1;
-            }
-            console.log("plus", one__wheel__plus, count__wheels__plus);
-          }, 400);
-        }
-      } else if (delta > 0) {
-        count__wheels__min = count__wheels__min + 1;
-        if (content__counter === 0) {
-          setTimeout(() => {
-            one__wheel__min = one__wheel__min + 1;
-          }, 400);
-          // content__counter = content__counter + 0;
-          content__counter = 6;
-        } else {
-          setTimeout(() => {
-            one__wheel__min = one__wheel__min + 1;
-            if (one__wheel__min < count__wheels__min) {
-            } else {
-              content__counter = content__counter - 1;
-            }
-            console.log("minus", one__wheel__min, count__wheels__min);
-          }, 400);
-        }
+    } else if (delta > 0) {
+      count__wheels__min = count__wheels__min + 1;
+      if (content__counter === 0) {
+        setTimeout(() => {
+          one__wheel__min = one__wheel__min + 1;
+        }, 200);
+        content__counter = content__counter + 0;
+        // content__counter = 6;
+      } else {
+        setTimeout(() => {
+          one__wheel__min = one__wheel__min + 1;
+          if (one__wheel__min < count__wheels__min) {
+          } else {
+            content__counter = content__counter - 1;
+          }
+          console.log("minus", one__wheel__min, count__wheels__min);
+        }, 200);
       }
-      console.log(content__counter);
-    }, 0);
+    }
+    console.log(content__counter);
+  }
+  function findScrollDirectionOtherBrowsers_2(event) {
+    var delta;
+    if (event.wheelDelta) {
+      delta = event.wheelDelta;
+    } else {
+      delta = -1 * event.deltaY;
+    }
+    if (delta < 0) {
+      if (content__counter === 6) {
+        content__counter = 0;
+      } else {
+        content__counter = content__counter + 1;
+      }
+    } else if (delta > 0) {
+      if (content__counter === 0) {
+        content__counter = 6;
+      } else {
+        content__counter = content__counter - 1;
+      }
+    }
+    console.log(content__counter);
   }
 });

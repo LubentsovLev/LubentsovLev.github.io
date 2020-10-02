@@ -35,22 +35,53 @@ function enableScroll() {
 }
 
 // trash
-// else if (delta > 0) {
-//     if (content__counter === 0) {
-//       content__counter = 0;
+// function findScrollDirectionOtherBrowsers(event) {
+//   setTimeout(() => {
+//     var delta;
+
+//     if (event.wheelDelta) {
+//       delta = event.wheelDelta;
 //     } else {
-//       debugger
-//       count__mouse = count__mouse + delta;
-//       setTimeout(() => {
-//         if (count__mouse < -120) {
-//           content__counter = content__counter;
-//         } else {
-//           if (content__counter === 0) {
-//             content__counter = 0;
+//       delta = -1 * event.deltaY;
+//     }
+
+//     if (delta < 0) {
+//       count__wheels__plus = count__wheels__plus + 1;
+//       if (content__counter === 6) {
+//         // content__counter = content__counter;
+//         content__counter = 0;
+//         setTimeout(() => {
+//           one__wheel__plus = one__wheel__plus + 1;
+//         }, 500);
+//       } else {
+//         setTimeout(() => {
+//           one__wheel__plus = one__wheel__plus + 1;
+//           if (one__wheel__plus < count__wheels__plus) {
+//           } else {
+//             content__counter = content__counter + 1;
+//           }
+//           console.log("plus", one__wheel__plus, count__wheels__plus);
+//         }, 500);
+//       }
+//     } else if (delta > 0) {
+//       count__wheels__min = count__wheels__min + 1;
+//       if (content__counter === 0) {
+//         setTimeout(() => {
+//           one__wheel__min = one__wheel__min + 1;
+//         }, 500);
+//         // content__counter = content__counter + 0;
+//         content__counter = 6;
+//       } else {
+//         setTimeout(() => {
+//           one__wheel__min = one__wheel__min + 1;
+//           if (one__wheel__min < count__wheels__min) {
 //           } else {
 //             content__counter = content__counter - 1;
 //           }
-//         }
-//       }, 500);
+//           console.log("minus", one__wheel__min, count__wheels__min);
+//         }, 500);
+//       }
 //     }
-//   }
+//     console.log(content__counter);
+//   }, 0);
+// }
