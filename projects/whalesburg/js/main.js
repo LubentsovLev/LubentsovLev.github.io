@@ -283,6 +283,11 @@ $(function () {
   change__counter_menu(menu_7, 6);
   //menu
   //main__slider
+  if (document.documentElement.clientWidth > 768) {
+
+  }
+
+
   let content__counter = 0;
   let count__wheels__plus = 0;
   let one__wheel__plus = 0;
@@ -309,6 +314,7 @@ $(function () {
     if (content__counter != 3) {
       //debugger;
       slider__hidden__reverse();
+      document.querySelector(".slider__hidden").style.opacity = "0";
     }
     
     switch (content__counter) {
@@ -553,7 +559,6 @@ $(function () {
       content.style.opacity = "1";
     }, 600);
   });
-  change__inner();
   function findScrollDirectionOtherBrowsers(event) {
     setTimeout(() => {
       var delta;
