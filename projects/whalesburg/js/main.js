@@ -296,7 +296,7 @@ $(function () {
   };
   let slider__hidden__reverse = function () {
     //debugger
-    let g = document.querySelector(".slider__hidden");
+    let g = document.querySelector(".slider__hidden")
     document.querySelector(".slider__hidden").classList.add("hidden");
     content.classList.remove("hidden");
   };
@@ -310,10 +310,10 @@ $(function () {
       //debugger;
       slider__hidden__reverse();
     }
-    if (document.documentElement.clientWidth > 768) {
-      switch (content__counter) {
-        case 0:
-          content.innerHTML = `
+    
+    switch (content__counter) {
+      case 0:
+        content.innerHTML = `
           <section class="page page-1">
     <div class="page-1__container container">
       <h6 class="title">Майнинг на стабильном и удобном пуле</h6>
@@ -339,9 +339,9 @@ $(function () {
     </div>
   </section>
           `;
-          break;
-        case 1:
-          content.innerHTML = `
+        break;
+      case 1:
+        content.innerHTML = `
           <section class="page page-2">
     <div class="page-2__container container">
       <h6 class="title">Какое железо нужно для подключения</h6>
@@ -377,9 +377,9 @@ $(function () {
     </div>
   </section>
           `;
-          break;
-        case 2:
-          content.innerHTML = `<section class="page page-3">
+        break;
+      case 2:
+        content.innerHTML = `<section class="page page-3">
           <div class="page-3__container container">
             <h6 class="title">Рост доходов</h6>
             <h4 class="page-3__text text">
@@ -407,13 +407,13 @@ $(function () {
             </div>
           </div>
         </section>`;
-          break;
-        case 3:
-          slider__hidden();
-          document.querySelector(".slider__hidden").style.opacity = "1";
-          break;
-        case 4:
-          content.innerHTML = `<section class="page page-5">
+        break;
+      case 3:
+        slider__hidden();
+        document.querySelector(".slider__hidden").style.opacity = "1";
+        break;
+      case 4:
+        content.innerHTML = `<section class="page page-5">
           <div class="page-5__container container">
             <div class="title">Русскоговорящее комьюнити</div>
             <div class="page-5__items">
@@ -442,9 +442,9 @@ $(function () {
             </div>
           </div>
         </section>`;
-          break;
-        case 5:
-          content.innerHTML = `<section class="page page-6">
+        break;
+      case 5:
+        content.innerHTML = `<section class="page page-6">
           <div class="page-6__container container">
             <h6 class="title">Зарабатывай с надежным пулом</h6>
             <div class="page-6__items">
@@ -483,9 +483,9 @@ $(function () {
             </div>
           </div>
         </section>`;
-          break;
-        case 6:
-          content.innerHTML = `<section class="page page-7">
+        break;
+      case 6:
+        content.innerHTML = `<section class="page page-7">
           <div class="page-7__container container">
             <div class="title">Получи полный доступ к Whalesburg</div>
             <div class="page-7__items">
@@ -538,8 +538,7 @@ $(function () {
             </div>
           </div>
         </section>`;
-          break;
-      }
+        break;
     }
   }
   window.addEventListener("wheel", function () {
