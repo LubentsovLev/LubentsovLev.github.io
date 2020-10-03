@@ -503,19 +503,19 @@ $(function () {
             <div class="page-7__info">
               <p>Куда прислать информацию?</p>
               <div class="page-7__info-items">
-                <a href="#" class="page-7__info-item">
+                <a href="social/telegram.html" class="page-7__info-item">
                   <img src="img/seventh__social/1.svg" alt="" />
                 </a>
-                <a href="#" class="page-7__info-item">
+                <a href="social/viber.html" class="page-7__info-item">
                   <img src="img/seventh__social/2.svg" alt="" />
                 </a>
-                <a href="#" class="page-7__info-item">
+                <a href="social/whatsApp.html" class="page-7__info-item">
                   <img src="img/seventh__social/3.svg" alt="" />
                 </a>
-                <a href="#" class="page-7__info-item">
+                <a href="social/vk.html" class="page-7__info-item">
                   <img src="img/seventh__social/5.svg" alt="" />
                 </a>
-                <a href="#" class="page-7__info-item">
+                <a href="social/facebook.html" class="page-7__info-item">
                   <img src="img/seventh__social/4.svg" alt="" />
                 </a>
               </div>
