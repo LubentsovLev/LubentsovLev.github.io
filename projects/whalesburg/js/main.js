@@ -543,7 +543,7 @@ $(function () {
       content.classList.remove("animat");
       // document.querySelector(".slider__hidden").style.opacity = "1";
       content.style.opacity = "1";
-    }, 500);
+    }, document.documentElement.clientWidth < 768 ? 1000 : 500);
   });
   change__inner();
   function findScrollDirectionOtherBrowsers(event) {
