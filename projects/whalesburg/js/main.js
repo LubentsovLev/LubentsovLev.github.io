@@ -268,8 +268,7 @@ $(function () {
   change__counter_menu(menu_7, 6);
   //menu
   //main__slider
-  if (document.documentElement.clientWidth > 768) {
-  }
+ 
 
   let content__counter = 0;
   let count__wheels__plus = 0;
@@ -413,8 +412,8 @@ $(function () {
                   таких же майнеров
                 </p>
                 <div class="page-5__item-imgs">
-                  <div class="page-5__item-img"><img src="img/fifth/1.png" alt="" /></div>
-                  <div class="page-5__item-img"><img src="img/fifth/2.png" alt="" /></div>
+                  <div class="page-5__item-img page-5__item-img-1"><img src="img/fifth/1.png" alt="" /></div>
+                  <div class="page-5__item-img page-5__item-img-1"><img src="img/fifth/2.png" alt="" /></div>
                 </div>
               </div>
               <div class="page-5__item">
@@ -424,8 +423,8 @@ $(function () {
                   поддержки, говорящей на одном с тобой языке
                 </p>
                 <div class="page-5__item-imgs">
-                  <div class="page-5__item-img"><img src="img/fifth/3.png" alt="" /></div>
-                  <div class="page-5__item-img"><img src="img/fifth/4.png" alt="" /></div>
+                  <div class="page-5__item-img page-5__item-img-2"><img src="img/fifth/3.png" alt="" /></div>
+                  <div class="page-5__item-img page-5__item-img-2"><img src="img/fifth/4.png" alt="" /></div>
                 </div>
               </div>
             </div>
@@ -543,7 +542,10 @@ $(function () {
       content.classList.remove("animat");
       // document.querySelector(".slider__hidden").style.opacity = "1";
       content.style.opacity = "1";
-    }, document.documentElement.clientWidth < 768 ? 1000 : 500);
+    }, document.documentElement.clientWidth < 613 ? 900 : 500);
+    if (document.documentElement.clientWidth > 768) {
+      document.querySelector('.section__inner').style.transition = '0.5s'
+}
   });
   change__inner();
   function findScrollDirectionOtherBrowsers(event) {
@@ -617,7 +619,4 @@ $(function () {
     // console.log(content__counter);
   }
 
-  setTimeout(function () {
-    $("#click-block").click();
-  }, 5000);
 });
