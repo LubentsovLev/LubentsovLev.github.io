@@ -111,7 +111,12 @@ $(function () {
           "Автоматическое переключение между самыми профитным монетами на алгоритме ETHASH"
         );
       case 8:
-        slider__texts__inner(8, "", "");
+        slider__texts__inner(
+          8,
+          "Получи полную презентацию",
+          '',
+          "В любом из мессенджеров"
+        );
     }
   };
 
@@ -565,7 +570,7 @@ $(function () {
           } else {
             content__counter = content__counter + 1;
           }
-          console.log("plus", one__wheel__plus, count__wheels__plus);
+          // console.log("plus", one__wheel__plus, count__wheels__plus);
         }, 200);
       }
     } else if (delta > 0) {
@@ -583,11 +588,11 @@ $(function () {
           } else {
             content__counter = content__counter - 1;
           }
-          console.log("minus", one__wheel__min, count__wheels__min);
+          // console.log("minus", one__wheel__min, count__wheels__min);
         }, 200);
       }
     }
-    console.log(content__counter);
+    // console.log(content__counter);
   }
   function findScrollDirectionOtherBrowsers_2(event) {
     var delta;
@@ -609,10 +614,10 @@ $(function () {
         content__counter = content__counter - 1;
       }
     }
-    console.log(content__counter);
+    // console.log(content__counter);
   }
 
   setTimeout(function () {
-    $("#click-block").click(); 
-  }, 5000); 
+    $("#click-block").click();
+  }, 5000);
 });
