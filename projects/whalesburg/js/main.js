@@ -511,10 +511,10 @@ $(function () {
                 <a href="social/telegram.html" class="page-7__info-item">
                   <img src="img/seventh__social/1.svg" alt="" />
                 </a>
-                <a href="social/viber.html" class="page-7__info-item">
+                <a href="social/whatsApp.html" class="page-7__info-item">
                   <img src="img/seventh__social/2.svg" alt="" />
                 </a>
-                <a href="social/whatsApp.html" class="page-7__info-item">
+                <a href="social/viber.html" class="page-7__info-item">
                   <img src="img/seventh__social/3.svg" alt="" />
                 </a>
                 <a href="social/vk.html" class="page-7__info-item">
