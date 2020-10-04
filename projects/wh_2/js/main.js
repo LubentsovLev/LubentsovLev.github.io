@@ -114,7 +114,7 @@ $(function () {
         slider__texts__inner(
           8,
           "Получи полную презентацию",
-          '',
+          "",
           "В любом из мессенджеров"
         );
     }
@@ -244,7 +244,10 @@ $(function () {
     link.addEventListener("click", function () {
       menuDelete();
       changeMenuArr();
-      document.querySelector(".slider__hidden").style.opacity = "0";
+      if (document.documentElement.clientWidth > 613) {
+        document.querySelector(".slider__hidden").style.opacity = "0";
+      }
+
       document.body.classList.remove("over");
       //debugger
       content__counter = count;
@@ -269,7 +272,6 @@ $(function () {
   change__counter_menu(menu_7, 6);
   //menu
   //main__slider
- 
 
   let content__counter = 0;
   let count__wheels__plus = 0;
@@ -530,7 +532,7 @@ $(function () {
         break;
     }
   }
-  if (document.documentElement.clientWidth > 613){
+  if (document.documentElement.clientWidth > 613) {
     window.addEventListener("wheel", function () {
       content.classList.add("animat");
       document.querySelector(".slider__hidden").style.opacity = "0";
@@ -538,19 +540,22 @@ $(function () {
         content.style.opacity = "1";
       }
       content.style.opacity = "0";
-      setTimeout(() => {
-        content.innerHTML = "";
-        change__inner();
-        content.classList.remove("animat");
-        // document.querySelector(".slider__hidden").style.opacity = "1";
-        content.style.opacity = "1";
-      }, document.documentElement.clientWidth < 613 ? 900 : 500);
+      setTimeout(
+        () => {
+          content.innerHTML = "";
+          change__inner();
+          content.classList.remove("animat");
+          // document.querySelector(".slider__hidden").style.opacity = "1";
+          content.style.opacity = "1";
+        },
+        document.documentElement.clientWidth < 613 ? 900 : 500
+      );
       if (document.documentElement.clientWidth > 768) {
-        document.querySelector('.section__inner').style.transition = '0.5s'
-  }
+        document.querySelector(".section__inner").style.transition = "0.5s";
+      }
     });
   }
- 
+
   change__inner();
   function findScrollDirectionOtherBrowsers(event) {
     //debugger
@@ -599,9 +604,10 @@ $(function () {
       }
     }
   }
-  if (document.documentElement.clientWidth < 613){
-
-
+  if (document.documentElement.clientWidth < 613) {
+    let sl = document.querySelector(".page-4");
+    sl.classList.remove("hidden");
+    sl.classList.remove("slider__hidden");
+    sl.style.opacity = "1";
   }
-
 });
