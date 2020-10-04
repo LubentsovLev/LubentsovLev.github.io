@@ -13,15 +13,14 @@ $(function () {
   //slider
   $(".page-4__slider").slick({
     nextArrow:
-      '<button type="button" class = "slick-arrow slick-next"><img src="img/icons/slider__arrow.svg" alt="next"></button>',
+      '<button type="button" class = "slick-arrow slick-next"><img src="img/icons/slider__arrow.png" alt="next"></button>',
     prevArrow:
-      '<button type="button" class = "slick-arrow slick-prev"><img src="img/icons/slider__arrow.svg" alt="back"></button>',
+      '<button type="button" class = "slick-arrow slick-prev"><img src="img/icons/slider__arrow.png" alt="back"></button>',
     centerMode: false,
     centerPadding: "0px",
     slidesToShow: 1.442,
     infinite: false,
     dots: true,
-    touchMove: false,
     swipe: false,
     responsive: [
       {
@@ -39,6 +38,10 @@ $(function () {
       {
         breakpoint: 1000,
         settings: {
+          nextArrow:
+            '<button type="button" class = "slick-arrow slick-next"><img src="img/icons/slider__arrow.png" alt="next"></button>',
+          prevArrow:
+            '<button type="button" class = "slick-arrow slick-prev"><img src="img/icons/slider__arrow.png" alt="back"></button>',
           slidesToShow: 1,
         },
       },
