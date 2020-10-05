@@ -1,0 +1,27 @@
+---
+resources:
+  - name: code-repo
+    type: git
+    source:
+      uri: git@github.com:whalesburg/landing_page.git
+      branch: master
+      private_key: ((github-private-key))
+
+  - name: dockerhub
+    type: docker-image
+    source:
+      username: ((docker-hub-username))
+      password: ((docker-hub-password))
+      repository: whalesburgcom/landing_page
+
+jobs:
+  - name: publish
+    public: true
+    plan:
+      - get: code-repo
+        trigger: true
+      - put: dockerhub
+        params:
+          build: code-repo
+          tag_file: code-repo/.git/ref
+          tag_as_latest: true
