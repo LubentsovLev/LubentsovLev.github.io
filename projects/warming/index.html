@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a href="" class="header__item header__item-fr">Калькулятор</a>
+        <a href="" class="header__item">О Нас</a>
+        <a href="" class="header__item">Виды работ</a>
+        <a href="" class="header__item">Материалы</a>
+        <a href="" class="header__item">Стоимость</a>
+        <a href="" class="header__item">Контакты</a>
+      </div>
+    </header>
+    <section class="head">
+      <div class="head__container container">
+        <div class="head__top">
+          <div class="head__top-logo">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <div class="head__top-items">
+            <div class="head__top-about">
+              <div class="head__top-item-about head__top-item-about-fr">
+                <img src="img/head/time.svg" alt="" />
+                <p>
+                  Без перерыва и выходных <br />
+                  С 9:00 до 22:00
+                </p>
+              </div>
+              <div class="head__top-item-about">
+                <img src="img/head/call.svg" alt="" />
+                <p>
+                  <strong>+7(977)540-96-44</strong> <br />
+                  <span>Обратный звонок</span>
+                </p>
+              </div>
+              <div class="head__top-item-about head__top-item-about-ls">
+                <div class="head__top-item-about-logos">
+                  <img src="img/head/what's.svg" alt="" />
+                  <img src="img/head/what's.svg" alt="" />
+                  <img src="img/head/what's.svg" alt="" />
+                </div>
+                <p>Способы связи</p>
+              </div>
+            </div>
+            <div class="head__top-text">
+              <p>Услуги по утеплению напыляемым пенополиуретаном</p>
+            </div>
+          </div>
+        </div>
+        <div class="head__bottom">
+          <div
+            class="head__main"
+            style="background-image: url(img/head/cloud.png)"
+          >
+            <div class="head__main-container">
+              <h1 class="head__main-title">Утепление Пенополиуретаном</h1>
+              <div class="head__main-qal">
+                <img src="img/head/100.png" alt="" />
+              </div>
+              <div class="head__main-items">
+                <div class="head__main-item">
+                  <div class="head__main-item-logo">
+                    <img src="img/head/main_1.png" alt="" />
+                  </div>
+                  <div class="head__main-item-title">10 лет опыта</div>
+                  <p class="head__main-item-text">
+                    У нас за плечами <strong>10 лет</strong> профессионального
+                    опыта
+                  </p>
+                </div>
+                <div class="head__main-item">
+                  <div class="head__main-item-logo">
+                    <img src="img/head/main_2.png" alt="" />
+                  </div>
+                  <div class="head__main-item-title">Оперативность</div>
+                  <p class="head__main-item-text">
+                    Выезд на объект в день обращения и минимальные сроки
+                    исполнения
+                  </p>
+                </div>
+                <div class="head__main-item">
+                  <div class="head__main-item-logo">
+                    <img src="img/head/main_3.png" alt="" />
+                  </div>
+                  <div class="head__main-item-title">Цена</div>
+                  <p class="head__main-item-text">
+                    Мы даем цену за 1 м² <strong>с учетом</strong> всех этапов
+                    предстоящей работы
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="head__right"
+            style="background-image: url(img/head/man.png)"
+          >
+            <div class="head__right-text">
+              <p>Качество гарантируем!</p>
+            </div>
+            <div class="head__right-btn">Получить консультацию</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="calc">
+      <div class="calc__container container">
+        <div class="calc__main">
+          <h1 class="calc__title">Калькулятор <br> стоимости утепления</h1>
+          <div class="calc__item calc__item-1">
+            <h6>Тип пены</h6>
+            <div class="select select__1">
+              <input class="select__input" type="hidden" name="" />
+              <div class="select__head">
+                <img src="img/calc/ic_1.svg" alt="" />
+              </div>
+              <ul class="select__list" style="display: none">
+                <li class="select__item">Мягкая пена</li>
+                <li class="select__item">Жесткая пена</li>
+              </ul>
+            </div>
+          </div>
+          <div class="calc__item calc__item-2">
+            <h6>Толщина слоя</h6>
+            <div class="select select__1">
+              <input class="select__input" type="hidden" name="" />
+              <div class="select__head">
+                <img src="img/calc/ic_2.svg" alt="" />
+              </div>
+              <ul class="select__list" style="display: none">
+                <li class="select__item">50мм</li>
+                <li class="select__item">100мм</li>
+                <li class="select__item">150мм</li>
+              </ul>
+            </div>
+          </div>
+          <div class="calc__item calc__item-3">
+            <h6>Площадь утепления</h6>
+            <div class="select select__3">
+              <input class="select__head" type="number" />
+              <img src="img/calc/ic_3.svg" alt="" />
+            </div>
+          </div>
+          <div class="calc__btn">Расчитать</div>
+          <div class="calc__count">
+            <div class="calc__count-title">Итог:</div>
+            <div class="calc__count-sum">
+              <div class="calc__count-sum-num">68500</div>
+              <div class="calc__count-sum-rub">руб</div>
+            </div>
+          </div>
+        </div>
+        <div class="calc__right">
+          <div class="calc__right-img-top">
+            <img src="img/calc/line.png" alt="" />
+          </div>
+          <div class="calc__right-img">
+            <img src="img/calc/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__container">
+        <div class="about__item">
+          <div class="about__text">
+            <h6 class="about__title">
+              ТЕРМО-ПАРК — надежные услуги по утеплению пенополиуретаном (ППУ).
+              <img src="img/about/home.png" alt="" />
+            </h6>
+            <p class="about__text-text">
+              Мы «P2PARK» утепляем пенополиуретаном (ППУ) уже более 5 лет!
+              Утепление пенополиуретаном — это экономичная и эфективная
+              процедура утепления. Несмотря на своих менее эфективных сородичев,
+              утпелние минеральной ватой или же пенополистеролом, ППУ является
+              более долговечней и надёжней. Также пенополиуретан имеет ряд
+              преимуществ перед конкурентами:
+            </p>
+            <div class="about__done">
+              <h6>1. Скорость.</h6>
+              Монтаж осуществляется современным оборудованием высокого давления
+              . За 1 день до 450 м2 выработки.
+            </div>
+            <div class="about__done">
+              <h6>2. Без швов.</h6>
+              Конечный продукт представляет собой монолит, где нет ни одного
+              шва, теплоизолированы все сложные углы.
+            </div>
+            <div class="about__done">
+              <h6>3. Срок службы</h6>
+              При соблюдении технологии материал служит минимум
+              <strong>50 лет</strong> за счет своих химических свойств, что
+              обуславливает цену.
+            </div>
+            <div class="about__done">
+              <h6>4. Безопасность</h6>
+              За счет своих химических свойств материал имеет наименьший класс
+              пожароопасности.
+            </div>
+          </div>
+          <div class="about__img">
+            <img src="img/about/1.png" alt="" />
+          </div>
+        </div>
+        <div class="about__item">
+          <div class="about__img">
+            <img src="img/about/2.png" alt="" />
+          </div>
+          <div class="about__now">
+            <img src="img/about/now.jpg" alt="" />
+            <div class="about__now-cont">
+              <div class="head__right-btn">Получить консультацию</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="type">
+      <div class="type__container container">
+        <h6 class="type__title title">
+          Что мы утепляем пенополиуретаном (ППУ)
+        </h6>
+        <p class="type__text text">
+          Одним из распространенных и универсальных материалов для утепления
+          является <strong>пенополиуретан</strong>. С его помощью можно утеплять
+          крыши, фасады, стены, подвалы, фундаменты, чердаки, балконы, мансарды.
+          Пенополиуретан подходит для утепления жилой и нежилой недвижимости,
+          помещений свободного назначения, ангаров, складов и прочих объектов.
+        </p>
+        <div class="type__subtitle">Мы утепляем:</div>
+        <div class="type__items">
+          <div class="type__item">
+            <img src="img/type/1.png" alt="" />
+            <p class="text type__item-text">Дома, дачи, котеджи, таунхаусы;</p>
+          </div>
+          <div class="type__item">
+            <img src="img/type/2.png" alt="" />
+            <p class="text type__item-text">
+              Цокольные этажи, подвалы, полы, бассейны, балконы;
+            </p>
+          </div>
+          <div class="type__item">
+            <img src="img/type/3.png" alt="" />
+            <p class="text type__item-text">
+              Теплицы, ангары, бытовки, временные строения;
+            </p>
+          </div>
+          <div class="type__item">
+            <img src="img/type/4.png" alt="" />
+            <p class="text type__item-text">Овощехранилища, зернохранилища;</p>
+          </div>
+          <div class="type__item">
+            <img src="img/type/5.png" alt="" />
+            <p class="text type__item-text">
+              Гаражи, крыши, мансарды, потолки;
+            </p>
+          </div>
+          <div class="type__item">
+            <img src="img/type/6.png" alt="" />
+            <p class="text type__item-text">
+              Промышленные объекты, поселки, госзаказы, оптовые крупные объекты;
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="meter">
+      <div class="meter container">
+        <h6 class="meter__title title">
+          Работаем только с проверенным материалом
+        </h6>
+        <div class="meter__buttons">
+          <div class="meter__btn btn_active btn__rus">Россия</div>
+          <div class="meter__btn btn__usa">USA</div>
+        </div>
+      </div>
+      <div class="meter__main">
+        <div class="meter__container meter__js container">
+          <div class="meter__img">
+            <img src="img/meter/rus.png" alt="" />
+          </div>
+          <div class="meter__inner">
+            <h5 class="meter__inner-title">
+              <p>Российские производители ППУ</p>
+            </h5>
+            <p class="meter__inner-text text">
+              Мы используем только проверенный пенополиуретан в своей работе. Мы
+              используем как импортные материалы так и отечественные.
+            </p>
+            <p class="meter__inner-text meter__inner-text-2 text">
+              Для более детальной консультации по материалам обращайтесь к нашим
+              менеджерам.
+            </p>
+            <div class="meter__inner-logos">
+              <div class="meter__inner-logo">
+                <img src="img/meter/100.png" alt="" />
+              </div>
+              <div class="meter__inner-logo">
+                <img src="img/meter/100.png" alt="" />
+              </div>
+              <div class="meter__inner-logo">
+                <img src="img/meter/100.png" alt="" />
+              </div>
+            </div>
+            <div class="head__right-btn">Узнать Подробнее</div>
+          </div>
+        </div>
+        <img class="meter__cloud" src="img/meter/cloud.png" alt="" />
+      </div>
+    </section>
+    <section class="price">
+      <div class="price__container container">
+        <div class="price__title title">
+          Стоимость утепления пенополиуретаном (ППУ)
+        </div>
+        <div class="price__tablet">
+          <div class="price__tablet-inner">
+            <!-- <table class="iksweb">
+              <tbody>
+                <tr>
+                  <td class="t_1-top t_r_1">ПЛОТНОСТЬ ПЕНЫ</td>
+                  <td class="t_2 t_2-top">ТОЛЩИНА СЛОЯ</td>
+                  <td class="t_3 t_3-top">СТОИМОСТЬ ЗА МЕТР КВАДРАТНЫЙ</td>
+                  <td class="t_ls t_ls-top t_r_2">
+                    ГДЕ И ДЛЯ ЧЕГО ПРИМЕНЯЕТСЯ
+                  </td>
+                </tr>
+                <tr>
+                  <td class="t_1 t_1-1" rowspan="3">
+                    Открытая ячейка <span>Мягкая пена</span>
+                  </td>
+                  <td class="t_2">50мм</td>
+                  <td class="t_3">от 340р за 1 м²</td>
+                  <td class="t_ls">Звукоизоляция внутренних помещений;</td>
+                </tr>
+                <tr>
+                  <td class="t_2">100мм</td>
+                  <td class="t_3">от 530р за 1 м²</td>
+                  <td class="t_ls">
+                    Теплоизоляция внутри помещений, стен, потолков, полов;
+                  </td>
+                </tr>
+                <tr>
+                  <td class="t_2">150мм</td>
+                  <td class="t_3">от 750р за 1 м²</td>
+                  <td class="t_ls">
+                    Теплоизоляция домов, промышленных объектов, ангаров, частных
+                    строений;
+                  </td>
+                </tr>
+                <tr>
+                  <td class="t_1 t_1-2 t_r_4" rowspan="3">
+                    Закрытая ячейка
+                    <span>Жесткая пена </span>
+                  </td>
+                  <td class="t_2">50мм</td>
+                  <td class="t_3">от 690р за 1 м²</td>
+                  <td class="t_ls">
+                    Пароизоляция внутри помещений, подвалов, басейнов;
+                  </td>
+                </tr>
+                <tr>
+                  <td class="t_2">75мм</td>
+                  <td class="t_3">от 890р за 1 м²</td>
+                  <td class="t_ls">
+                    Теплопароизоляция домов, промышленных объектов, ангаров,
+                    частных строений;
+                  </td>
+                </tr>
+                <tr>
+                  <td class="t_2">100мм</td>
+                  <td class="t_3">от 1099р за 1 м²</td>
+                  <td class="t_ls t_r_3">
+                    Усиленная теплопароизоляция домов, промышленных объектов,
+                    ангаров, частных строений;
+                  </td>
+                </tr>
+              </tbody>
+            </table> -->
+            <img src="img/exp_tb.png" alt="" />
+          </div>
+        </div>
+        <div class="price__bottom">
+          <div class="price__text">
+            Расчет стоимости утепления пенополиуретаном зависит от разных
+            критериев: какой вид объекта, личные пожелания и нюансы утепления,
+            назначение помещения, плотность метериала и качество. Цена ха 1
+            квадратный метр может варьироваться от 400 до 1300 рублей вместе с
+            учетом работы. Таблица с расценками поможет вам приблизительно
+            понимать стоимость утепления вашего объекта. Для определения
+            финальной стоимости работ рекомендуем проконсультироваться с нашими
+            специалистами. Они сэкономят ваше время и помогут разобраться в
+            материале и ценах. Оставляйте заявку на сайте или просто звоните.
+          </div>
+          <div class="price__cl">
+            <img src="img/price/1.png" alt="" />
+          </div>
+          <div class="price__btn">
+            <div class="head__right-btn">Узнать Подробнее</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="work">
+      <div class="work__contaier container">
+        <div class="work__title title">Этапы работы</div>
+        <div class="work__items">
+          <div class="work__item">
+            <div class="work__item-head">
+              <div class="work__item-num">1</div>
+              <div class="work__item-img">
+                <img src="img/work/1.svg" alt="" />
+              </div>
+            </div>
+            <p class="work__item-text text">
+              Вы оставляете заявку в нашу компанию любым удобным для вас
+              способом;
+            </p>
+          </div>
+          <div class="work__item">
+            <div class="work__item-head">
+              <div class="work__item-num">2</div>
+              <div class="work__item-img">
+                <img src="img/work/2.svg" alt="" />
+              </div>
+            </div>
+            <p class="work__item-text text">
+              Наш менеджер связывается с вами, консультирует и договариваемся о
+              выезде на объект;
+            </p>
+          </div>
+          <div class="work__item">
+            <div class="work__item-head">
+              <div class="work__item-num">3</div>
+              <div class="work__item-img">
+                <img src="img/work/3.svg" alt="" />
+              </div>
+            </div>
+            <p class="work__item-text text">
+              Наш мастер приезжает к вам на объект и делает расчет,
+              согласовываем время, сроки и стоимость работ, заключаем договор;
+            </p>
+          </div>
+          <div class="work__item">
+            <div class="work__item-head">
+              <div class="work__item-num">4</div>
+              <div class="work__item-img">
+                <img src="img/work/4.svg" alt="" />
+              </div>
+            </div>
+            <p class="work__item-text text">
+              Наша бригада, после всех согласований, приступает к выполнению
+              работ;
+            </p>
+          </div>
+        </div>
+        <div class="work__bottom">
+          <div class="work__bottom-item">
+            <img src="img/work/bg_1.png" alt="" />
+          </div>
+          <div class="work__bottom-item">
+            <img src="img/work/bg_2.png" alt="" />
+          </div>
+          <div class="work__bottom-item">
+            <img src="img/work/bg_3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why">
+      <div class="why__container container">
+        <h6 class="why__title title">Почему пенополиуретан?</h6>
+        <div class="why__text text">
+          По теплоизоляционным свойствам пенополиуретан(ППУ) является лидером
+          среди теплоизоляционных материалов представленных на рынке. Он лучше
+          своих конкурентов таких как минеральная вата, эко-пена,
+          пенополистерол.
+        </div>
+        <!-- <div class="why__tb price__tablet-inner">
+            <table class="iksweb">
+              <tbody>
+                <tr>
+                  <td class="t_1-top t_r_1">CРАВНЕНИЕ</td>
+                  <td class="t_2 t_2-top">ТОЛЩИНА</td>
+                  <td class="t_3 t_3-top">Коэффициент теплопроводности</td>
+                  <td class="t_ls t_ls-top t_r_2">ВЫВОД</td>
+                </tr>
+                <tr>
+                  <td class="t_1 t_1-1" rowspan="1">
+                    <strong>Минеральная вата</strong>
+                    <span>(один из часто используемых утеплителей)</span>
+                  </td>
+                  <td class="t_2">50мм</td>
+                  <td class="t_3">0,045 Вт/м·°С</td>
+                  <td class="t_ls t_ls_1">
+                    При равной толщине слоя утепления минеральная вата в
+                    <strong>2,5 раза</strong> менее теплоэффектианее чем ППУ
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="t_1 t_1-2 t_r_4" rowspan="1">
+                    Закрытая ячейка
+                    <span>Жесткая пена </span>
+                  </td>
+                  <td class="t_2">50мм</td>
+                  <td class="t_3">0,018 Вт/м·°С</td>
+                  <td class="t_ls t_ls_2 t_r_3">
+                    Что бы достичь такого результата теплоэфективности,
+                    потребуется слой <strong>минеральной ваты в 225мм</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+        <img src="img/exp_tb_2.png" alt="" />
+        <div class="why__under text">
+          Несмотря на довольно высокие первоначальные вложения, теплоизоляция
+          ППУ, окупается в течении 2-3 лет
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__container container">
+        <h6 class="reviews__title title">Отзывы о нас</h6>
+        <div class="reviews__items">
+          <div class="reviews__left">
+            <div class="reviews__item">
+              <p class="reviews__text">
+                Обращался в данную компанию с просьбой утеплить складское
+                помещение в 250м. Ребята справились за 2 дня. 1-й день приехал
+                замерщик, сделал оценку, заключили договор. 2-й день приехала
+                бригада, и все оперативно сделали. Доволен. Спасибо.
+              </p>
+              <div class="reviews__logo">
+                <div class="reviews__logo-title">Игорь</div>
+                <div class="reviews__img">
+                  <img src="img/reviews/l_1.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <p class="reviews__text">
+                Ребята профессионалы своего дела! Утеплили дачный деревяный дом.
+                Теперь и зимой можно будет отдыхать.
+              </p>
+              <div class="reviews__logo">
+                <div class="reviews__logo-title">Сергей</div>
+                <div class="reviews__img">
+                  <img src="img/reviews/l_2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__right">
+            <div class="reviews__item reviews__item_3">
+              <p class="reviews__text">
+                Привет! Хочу оставить отзыв о компании Термо-Парк. Данную
+                компанию мне посоветовали знакомые. Мне надо было решить вопрос
+                термоизоляции на лето цветочного склада в подмосковье. т.к склад
+                был теплый, кондеционеры не спасали. Решили вопрос в кратчайшие
+                сроки. Спасибо!
+              </p>
+              <div class="reviews__logo">
+                <div class="reviews__logo-title">Вероника</div>
+                <div class="reviews__img">
+                  <img src="img/reviews/l_3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item reviews__item_4">
+              <p class="reviews__text">
+                Можно обращаться! Советую! Ребята адекватные и толковые. Без
+                проблем. Цены вроде такие же как и везде, но у них расчет
+                замерщика получился ниже! Кто сталкивался с утеплением тот
+                поймет о чем я ;)
+              </p>
+              <div class="reviews__logo">
+                <div class="reviews__logo-title">Дмитрий</div>
+                <div class="reviews__img">
+                  <img src="img/reviews/l_4.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gal">
+      <div class="gal__bott">
+        <img src="img/gal/bg.png" alt="" />
+      </div>
+      <div class="gal__container container">
+        <div class="gal__title title">Наши работы</div>
+        <div class="gal__items">
+          <div class="gal__first">
+            <a
+              data-fancybox="exp__galerry"
+              href="img/gal/1.jpg"
+              class="gal__item"
+              style="background-image: url(img/gal/1.jpg)"
+            >
+            </a>
+            <a
+              data-fancybox="exp__galerry"
+              href="img/gal/1.jpg"
+              class="gal__item"
+              style="background-image: url(img/gal/1.jpg)"
+            >
+            </a>
+            <a
+              data-fancybox="exp__galerry"
+              href="img/gal/1.jpg"
+              class="gal__item"
+              style="background-image: url(img/gal/1.jpg)"
+            >
+            </a>
+            <a
+              data-fancybox="exp__galerry"
+              href="img/gal/1.jpg"
+              class="gal__item"
+              style="background-image: url(img/gal/1.jpg)"
+            >
+            </a>
+            <div class="gal__inst">
+              <p class="gal__inst-text text">
+                Подпишитесь на наш Instagram и следите за нашими работами
+              </p>
+              <div class="gal__inst-like">
+                <img src="img/gal/like.png" alt="" />
+              </div>
+              <div class="gal__inst-inst">
+                <img src="img/gal/inst.png" alt="" />
+                <a class="text">Подписаться</a>
+              </div>
+            </div>
+          </div>
+          <div class="gal__sc">
+            <a
+              data-fancybox="exp__galerry"
+              href="img/gal/1.jpg"
+              class="gal__item"
+              style="background-image: url(img/gal/1.jpg)"
+            >
+            </a>
+            <a
+              data-fancybox="exp__galerry"
+              href="img/gal/1.jpg"
+              class="gal__item"
+              style="background-image: url(img/gal/1.jpg)"
+            >
+            </a>
+            <a
+              data-fancybox="exp__galerry"
+              href="img/gal/1.jpg"
+              class="gal__item"
+              style="background-image: url(img/gal/1.jpg)"
+            >
+            </a>
+            <a
+              data-fancybox="exp__galerry"
+              href="img/gal/1.jpg"
+              class="gal__item"
+              style="background-image: url(img/gal/1.jpg)"
+            >
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__container container">
+        <div class="map__left">
+          <div class="map__left-img">
+            <img src="img/map/1.png" alt="" />
+          </div>
+          <div class="map__left-map">
+            <img src="img/map/map.png" alt="" />
+          </div>
+        </div>
+        <div class="map__right">
+          <form class="map__right-form">
+            <div class="map__right-form-title">Номер телефона *</div>
+            <input
+              type="number"
+              required
+              class="map__right-form-input"
+              placeholder="+7 (000) 777-00-00"
+            />
+            <div class="map__right-form-title">Ваше имя *</div>
+            <input
+              type="text"
+              required
+              class="map__right-form-input"
+              placeholder="Николай Наумов"
+            />
+            <div class="map__right-form-title">Почта</div>
+            <input
+              type="text"
+              required
+              class="map__right-form-input"
+              placeholder="example@gmail.com"
+            />
+            <div class="map__right-form-title">Комментарий</div>
+            <textarea
+              class="map__right-form-input map__right-form-tx"
+            ></textarea>
+            <button class="head__right-btn">Отправить</button>
+            <p class="map__right-form-bot">
+              Нажимая кнопку отправить вы даете согласие на обработку
+              персональных данных
+              <a style="display: block" href="#">Политика конфиденциальности</a>
+            </p>
+          </form>
+          <div class="map__right-info">
+            <div class="map__right-info-title">Где нас найти?</div>
+            <div class="map__right-info-item">
+              <img src="img/map/poi.svg" alt="" />
+              <p>Работаем по Москве и Московской области</p>
+            </div>
+            <div class="map__right-info-item">
+              <img src="img/map/ph.svg" alt="" />
+              <strong><a href="tel:+79775409644">+7(977)540-96-44</a></strong>
+            </div>
+            <div class="map__right-info-item">
+              <img src="img/map/mail.svg" alt="" />
+              <a href="mail:thebestppu@gmail.com">thebestppu@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="map__cloud-1">
+          <img src="img/map/cloud_1.png" alt="" />
+        </div>
+        <div class="map__cloud-2">
+          <img src="img/map/cloud_2.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer__container container">
+        <div class="footer__r">
+          <div class="footer__phone">
+            Телефон: <a href="tel:+79775409644">+7(977)540-96-44 </a>
+          </div>
+          <div class="footer__r-text text">
+            «ТЕРМО-ПАРК» — надежные услуги по утеплению пенополиуретаном (ППУ).
+          </div>
+        </div>
+        <div class="footer__l">
+          <div class="footer__l-top">
+            <p><span>© ООО ТЕРМО-ПАРК</span> Все права защищены</p>
+            <a href="">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__l-bot">
+            <div class="footer__l-bot-text">
+              Свяжитесь с нами в месенджерах:
+            </div>
+            <div class="footer__l-icons">
+              <a class="footer__l-icon" href="#"
+                ><img src="img/icons/wapp.svg" alt=""
+              /></a>
+              <a class="footer__l-icon" href="#"
+                ><img src="img/icons/wapp.svg" alt=""
+              /></a>
+              <a class="footer__l-icon" href="#"
+                ><img src="img/icons/wapp.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">Сайт разработан 2020</div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  </body>
+</html>

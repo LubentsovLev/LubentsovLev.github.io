@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Mazzard;
+  font-style: normal;
+  color: #000000;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+a {
+  display: inline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 100%;
+  color: #000000;
+}
+.text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+}
+.btn_active {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ffb038 0%,
+    #ff9900 100%
+  ) !important;
+  transition: 0.5s;
+}
