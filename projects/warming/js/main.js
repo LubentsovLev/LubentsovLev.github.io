@@ -150,6 +150,7 @@ calc__btn.addEventListener("click", function(){
 let popUp_1 = document.querySelector('.popUp_1')
 let popUp_2 = document.querySelector('.popUp_2')
 let popUp_4 = document.querySelector('.popUp_4')
+let popUp_5 = document.querySelector('.popUp_5')
 let popUp = document.querySelector('.popUp')
 let popUp__title_x = document.querySelector('.popUp__title-x')
 
@@ -172,6 +173,7 @@ let autoPup = function(pop){
 autoPup(popUp_1)
 autoPup(popUp_2)
 autoPup(popUp_4)
+autoPup(popUp_5)
 autoPup(popUp_3_2)
 autoPup(popUp_3_1)
 autoPup(popUp_3_3)
