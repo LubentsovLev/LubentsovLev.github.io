@@ -63,10 +63,12 @@ $(function () {
   });
 
   ///////
-  if (document.documentElement.clientWidth < 1100) {
-    //debugger
+  //debugger
+  ///////
+  let g =  document.documentElement.clientWidth
+  if (+g < 1100) {
     document.querySelector(".meta_").content =
-      '"width=device-width, initial-scale=1.0';
+      'width=device-width, initial-scale=1.0';
   }
 
 
