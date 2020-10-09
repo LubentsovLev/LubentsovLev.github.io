@@ -9,13 +9,24 @@
   </head>
   <body>
     <header class="header">
+      <div class="header__mob">
+        <div class="header__mob-cont">
+          <a href="index.html" class="header__mob-logo">
+            <img src="img/logo.png" alt="">
+          </a>
+          <div class="header__mob-menu">
+            <img src="img/menu.svg" alt="">
+          </div>
+        </div>
+      </div>
       <div class="header__inner">
-        <a href="" class="header__item header__item-fr">Калькулятор</a>
-        <a href="" class="header__item">О Нас</a>
-        <a href="" class="header__item">Виды работ</a>
-        <a href="" class="header__item">Материалы</a>
-        <a href="" class="header__item">Стоимость</a>
-        <a href="" class="header__item">Контакты</a>
+        <div class="menu_x"><img src="img/x.svg" alt=""></div>
+        <a href="#menu_1" class="header__item header__item-fr">Калькулятор</a>
+        <a href="#menu_2" class="header__item">О Нас</a>
+        <a href="#menu_3" class="header__item">Виды работ</a>
+        <a href="#menu_4" class="header__item">Материалы</a>
+        <a href="#menu_5" class="header__item">Стоимость</a>
+        <a href="#menu_6" class="header__item">Контакты</a>
       </div>
     </header>
     <section class="head">
@@ -36,15 +47,18 @@
               <div class="head__top-item-about">
                 <img src="img/head/call.svg" alt="" />
                 <p>
-                  <strong>+7(977)540-96-44</strong> <br />
-                  <span>Обратный звонок</span>
+                  <strong
+                    ><a href="tel:+79775409644">+7(977)540-96-44</a></strong
+                  >
+                  <br />
+                  <a class="recall" href="tel:+79775409644">Обратный звонок</a>
                 </p>
               </div>
               <div class="head__top-item-about head__top-item-about-ls">
                 <div class="head__top-item-about-logos">
-                  <img src="img/head/what's.svg" alt="" />
-                  <img src="img/head/what's.svg" alt="" />
-                  <img src="img/head/what's.svg" alt="" />
+                  <a href="#"><img src="img/icons/inst_y.png" alt="" /></a>
+                  <a href="#"><img src="img/icons/tel_y.png" alt="" /></a>
+                  <a href="#"><img src="img/icons/w_y.png" alt="" /></a>
                 </div>
                 <p>Способы связи</p>
               </div>
@@ -60,7 +74,7 @@
             style="background-image: url(img/head/cloud.png)"
           >
             <div class="head__main-container">
-              <h1 class="head__main-title">Утепление Пенополиуретаном</h1>
+              <h1 class="head__main-title title">Утепление Пенополиуретаном</h1>
               <div class="head__main-qal">
                 <img src="img/head/100.png" alt="" />
               </div>
@@ -105,21 +119,24 @@
             <div class="head__right-text">
               <p>Качество гарантируем!</p>
             </div>
-            <div class="head__right-btn">Получить консультацию</div>
+            <div class="head__right-btn popUp_1">Получить консультацию</div>
           </div>
         </div>
       </div>
     </section>
-    <section class="calc">
+    <section class="calc" id="menu_1">
       <div class="calc__container container">
         <div class="calc__main">
-          <h1 class="calc__title">Калькулятор <br> стоимости утепления</h1>
+          <h1 class="calc__title title">
+            Калькулятор <br />
+            стоимости утепления
+          </h1>
           <div class="calc__item calc__item-1">
             <h6>Тип пены</h6>
             <div class="select select__1">
-              <input class="select__input" type="hidden" name="" />
+              <input class="select__input select__input_1"  type="hidden" name="" />
               <div class="select__head">
-                <img src="img/calc/ic_1.svg" alt="" />
+                <img class="select__img" src="img/calc/ic_1.svg" alt="" />
               </div>
               <ul class="select__list" style="display: none">
                 <li class="select__item">Мягкая пена</li>
@@ -130,9 +147,9 @@
           <div class="calc__item calc__item-2">
             <h6>Толщина слоя</h6>
             <div class="select select__1">
-              <input class="select__input" type="hidden" name="" />
+              <input class="select__input select__input_2" type="hidden" name="" />
               <div class="select__head">
-                <img src="img/calc/ic_2.svg" alt="" />
+                <img class="select__img" src="img/calc/ic_2.svg" alt="" />
               </div>
               <ul class="select__list" style="display: none">
                 <li class="select__item">50мм</li>
@@ -144,7 +161,7 @@
           <div class="calc__item calc__item-3">
             <h6>Площадь утепления</h6>
             <div class="select select__3">
-              <input class="select__head" type="number" />
+              <input class="select__head select__input_3" type="number" />
               <img src="img/calc/ic_3.svg" alt="" />
             </div>
           </div>
@@ -167,15 +184,15 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="menu_2">
       <div class="about__container">
         <div class="about__item">
           <div class="about__text">
-            <h6 class="about__title">
+            <h6 class="about_title title">
               ТЕРМО-ПАРК — надежные услуги по утеплению пенополиуретаном (ППУ).
               <img src="img/about/home.png" alt="" />
             </h6>
-            <p class="about__text-text">
+            <p class="about__text-text text">
               Мы «P2PARK» утепляем пенополиуретаном (ППУ) уже более 5 лет!
               Утепление пенополиуретаном — это экономичная и эфективная
               процедура утепления. Несмотря на своих менее эфективных сородичев,
@@ -183,29 +200,29 @@
               более долговечней и надёжней. Также пенополиуретан имеет ряд
               преимуществ перед конкурентами:
             </p>
-            <div class="about__done">
+            <div class="about__done text">
               <h6>1. Скорость.</h6>
               Монтаж осуществляется современным оборудованием высокого давления
               . За 1 день до 450 м2 выработки.
             </div>
-            <div class="about__done">
+            <div class="about__done text">
               <h6>2. Без швов.</h6>
               Конечный продукт представляет собой монолит, где нет ни одного
               шва, теплоизолированы все сложные углы.
             </div>
-            <div class="about__done">
+            <div class="about__done text">
               <h6>3. Срок службы</h6>
               При соблюдении технологии материал служит минимум
               <strong>50 лет</strong> за счет своих химических свойств, что
               обуславливает цену.
             </div>
-            <div class="about__done">
+            <div class="about__done text">
               <h6>4. Безопасность</h6>
               За счет своих химических свойств материал имеет наименьший класс
               пожароопасности.
             </div>
           </div>
-          <div class="about__img">
+          <div class="about__img about__img-1">
             <img src="img/about/1.png" alt="" />
           </div>
         </div>
@@ -216,13 +233,13 @@
           <div class="about__now">
             <img src="img/about/now.jpg" alt="" />
             <div class="about__now-cont">
-              <div class="head__right-btn">Получить консультацию</div>
+              <div class="head__right-btn popUp_2 ">Получить консультацию</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="type">
+    <section class="type" id="menu_3">
       <div class="type__container container">
         <h6 class="type__title title">
           Что мы утепляем пенополиуретаном (ППУ)
@@ -239,39 +256,88 @@
           <div class="type__item">
             <img src="img/type/1.png" alt="" />
             <p class="text type__item-text">Дома, дачи, котеджи, таунхаусы;</p>
+            <div class="type__item-desc">
+              <p class="type__item-desc-text text">
+                Для пдробного расчета по вашему объекту, советуем обратиться к
+                нашим специалистам. Они более детально проконсультируют какой тип
+                пены, больше всего, подходит для данных типажей строений.
+              </p>
+              <div class="head__right-btn popUp_3_1 ">Заказать</div>
+            </div>
           </div>
+          
           <div class="type__item">
             <img src="img/type/2.png" alt="" />
             <p class="text type__item-text">
               Цокольные этажи, подвалы, полы, бассейны, балконы;
             </p>
+            <div class="type__item-desc">
+              <p class="type__item-desc-text text">
+                Для пдробного расчета по вашему объекту, советуем обратиться к
+                нашим специалистам. Они более детально проконсультируют какой тип
+                пены, больше всего, подходит для данных типажей строений.
+              </p>
+              <div class="head__right-btn popUp_3_2 ">Заказать</div>
+            </div>
           </div>
           <div class="type__item">
             <img src="img/type/3.png" alt="" />
             <p class="text type__item-text">
               Теплицы, ангары, бытовки, временные строения;
             </p>
+            <div class="type__item-desc">
+              <p class="type__item-desc-text text">
+                Для пдробного расчета по вашему объекту, советуем обратиться к
+                нашим специалистам. Они более детально проконсультируют какой тип
+                пены, больше всего, подходит для данных типажей строений.
+              </p>
+              <div class="head__right-btn popUp_3_3">Заказать</div>
+            </div>
           </div>
           <div class="type__item">
             <img src="img/type/4.png" alt="" />
             <p class="text type__item-text">Овощехранилища, зернохранилища;</p>
+            <div class="type__item-desc">
+              <p class="type__item-desc-text text">
+                Для пдробного расчета по вашему объекту, советуем обратиться к
+                нашим специалистам. Они более детально проконсультируют какой тип
+                пены, больше всего, подходит для данных типажей строений.
+              </p>
+              <div class="head__right-btn popUp_3_4">Заказать</div>
+            </div>
           </div>
           <div class="type__item">
             <img src="img/type/5.png" alt="" />
             <p class="text type__item-text">
               Гаражи, крыши, мансарды, потолки;
             </p>
+            <div class="type__item-desc">
+              <p class="type__item-desc-text text">
+                Для пдробного расчета по вашему объекту, советуем обратиться к
+                нашим специалистам. Они более детально проконсультируют какой тип
+                пены, больше всего, подходит для данных типажей строений.
+              </p>
+              <div class="head__right-btn popUp_3_5">Заказать</div>
+            </div>
           </div>
           <div class="type__item">
             <img src="img/type/6.png" alt="" />
             <p class="text type__item-text">
               Промышленные объекты, поселки, госзаказы, оптовые крупные объекты;
             </p>
+            <div class="type__item-desc">
+              <p class="type__item-desc-text text">
+                Для пдробного расчета по вашему объекту, советуем обратиться к
+                нашим специалистам. Они более детально проконсультируют какой тип
+                пены, больше всего, подходит для данных типажей строений.
+              </p>
+              <div class="head__right-btn popUp_3_6">Заказать</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="meter">
+    <section class="meter" id="menu_4" >
       <div class="meter container">
         <h6 class="meter__title title">
           Работаем только с проверенным материалом
@@ -309,13 +375,13 @@
                 <img src="img/meter/100.png" alt="" />
               </div>
             </div>
-            <div class="head__right-btn">Узнать Подробнее</div>
+            <div class="head__right-btn popUp_4">Узнать Подробнее</div>
           </div>
         </div>
         <img class="meter__cloud" src="img/meter/cloud.png" alt="" />
       </div>
     </section>
-    <section class="price">
+    <section class="price" id="menu_5" >
       <div class="price__container container">
         <div class="price__title title">
           Стоимость утепления пенополиуретаном (ППУ)
@@ -384,11 +450,12 @@
                 </tr>
               </tbody>
             </table> -->
-            <img src="img/exp_tb.png" alt="" />
+            <img class="exp__tb-d" src="img/exp_tb.png" alt="" />
+            <img class="exp__tb-m" src="img/exp_tb_mob.png" alt="" />
           </div>
         </div>
         <div class="price__bottom">
-          <div class="price__text">
+          <div class="price__text text">
             Расчет стоимости утепления пенополиуретаном зависит от разных
             критериев: какой вид объекта, личные пожелания и нюансы утепления,
             назначение помещения, плотность метериала и качество. Цена ха 1
@@ -403,7 +470,7 @@
             <img src="img/price/1.png" alt="" />
           </div>
           <div class="price__btn">
-            <div class="head__right-btn">Узнать Подробнее</div>
+            <div class="head__right-btn popUp_5 ">Узнать Подробнее</div>
           </div>
         </div>
       </div>
@@ -520,7 +587,9 @@
               </tbody>
             </table>
           </div> -->
-        <img src="img/exp_tb_2.png" alt="" />
+        <img class="why_tb-d" src="img/exp_tb_2.png" alt="" />
+          <div class="why__sraw">CРАВНЕНИЕ</div>
+        <img class="why_tb-mob" src="img/exp_tb_2_mob.png" alt="" />
         <div class="why__under text">
           Несмотря на довольно высокие первоначальные вложения, теплоизоляция
           ППУ, окупается в течении 2-3 лет
@@ -610,26 +679,26 @@
             </a>
             <a
               data-fancybox="exp__galerry"
-              href="img/gal/1.jpg"
+              href="img/gal/2.jpg"
               class="gal__item"
-              style="background-image: url(img/gal/1.jpg)"
+              style="background-image: url(img/gal/2.jpg)"
             >
             </a>
             <a
               data-fancybox="exp__galerry"
-              href="img/gal/1.jpg"
+              href="img/gal/3.jpg"
               class="gal__item"
-              style="background-image: url(img/gal/1.jpg)"
+              style="background-image: url(img/gal/3.jpg)"
             >
             </a>
             <a
               data-fancybox="exp__galerry"
-              href="img/gal/1.jpg"
+              href="img/gal/4.jpg"
               class="gal__item"
-              style="background-image: url(img/gal/1.jpg)"
+              style="background-image: url(img/gal/4.jpg)"
             >
             </a>
-            <div class="gal__inst">
+            <div class="gal__inst gal__inst-desct">
               <p class="gal__inst-text text">
                 Подпишитесь на наш Instagram и следите за нашими работами
               </p>
@@ -645,38 +714,70 @@
           <div class="gal__sc">
             <a
               data-fancybox="exp__galerry"
-              href="img/gal/1.jpg"
+              href="img/gal/5.jpg"
               class="gal__item"
-              style="background-image: url(img/gal/1.jpg)"
+              style="background-image: url(img/gal/5.jpg)"
             >
             </a>
             <a
               data-fancybox="exp__galerry"
-              href="img/gal/1.jpg"
+              href="img/gal/6.jpg"
               class="gal__item"
-              style="background-image: url(img/gal/1.jpg)"
+              style="background-image: url(img/gal/6.jpg)"
             >
             </a>
             <a
               data-fancybox="exp__galerry"
-              href="img/gal/1.jpg"
+              href="img/gal/7.jpg"
               class="gal__item"
-              style="background-image: url(img/gal/1.jpg)"
+              style="background-image: url(img/gal/7.jpg)"
             >
             </a>
             <a
               data-fancybox="exp__galerry"
-              href="img/gal/1.jpg"
+              href="img/gal/8.jpg"
               class="gal__item"
-              style="background-image: url(img/gal/1.jpg)"
+              style="background-image: url(img/gal/8.jpg)"
             >
             </a>
           </div>
+          <!-- <div class="gal__mobil">
+            <div class="gal__inst">
+              <p class="gal__inst-text text">
+                Подпишитесь на наш Instagram и следите за нашими работами
+              </p>
+              <div class="gal__inst-inn">
+                <div class="gal__inst-like">
+                  <img src="img/gal/like.png" alt="" />
+                </div>
+                <div class="gal__inst-inst">
+                  <img src="img/gal/inst.png" alt="" />
+                  <a class="text">Подписаться</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </section>
-    <section class="map">
+    <section class="map" id="menu_6" >
       <div class="map__container container">
+        <div class="gal__mobil">
+          <div class="gal__inst">
+            <p class="gal__inst-text text">
+              Подпишитесь на наш Instagram и следите за нашими работами
+            </p>
+            <div class="gal__inst-inn">
+              <div class="gal__inst-like">
+                <img src="img/gal/like.png" alt="" />
+              </div>
+              <div class="gal__inst-inst">
+                <img src="img/gal/inst.png" alt="" />
+                <a class="text">Подписаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="map__left">
           <div class="map__left-img">
             <img src="img/map/1.png" alt="" />
@@ -716,6 +817,7 @@
             <p class="map__right-form-bot">
               Нажимая кнопку отправить вы даете согласие на обработку
               персональных данных
+              <br>
               <a style="display: block" href="#">Политика конфиденциальности</a>
             </p>
           </form>
@@ -731,7 +833,7 @@
             </div>
             <div class="map__right-info-item">
               <img src="img/map/mail.svg" alt="" />
-              <a href="mail:thebestppu@gmail.com">thebestppu@gmail.com</a>
+              <a href="mailto:thebestppu@gmail.com">thebestppu@gmail.com</a>
             </div>
           </div>
         </div>
@@ -764,13 +866,13 @@
             </div>
             <div class="footer__l-icons">
               <a class="footer__l-icon" href="#"
-                ><img src="img/icons/wapp.svg" alt=""
+                ><img src="img/icons/inst_white.png" alt=""
               /></a>
               <a class="footer__l-icon" href="#"
-                ><img src="img/icons/wapp.svg" alt=""
+                ><img src="img/icons/tel_white.png" alt=""
               /></a>
               <a class="footer__l-icon" href="#"
-                ><img src="img/icons/wapp.svg" alt=""
+                ><img src="img/icons/w_white.png" alt=""
               /></a>
             </div>
           </div>
@@ -778,6 +880,31 @@
         <div class="footer__bottom">Сайт разработан 2020</div>
       </div>
     </section>
+    <div class="popUp ">
+      <div class="popUp__container">
+        <form class="map__right-form">
+          <div class="popUp__title-x"><img src="img/gray_x.svg" alt=""></div>
+          <div class="popUp__title title">
+            ТЕРМО-ПАРК —  надежные услуги по утеплению пенополиуретаном (ППУ).
+          </div>
+          <div class="map__right-form-title">Номер телефона *</div>
+          <input type="number" required="" class="map__right-form-input" placeholder="+7 (000) 777-00-00">
+          <div class="map__right-form-title">Ваше имя *</div>
+          <input type="text" required="" class="map__right-form-input" placeholder="Николай Наумов">
+          <div class="map__right-form-title">Почта</div>
+          <input type="text" required="" class="map__right-form-input" placeholder="example@gmail.com">
+          <div class="map__right-form-title">Комментарий</div>
+          <textarea class="map__right-form-input map__right-form-tx"></textarea>
+          <button class="head__right-btn">Отправить</button>
+          <p class="map__right-form-bot">
+            Нажимая кнопку отправить вы даете согласие на обработку
+            персональных данных
+            <br>
+            <a style="display: block" href="#">Политика конфиденциальности</a>
+          </p>
+        </form>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>

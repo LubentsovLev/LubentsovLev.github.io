@@ -31,9 +31,9 @@ let btn__rus = document.querySelector(".btn__rus");
 let btn__usa = document.querySelector(".btn__usa");
 
 btn__rus.addEventListener("click", function () {
-  btn__usa.classList.remove('btn_active')
-  btn__rus.classList.add('btn_active')
-  meter.innerHTML = ``
+  btn__usa.classList.remove("btn_active");
+  btn__rus.classList.add("btn_active");
+  meter.innerHTML = ``;
   meter.innerHTML = `
   <div class="meter__img">
             <img src="img/meter/rus.png" alt="" />
@@ -64,9 +64,9 @@ btn__rus.addEventListener("click", function () {
   `;
 });
 btn__usa.addEventListener("click", function () {
-  btn__rus.classList.remove('btn_active')
-  btn__usa.classList.add('btn_active')
-  meter.innerHTML = ``
+  btn__rus.classList.remove("btn_active");
+  btn__usa.classList.add("btn_active");
+  meter.innerHTML = ``;
   meter.innerHTML = `
   <div class="meter__img">
             <img src="img/meter/usa.png" alt="" />
@@ -97,3 +97,89 @@ btn__usa.addEventListener("click", function () {
           </div>
   `;
 });
+///menu
+let header__mob_menu = document.querySelector(".header__mob-menu");
+let header__inner = document.querySelector(".header__inner");
+let menu_x = document.querySelector(".menu_x");
+
+header__mob_menu.addEventListener("click", function () {
+  header__inner.classList.add("header__inner-active");
+});
+menu_x.addEventListener("click", function () {
+  header__inner.classList.remove("header__inner-active");
+});
+//menu
+let select__input_1 = document.querySelector(".select__input_1");
+let select__input_2 = document.querySelector(".select__input_2");
+let select__input_3 = document.querySelector(".select__input_3");
+let calc__count_sum_num = document.querySelector(".calc__count-sum-num");
+let calc__btn = document.querySelector(".calc__btn");
+
+let count__c = function () {
+  //debugger;
+  select__input_3.value = +select__input_3.value
+  calc__count_sum_num.innerHTML = ''
+  //debugger
+  select__input_3.value == "0" ? select__input_3.value = 1 : select__input_3.value = select__input_3.value
+  if (select__input_1.value === "Мягкая пена") {  
+    if (select__input_2.value === "50мм") {
+      calc__count_sum_num.innerHTML = 340 * select__input_3.value;
+    }
+    if (select__input_2.value === "100мм") {
+      calc__count_sum_num.innerHTML = 530 * select__input_3.value;
+    }
+    if (select__input_2.value === "150мм") {
+      calc__count_sum_num.innerHTML = 750 * select__input_3.value;
+    }
+  } else if (select__input_1.value === "Жесткая пена") {
+    if (select__input_2.value === "50мм") {
+      calc__count_sum_num.innerHTML = 690 * select__input_3.value;
+    }
+    if (select__input_2.value === "100мм") {
+      calc__count_sum_num.innerHTML = 890 * select__input_3.value;
+    }
+    if (select__input_2.value === "150мм") {
+      calc__count_sum_num.innerHTML = 1099 * select__input_3.value;
+    }
+  }
+};
+calc__btn.addEventListener("click", function(){
+  count__c()
+});
+///popup
+let popUp_1 = document.querySelector('.popUp_1')
+let popUp_2 = document.querySelector('.popUp_2')
+let popUp_4 = document.querySelector('.popUp_4')
+let popUp = document.querySelector('.popUp')
+let popUp__title_x = document.querySelector('.popUp__title-x')
+
+let popUp_3_1 = document.querySelector('.popUp_3_1')
+let popUp_3_2 = document.querySelector('.popUp_3_2')
+let popUp_3_3 = document.querySelector('.popUp_3_3')
+let popUp_3_4 = document.querySelector('.popUp_3_4')
+let popUp_3_5 = document.querySelector('.popUp_3_5')
+let popUp_3_6 = document.querySelector('.popUp_3_6')
+
+let autoPup = function(pop){
+  let open__pop = function(){
+    popUp.classList.add('popUp__active')
+  }
+  pop.addEventListener('click', function(){
+    document.body.style.overflow = "hidden"
+    open__pop()
+  } )
+}
+autoPup(popUp_1)
+autoPup(popUp_2)
+autoPup(popUp_4)
+autoPup(popUp_3_2)
+autoPup(popUp_3_1)
+autoPup(popUp_3_3)
+autoPup(popUp_3_4)
+autoPup(popUp_3_5)
+autoPup(popUp_3_6)
+popUp__title_x.addEventListener('click', function(){
+
+  popUp.classList.remove('popUp__active')
+  document.body.style.overflow = "visible "
+})
