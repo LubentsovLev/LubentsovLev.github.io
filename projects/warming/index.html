@@ -1,26 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      class="meta_"
+      name="viewport"
+      content="width=1920, initial-scale=1.0"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Утепление объектов и зданий пенополиуретаном</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png" />
     <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WTVWW66");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
-    <header class="header">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WTVWW66"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="header  "
+    >
       <div class="header__mob">
         <div class="header__mob-cont">
           <a href="index.html" class="header__mob-logo">
-            <img src="img/logo.png" alt="">
+            <img src="img/logo.png" alt="" />
           </a>
           <div class="header__mob-menu">
-            <img src="img/menu.svg" alt="">
+            <img src="img/menu.svg" alt="" />
           </div>
         </div>
       </div>
       <div class="header__inner">
-        <div class="menu_x"><img src="img/x.svg" alt=""></div>
+        <div class="menu_x"><img src="img/x.svg" alt="" /></div>
         <a href="#menu_1" class="header__item header__item-fr">Калькулятор</a>
         <a href="#menu_2" class="header__item">О Нас</a>
         <a href="#menu_3" class="header__item">Виды работ</a>
@@ -29,7 +64,9 @@
         <a href="#menu_6" class="header__item">Контакты</a>
       </div>
     </header>
-    <section class="head">
+    <section
+      class="head wow animate__animated animate__fadeIn animate__delay-0.5s"
+    >
       <div class="head__container container">
         <div class="head__top">
           <div class="head__top-logo">
@@ -56,11 +93,11 @@
               </div>
               <div class="head__top-item-about head__top-item-about-ls">
                 <div class="head__top-item-about-logos">
-                  <a href="#"><img src="img/icons/inst_y.png" alt="" /></a>
-                  <a href="#"><img src="img/icons/tel_y.png" alt="" /></a>
-                  <a href="#"><img src="img/icons/w_y.png" alt="" /></a>
+                  <a href="https://www.instagram.com/termopark.ppu/"><img src="img/icons/inst_y.png" alt="" /></a>
+                  <a href="tg://msg?text=<?php echo urlencode( '<TEXT>' ); ?>&to=<+79775409644>" ><img src="img/icons/tel_y.png" alt="" /></a>
+                  <a href="https://wa.me/+79775409644"><img src="img/icons/w_y.png" alt="" /></a>
                 </div>
-                <p>Способы связи</p>
+                <p class="">Способы связи</p>
               </div>
             </div>
             <div class="head__top-text">
@@ -124,7 +161,10 @@
         </div>
       </div>
     </section>
-    <section class="calc" id="menu_1">
+    <section
+      class="calc wow animate__animated animate__fadeIn animate__delay-0.5s"
+      id="menu_1"
+    >
       <div class="calc__container container">
         <div class="calc__main">
           <h1 class="calc__title title">
@@ -134,23 +174,51 @@
           <div class="calc__item calc__item-1">
             <h6>Тип пены</h6>
             <div class="select select__1">
-              <input class="select__input select__input_1"  type="hidden" name="" />
-              <div class="select__head">
-                <img class="select__img" src="img/calc/ic_1.svg" alt="" />
-              </div>
+              <input
+                class="select__input select__input_1"
+                type="hidden"
+                name=""
+                value=""
+              />
+              <img class="select__img" src="img/calc/ic_1.svg" alt="" />
+              <div class="select__head select__head_1"></div>
               <ul class="select__list" style="display: none">
-                <li class="select__item">Мягкая пена</li>
-                <li class="select__item">Жесткая пена</li>
+                <li class="select__item">
+                  <h6>Мягкая пена (открытая ячейка)</h6>
+                  <input
+                    type="text"
+                    value="Подходит для внутренних сухих помещений "
+                  />
+                  <input
+                    type="text"
+                    value="а так же для наружных; вентилируемых объектов;"
+                  />
+                  <!-- <p>
+                    Подходит для внутренних сухих помещений а так же для
+                    наружных вентилируемых объектов;
+                  </p> -->
+                </li>
+                <li class="select__item">
+                  <h6>Жесткая пена (закрытая ячейка)</h6>
+                  <!-- <p>
+                    Подходит для внутренних и наружных работ на объектах разного
+                    назначения;
+                  </p> -->
+                  <input
+                    type="text"
+                    value="Подходит для внутренних и наружных работ на ;"
+                  />
+                  <input type="text" value="объектах разного назначения;" />
+                </li>
               </ul>
             </div>
           </div>
           <div class="calc__item calc__item-2">
             <h6>Толщина слоя</h6>
             <div class="select select__1">
-              <input class="select__input select__input_2" type="hidden" name="" />
-              <div class="select__head">
-                <img class="select__img" src="img/calc/ic_2.svg" alt="" />
-              </div>
+              <input class="select__input select__input_2" type="hidden" name />
+              <img class="select__img" src="img/calc/ic_2.svg" alt="" />
+              <div class="select__head select__head_2"></div>
               <ul class="select__list" style="display: none">
                 <li class="select__item">50мм</li>
                 <li class="select__item">100мм</li>
@@ -161,7 +229,7 @@
           <div class="calc__item calc__item-3">
             <h6>Площадь утепления</h6>
             <div class="select select__3">
-              <input class="select__head select__input_3" type="number" />
+              <input class="select__head select__input_3" type="number" name />
               <img src="img/calc/ic_3.svg" alt="" />
             </div>
           </div>
@@ -169,7 +237,7 @@
           <div class="calc__count">
             <div class="calc__count-title">Итог:</div>
             <div class="calc__count-sum">
-              <div class="calc__count-sum-num">68500</div>
+              <div class="calc__count-sum-num">0</div>
               <div class="calc__count-sum-rub">руб</div>
             </div>
           </div>
@@ -184,7 +252,10 @@
         </div>
       </div>
     </section>
-    <section class="about" id="menu_2">
+    <section
+      class="about wow animate__animated animate__fadeIn animate__delay-0.5s  "
+      id="menu_2"
+    >
       <div class="about__container">
         <div class="about__item">
           <div class="about__text">
@@ -233,13 +304,16 @@
           <div class="about__now">
             <img src="img/about/now.jpg" alt="" />
             <div class="about__now-cont">
-              <div class="head__right-btn popUp_2 ">Получить консультацию</div>
+              <div class="head__right-btn popUp_2">Получить консультацию</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="type" id="menu_3">
+    <section
+      class="type wow animate__animated animate__fadeIn animate__delay-0.5s "
+      id="menu_3"
+    >
       <div class="type__container container">
         <h6 class="type__title title">
           Что мы утепляем пенополиуретаном (ППУ)
@@ -259,13 +333,13 @@
             <div class="type__item-desc">
               <p class="type__item-desc-text text">
                 Для пдробного расчета по вашему объекту, советуем обратиться к
-                нашим специалистам. Они более детально проконсультируют какой тип
-                пены, больше всего, подходит для данных типажей строений.
+                нашим специалистам. Они более детально проконсультируют какой
+                тип пены, больше всего, подходит для данных типажей строений.
               </p>
-              <div class="head__right-btn popUp_3_1 ">Заказать</div>
+              <div class="head__right-btn popUp_3_1">Заказать</div>
             </div>
           </div>
-          
+
           <div class="type__item">
             <img src="img/type/2.png" alt="" />
             <p class="text type__item-text">
@@ -274,10 +348,10 @@
             <div class="type__item-desc">
               <p class="type__item-desc-text text">
                 Для пдробного расчета по вашему объекту, советуем обратиться к
-                нашим специалистам. Они более детально проконсультируют какой тип
-                пены, больше всего, подходит для данных типажей строений.
+                нашим специалистам. Они более детально проконсультируют какой
+                тип пены, больше всего, подходит для данных типажей строений.
               </p>
-              <div class="head__right-btn popUp_3_2 ">Заказать</div>
+              <div class="head__right-btn popUp_3_2">Заказать</div>
             </div>
           </div>
           <div class="type__item">
@@ -288,8 +362,8 @@
             <div class="type__item-desc">
               <p class="type__item-desc-text text">
                 Для пдробного расчета по вашему объекту, советуем обратиться к
-                нашим специалистам. Они более детально проконсультируют какой тип
-                пены, больше всего, подходит для данных типажей строений.
+                нашим специалистам. Они более детально проконсультируют какой
+                тип пены, больше всего, подходит для данных типажей строений.
               </p>
               <div class="head__right-btn popUp_3_3">Заказать</div>
             </div>
@@ -300,8 +374,8 @@
             <div class="type__item-desc">
               <p class="type__item-desc-text text">
                 Для пдробного расчета по вашему объекту, советуем обратиться к
-                нашим специалистам. Они более детально проконсультируют какой тип
-                пены, больше всего, подходит для данных типажей строений.
+                нашим специалистам. Они более детально проконсультируют какой
+                тип пены, больше всего, подходит для данных типажей строений.
               </p>
               <div class="head__right-btn popUp_3_4">Заказать</div>
             </div>
@@ -314,8 +388,8 @@
             <div class="type__item-desc">
               <p class="type__item-desc-text text">
                 Для пдробного расчета по вашему объекту, советуем обратиться к
-                нашим специалистам. Они более детально проконсультируют какой тип
-                пены, больше всего, подходит для данных типажей строений.
+                нашим специалистам. Они более детально проконсультируют какой
+                тип пены, больше всего, подходит для данных типажей строений.
               </p>
               <div class="head__right-btn popUp_3_5">Заказать</div>
             </div>
@@ -328,8 +402,8 @@
             <div class="type__item-desc">
               <p class="type__item-desc-text text">
                 Для пдробного расчета по вашему объекту, советуем обратиться к
-                нашим специалистам. Они более детально проконсультируют какой тип
-                пены, больше всего, подходит для данных типажей строений.
+                нашим специалистам. Они более детально проконсультируют какой
+                тип пены, больше всего, подходит для данных типажей строений.
               </p>
               <div class="head__right-btn popUp_3_6">Заказать</div>
             </div>
@@ -337,7 +411,10 @@
         </div>
       </div>
     </section>
-    <section class="meter" id="menu_4" >
+    <section
+      class="meter wow animate__animated animate__fadeIn animate__delay-0.5s"
+      id="menu_4"
+    >
       <div class="meter container">
         <h6 class="meter__title title">
           Работаем только с проверенным материалом
@@ -354,7 +431,10 @@
           </div>
           <div class="meter__inner">
             <h5 class="meter__inner-title">
-              <p>Российские производители ППУ</p>
+              <p>
+                Российские <br />
+                производители ППУ
+              </p>
             </h5>
             <p class="meter__inner-text text">
               Мы используем только проверенный пенополиуретан в своей работе. Мы
@@ -381,7 +461,7 @@
         <img class="meter__cloud" src="img/meter/cloud.png" alt="" />
       </div>
     </section>
-    <section class="price" id="menu_5" >
+    <section class="price wow animate__animated animate__fadeIn animate__delay-0.5s" id="menu_5">
       <div class="price__container container">
         <div class="price__title title">
           Стоимость утепления пенополиуретаном (ППУ)
@@ -451,7 +531,7 @@
               </tbody>
             </table> -->
             <img class="exp__tb-d" src="img/exp_tb.png" alt="" />
-            <img class="exp__tb-m" src="img/exp_tb_mob.png" alt="" />
+            <img class="exp__tb-m" src="img/exp_tb_mob.svg" alt="" />
           </div>
         </div>
         <div class="price__bottom">
@@ -470,12 +550,12 @@
             <img src="img/price/1.png" alt="" />
           </div>
           <div class="price__btn">
-            <div class="head__right-btn popUp_5 ">Узнать Подробнее</div>
+            <div class="head__right-btn popUp_5">Узнать Подробнее</div>
           </div>
         </div>
       </div>
     </section>
-    <section class="work">
+    <section class="work wow animate__animated animate__fadeIn animate__delay-0.5s">
       <div class="work__contaier container">
         <div class="work__title title">Этапы работы</div>
         <div class="work__items">
@@ -541,7 +621,7 @@
         </div>
       </div>
     </section>
-    <section class="why">
+    <section class="why wow animate__animated animate__fadeIn animate__delay-0.5s" >
       <div class="why__container container">
         <h6 class="why__title title">Почему пенополиуретан?</h6>
         <div class="why__text text">
@@ -588,15 +668,15 @@
             </table>
           </div> -->
         <img class="why_tb-d" src="img/exp_tb_2.png" alt="" />
-          <div class="why__sraw">CРАВНЕНИЕ</div>
-        <img class="why_tb-mob" src="img/exp_tb_2_mob.png" alt="" />
+        <div class="why__sraw">CРАВНЕНИЕ</div>
+        <img class="why_tb-mob" src="img/exp_tb_2_mob.svg" alt="" />
         <div class="why__under text">
           Несмотря на довольно высокие первоначальные вложения, теплоизоляция
           ППУ, окупается в течении 2-3 лет
         </div>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews wow animate__animated animate__fadeIn animate__delay-0.5s">
       <div class="reviews__container container">
         <h6 class="reviews__title title">Отзывы о нас</h6>
         <div class="reviews__items">
@@ -662,7 +742,7 @@
         </div>
       </div>
     </section>
-    <section class="gal">
+    <section class="gal wow animate__animated animate__fadeIn animate__delay-0.5s">
       <div class="gal__bott">
         <img src="img/gal/bg.png" alt="" />
       </div>
@@ -707,7 +787,7 @@
               </div>
               <div class="gal__inst-inst">
                 <img src="img/gal/inst.png" alt="" />
-                <a class="text">Подписаться</a>
+                <a href="https://www.instagram.com/termopark.ppu/" class="text">Подписаться</a>
               </div>
             </div>
           </div>
@@ -760,7 +840,7 @@
         </div>
       </div>
     </section>
-    <section class="map" id="menu_6" >
+    <section class="map wow animate__animated animate__fadeIn animate__delay-0.5s" id="menu_6">
       <div class="map__container container">
         <div class="gal__mobil">
           <div class="gal__inst">
@@ -773,7 +853,7 @@
               </div>
               <div class="gal__inst-inst">
                 <img src="img/gal/inst.png" alt="" />
-                <a class="text">Подписаться</a>
+                <a href="https://www.instagram.com/termopark.ppu/" class="text">Подписаться</a>
               </div>
             </div>
           </div>
@@ -783,13 +863,32 @@
             <img src="img/map/1.png" alt="" />
           </div>
           <div class="map__left-map">
-            <img src="img/map/map.png" alt="" />
+            <!-- <img src="img/map/map.png" alt="" /> -->
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1754c4361d2958c3243272e470961a65bfa6bc7d9ebbffcd40f6fbb21a949a9c&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
           </div>
         </div>
         <div class="map__right">
           <form class="map__right-form">
+
+            
+            <input type="hidden" name="project_name" value="warming" />
+            <input
+              type="hidden"
+              name="admin_email"
+              value="thebestppu@gmail.com"
+            />
+            <input type="hidden" name="form_subject" value="footer__form" />
+            
+
+
             <div class="map__right-form-title">Номер телефона *</div>
             <input
+              name="Phone"
               type="number"
               required
               class="map__right-form-input"
@@ -797,6 +896,7 @@
             />
             <div class="map__right-form-title">Ваше имя *</div>
             <input
+              name="Name"
               type="text"
               required
               class="map__right-form-input"
@@ -804,6 +904,7 @@
             />
             <div class="map__right-form-title">Почта</div>
             <input
+              name="Mail"
               type="text"
               required
               class="map__right-form-input"
@@ -811,16 +912,18 @@
             />
             <div class="map__right-form-title">Комментарий</div>
             <textarea
+              name="Comment"
               class="map__right-form-input map__right-form-tx"
             ></textarea>
             <button class="head__right-btn">Отправить</button>
             <p class="map__right-form-bot">
               Нажимая кнопку отправить вы даете согласие на обработку
               персональных данных
-              <br>
+              <br />
               <a style="display: block" href="#">Политика конфиденциальности</a>
             </p>
           </form>
+          
           <div class="map__right-info">
             <div class="map__right-info-title">Где нас найти?</div>
             <div class="map__right-info-item">
@@ -845,7 +948,7 @@
         </div>
       </div>
     </section>
-    <section class="footer">
+    <section class="footer ">
       <div class="footer__container container">
         <div class="footer__r">
           <div class="footer__phone">
@@ -865,13 +968,13 @@
               Свяжитесь с нами в месенджерах:
             </div>
             <div class="footer__l-icons">
-              <a class="footer__l-icon" href="#"
+              <a class="footer__l-icon" href="https://www.instagram.com/termopark.ppu/"
                 ><img src="img/icons/inst_white.png" alt=""
               /></a>
               <a class="footer__l-icon" href="#"
                 ><img src="img/icons/tel_white.png" alt=""
               /></a>
-              <a class="footer__l-icon" href="#"
+              <a class="footer__l-icon" href="https://wa.me/+79775409644"
                 ><img src="img/icons/w_white.png" alt=""
               /></a>
             </div>
@@ -880,26 +983,55 @@
         <div class="footer__bottom">Сайт разработан 2020</div>
       </div>
     </section>
-    <div class="popUp ">
+    <div class="popUp">
       <div class="popUp__container">
         <form class="map__right-form">
-          <div class="popUp__title-x"><img src="img/gray_x.svg" alt=""></div>
+
+
+          <input type="hidden" name="project_name" value="warming" />
+            <input
+              type="hidden"
+              name="admin_email"
+              value="thebestppu@gmail.com"
+            />
+            <input type="hidden" name="form_subject" value="PopUp__form" />
+
+
+          <div class="popUp__title-x"><img src="img/gray_x.svg" alt="" /></div>
           <div class="popUp__title title">
-            ТЕРМО-ПАРК —  надежные услуги по утеплению пенополиуретаном (ППУ).
+            ТЕРМО-ПАРК — надежные услуги по утеплению пенополиуретаном (ППУ).
           </div>
           <div class="map__right-form-title">Номер телефона *</div>
-          <input type="number" required="" class="map__right-form-input" placeholder="+7 (000) 777-00-00">
+          <input
+            name="Phone"
+            type="number"
+            required=""
+            class="map__right-form-input"
+            placeholder="+7 (000) 777-00-00"
+          />
           <div class="map__right-form-title">Ваше имя *</div>
-          <input type="text" required="" class="map__right-form-input" placeholder="Николай Наумов">
+          <input
+            name="Name"
+            type="text"
+            required=""
+            class="map__right-form-input"
+            placeholder="Николай Наумов"
+          />
           <div class="map__right-form-title">Почта</div>
-          <input type="text" required="" class="map__right-form-input" placeholder="example@gmail.com">
+          <input
+            name="mail"
+            type="text"
+            required=""
+            class="map__right-form-input"
+            placeholder="example@gmail.com"
+          />
           <div class="map__right-form-title">Комментарий</div>
-          <textarea class="map__right-form-input map__right-form-tx"></textarea>
+          <textarea name="Message" class="map__right-form-input map__right-form-tx"></textarea>
           <button class="head__right-btn">Отправить</button>
           <p class="map__right-form-bot">
-            Нажимая кнопку отправить вы даете согласие на обработку
-            персональных данных
-            <br>
+            Нажимая кнопку отправить вы даете согласие на обработку персональных
+            данных
+            <br />
             <a style="display: block" href="#">Политика конфиденциальности</a>
           </p>
         </form>
@@ -907,6 +1039,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
     <link
@@ -914,5 +1047,8 @@
       href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
     />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
