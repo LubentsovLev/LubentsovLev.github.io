@@ -68,12 +68,12 @@ $(function () {
   document.querySelector(".with").innerHTML =  document.documentElement.clientWidth
   //debugger
   let g =  document.querySelector(".with").innerHTML 
-   debugger
+   let u = $(window).width();
   let c = document.querySelector(".meta_").content
-  if (+g < 1100) {
-    debugger
+  if (+g > 1100) {
+    //debugger
     document.querySelector(".meta_").content =
-      'width=device-width, initial-scale=1.0';
+      "width=1920, initial-scale=0.1 ,minimum-scale= 1.0"
   }
 
 
