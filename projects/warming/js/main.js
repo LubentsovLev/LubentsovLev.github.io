@@ -73,6 +73,8 @@ $(function () {
     document.querySelector(".meta_").content =
       "width=1540 , initial-scale=1.0"
       document.body.style.minWidth = '1540px'
+      document.body.style.overflow = 'hidden'
+      
       $("body").css({ zoom: 1, transform: "scale(1)", transformOrigin: "0 0" })
   }
 
