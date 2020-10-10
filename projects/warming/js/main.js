@@ -71,9 +71,9 @@ $(function () {
   if (+g > 1100) {
     //debugger
     document.querySelector(".meta_").content =
-      "width=1920 , initial-scale=1.0"
-      document.body.style.minWidth = '1920px'
-      $("body").css({ zoom: 2, transform: "scale(0.55)", transformOrigin: "0 0" })
+      "width=1540 , initial-scale=1.0"
+      document.body.style.minWidth = '1540px'
+      $("body").css({ zoom: 1, transform: "scale(1)", transformOrigin: "0 0" })
   }
 
 
