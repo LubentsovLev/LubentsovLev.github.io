@@ -68,15 +68,18 @@ $(function () {
   document.querySelector(".with").innerHTML =  document.documentElement.clientWidth
   //debugger
   let g =  document.querySelector(".with").innerHTML 
-  if (+g > 1100) {
-    //debugger
-    document.querySelector(".meta_").content =
-      "width=1540 , initial-scale=1.0"
-      document.body.style.minWidth = '1540px'
-      document.body.style.overflow = 'hidden'
+
+
+  
+  // if (+g > 1100) {
+  //   //debugger
+  //   document.querySelector(".meta_").content =
+  //     "width=1540 , initial-scale=1.0"
+  //     document.body.style.minWidth = '1540px'
+  //     document.body.style.overflow = 'hidden'
       
-      $("body").css({ zoom: 1, transform: "scale(1)", transformOrigin: "0 0" })
-  }
+  //     $("body").css({ zoom: 1, transform: "scale(1)", transformOrigin: "0 0" })
+  // }
 
 
 
