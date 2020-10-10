@@ -68,13 +68,11 @@ $(function () {
   document.querySelector(".with").innerHTML =  document.documentElement.clientWidth
   //debugger
   let g =  document.querySelector(".with").innerHTML 
-   let u = $(window).width();
-  let c = document.querySelector(".meta_").content
   if (+g > 1100) {
     //debugger
     document.querySelector(".meta_").content =
-      "width=1920, initial-scale=1"
-      document.body.style.minWidth = '1920px'
+      "width=1540 , initial-scale=1.0"
+      document.body.style.minWidth = '1540px'
   }
 
 
