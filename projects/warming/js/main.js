@@ -73,7 +73,8 @@ $(function () {
   if (+g > 1100) {
     //debugger
     document.querySelector(".meta_").content =
-      "width=1920, initial-scale=0.1 ,minimum-scale= 1.0"
+      "width=1920, initial-scale=1"
+      document.body.style.minWidth = '1920'
   }
 
 
