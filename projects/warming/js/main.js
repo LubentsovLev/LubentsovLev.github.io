@@ -74,7 +74,7 @@ $(function () {
     //debugger
     document.querySelector(".meta_").content =
       "width=1920, initial-scale=1"
-      document.body.style.minWidth = '1920'
+      document.body.style.minWidth = '1920px'
   }
 
 
