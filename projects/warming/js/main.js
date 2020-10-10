@@ -65,8 +65,13 @@ $(function () {
   ///////
   //debugger
   ///////
-  let g =  document.documentElement.clientWidth
+  document.querySelector(".with").innerHTML =  document.documentElement.clientWidth
+  //debugger
+  let g =  document.querySelector(".with").innerHTML 
+   debugger
+  let c = document.querySelector(".meta_").content
   if (+g < 1100) {
+    debugger
     document.querySelector(".meta_").content =
       'width=device-width, initial-scale=1.0';
   }
@@ -80,77 +85,8 @@ $(function () {
   // }
 });
 
-let meter = document.querySelector(".meter__container");
-let btn__rus = document.querySelector(".btn__rus");
-let btn__usa = document.querySelector(".btn__usa");
 
-btn__rus.addEventListener("click", function () {
-  btn__usa.classList.remove("btn_active");
-  btn__rus.classList.add("btn_active");
-  meter.innerHTML = ``;
-  meter.innerHTML = `
-  <div class="meter__img">
-            <img src="img/meter/rus.png" alt="" />
-          </div>
-          <div class="meter__inner">
-            <div class="meter__inner-title"><p>Российские <br> производители ППУ</p></div>
-            <p class="meter__inner-text text">
-              Мы используем только проверенный пенополиуретан в своей работе. Мы
-              используем как импортные материалы так и отечественные.
-            </p>
-            <p class="meter__inner-text meter__inner-text-2 text">
-              Для более детальной консультации по материалам обращайтесь к нашим
-              менеджерам.
-            </p>
-            <div class="meter__inner-logos">
-              <div class="meter__inner-logo">
-                <img src="img/meter/100.png" alt="" />
-              </div>
-              <div class="meter__inner-logo">
-                <img src="img/meter/100.png" alt="" />
-              </div>
-              <div class="meter__inner-logo">
-                <img src="img/meter/100.png" alt="" />
-              </div>
-            </div>
-            <div class="head__right-btn">Узнать Подробнее</div>
-          </div>
-  `;
-});
-btn__usa.addEventListener("click", function () {
-  btn__rus.classList.remove("btn_active");
-  btn__usa.classList.add("btn_active");
-  meter.innerHTML = ``;
-  meter.innerHTML = `
-  <div class="meter__img">
-            <img src="img/meter/usa.png" alt="" />
-          </div>
-          <div class="meter__inner">
-            <div class="meter__inner-title"><p>Американские производители ППУ</p></div>
-            <p class="meter__inner-text text">
-              Мы используем только проверенный пенополиуретан в своей работе.
-              Кроме Российских материалов мы так же используем импортные, в
-              частности Американского производства.
-            </p>
-            <p class="meter__inner-text meter__inner-text-2 text">
-              Для более детальной консультации по материалам обращайтесь к нашим
-              менеджерам.
-            </p>
-            <div class="meter__inner-logos">
-              <div class="meter__inner-logo">
-                <img src="img/meter/100.png" alt="" />
-              </div>
-              <div class="meter__inner-logo">
-                <img src="img/meter/100.png" alt="" />
-              </div>
-              <div class="meter__inner-logo">
-                <img src="img/meter/100.png" alt="" />
-              </div>
-            </div>
-            <div class="head__right-btn">Узнать Подробнее</div>
-          </div>
-  `;
-});
+
 ///menu
 let header__mob_menu = document.querySelector(".header__mob-menu");
 let header__inner = document.querySelector(".header__inner");
@@ -239,8 +175,89 @@ autoPup(popUp_3_3);
 autoPup(popUp_3_4);
 autoPup(popUp_3_5);
 autoPup(popUp_3_6);
+// autoPup(popUp_7);
 popUp__title_x.addEventListener("click", function () {
   popUp.classList.remove("popUp__active");
   document.body.style.overflow = "visible ";
 });
 //window
+
+//usa
+let meter = document.querySelector(".meter__container");
+let btn__rus = document.querySelector(".btn__rus");
+let btn__usa = document.querySelector(".btn__usa");
+
+btn__rus.addEventListener("click", function () {
+  
+  btn__usa.classList.remove("btn_active");
+  btn__rus.classList.add("btn_active");
+  meter.innerHTML = ``;
+  meter.innerHTML = `
+  <div class="meter__img">
+            <img src="img/meter/rus.png" alt="" />
+          </div>
+          <div class="meter__inner">
+            <div class="meter__inner-title"><p>Российские <br> производители ППУ</p></div>
+            <p class="meter__inner-text text">
+              Мы используем только проверенный пенополиуретан в своей работе. Мы
+              используем как импортные материалы так и отечественные.
+            </p>
+            <p class="meter__inner-text meter__inner-text-2 text">
+              Для более детальной консультации по материалам обращайтесь к нашим
+              менеджерам.
+            </p>
+            <div class="meter__inner-logos">
+              <div class="meter__inner-logo">
+                <img src="img/meter/100.png" alt="" />
+              </div>
+              <div class="meter__inner-logo">
+                <img src="img/meter/100.png" alt="" />
+              </div>
+              <div class="meter__inner-logo">
+                <img src="img/meter/100.png" alt="" />
+              </div>
+            </div>
+            <div class="head__right-btn popUp_6">Узнать Подробнее</div>
+          </div>
+  `;
+  let popUp_6 = document.querySelector(".popUp_6")
+  autoPup(popUp_6);
+});
+// let popUp_6 = document.querySelector(".popUp_6")
+btn__usa.addEventListener("click", function () {
+  
+  btn__rus.classList.remove("btn_active");
+  btn__usa.classList.add("btn_active");
+  meter.innerHTML = ``;
+  meter.innerHTML = `
+  <div class="meter__img">
+            <img src="img/meter/usa.png" alt="" />
+          </div>
+          <div class="meter__inner">
+            <div class="meter__inner-title"><p>Американские производители ППУ</p></div>
+            <p class="meter__inner-text text">
+              Мы используем только проверенный пенополиуретан в своей работе.
+              Кроме Российских материалов мы так же используем импортные, в
+              частности Американского производства.
+            </p>
+            <p class="meter__inner-text meter__inner-text-2 text">
+              Для более детальной консультации по материалам обращайтесь к нашим
+              менеджерам.
+            </p>
+            <div class="meter__inner-logos">
+              <div class="meter__inner-logo">
+                <img src="img/meter/100.png" alt="" />
+              </div>
+              <div class="meter__inner-logo">
+                <img src="img/meter/100.png" alt="" />
+              </div>
+              <div class="meter__inner-logo">
+                <img src="img/meter/100.png" alt="" />
+              </div>
+            </div>
+            <div class="head__right-btn popUp_7">Узнать Подробнее</div>
+          </div>
+  `;
+  let popUp_7 = document.querySelector(".popUp_7")
+  autoPup(popUp_7);
+});
