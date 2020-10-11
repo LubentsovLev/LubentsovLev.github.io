@@ -1,5 +1,4 @@
 $(function () {
-
   $("form").submit(function () {
     //Change
     var th = $(this);
@@ -8,7 +7,7 @@ $(function () {
       url: "mail.php", //Change
       data: th.serialize(),
     }).done(function () {
-      alert("Спасибо за отправку" );
+      alert("Спасибо за отправку");
       setTimeout(function () {
         // Done Functions
         th.trigger("reset");
@@ -16,7 +15,6 @@ $(function () {
     });
     return false;
   });
-
 
   function chaseSel() {
     //debugger
@@ -59,27 +57,38 @@ $(function () {
       $(".select__head").removeClass("open");
       $(".select__list").fadeOut();
     }
-
   });
 
   ///////
   //debugger
   ///////
-  document.querySelector(".with").innerHTML =  document.documentElement.clientWidth
+  document.querySelector(".with").innerHTML =
+    document.documentElement.clientWidth;
   //debugger
-  let g =  document.querySelector(".with").innerHTML 
+  let g = document.querySelector(".with").innerHTML;
 
+  let changeSize = function(){
+    //debugger
+    if (+g > 1100) {
+      //debugger
+      document.documentElement.clientWidth = 1900;
+      window.screen.width = 1900;
+      document.querySelector(".meta_").content = "width=1920";
+      document.body.style.minWidth = "1900px";
+      // document.body.style.overflow = 'hidden'
+  
+      // $("body").css({ zoom: 0.75, transform: "scale(1,1)", transformOrigin: "0 0" })
+    }
+  }
+
+
+  window.attachEvent("onload", changeSize());
+  window.attachEvent("onresize", changeSize());
 
   
-  // if (+g > 1100) {
-  //   //debugger
-  //   document.querySelector(".meta_").content =
-  //     "width=1540 , initial-scale=1.0"
-  //     document.body.style.minWidth = '1540px'
-  //     document.body.style.overflow = 'hidden'
-      
-  //     $("body").css({ zoom: 1, transform: "scale(1)", transformOrigin: "0 0" })
-  // }
+  ///////
+  ///////
+  ///////
 
 
 
@@ -89,8 +98,6 @@ $(function () {
   //     'width=device-width, initial-scale=1.0';
   // }
 });
-
-
 
 ///menu
 let header__mob_menu = document.querySelector(".header__mob-menu");
@@ -109,15 +116,15 @@ let select__input_2 = document.querySelector(".select__input_2");
 let select__input_3 = document.querySelector(".select__input_3");
 let calc__count_sum_num = document.querySelector(".calc__count-sum-num");
 let calc__btn = document.querySelector(".calc__btn");
-let select__head_2 = document.querySelector('.select__head_2')
-let select__head_1 = document.querySelector('.select__head_1')
+let select__head_2 = document.querySelector(".select__head_2");
+let select__head_1 = document.querySelector(".select__head_1");
 
 let count__c = function () {
   //debugger;
   select__input_3.value = +select__input_3.value;
   calc__count_sum_num.innerHTML = "";
-  let g = select__input_2.value
-  let c = select__input_1.value
+  let g = select__input_2.value;
+  let c = select__input_1.value;
   select__input_3.value == "0"
     ? (select__input_3.value = 1)
     : (select__input_3.value = select__input_3.value);
@@ -131,7 +138,9 @@ let count__c = function () {
     if (select__head_2.innerHTML === "150мм") {
       calc__count_sum_num.innerHTML = 750 * select__input_3.value;
     }
-  } else if (select__head_1.innerHTML.trim() == "Жесткая пена (закрытая ячейка)") {
+  } else if (
+    select__head_1.innerHTML.trim() == "Жесткая пена (закрытая ячейка)"
+  ) {
     if (select__head_2.innerHTML === "50мм") {
       calc__count_sum_num.innerHTML = 690 * select__input_3.value;
     }
@@ -193,7 +202,6 @@ let btn__rus = document.querySelector(".btn__rus");
 let btn__usa = document.querySelector(".btn__usa");
 
 btn__rus.addEventListener("click", function () {
-  
   btn__usa.classList.remove("btn_active");
   btn__rus.classList.add("btn_active");
   meter.innerHTML = ``;
@@ -225,12 +233,11 @@ btn__rus.addEventListener("click", function () {
             <div class="head__right-btn popUp_6">Узнать Подробнее</div>
           </div>
   `;
-  let popUp_6 = document.querySelector(".popUp_6")
+  let popUp_6 = document.querySelector(".popUp_6");
   autoPup(popUp_6);
 });
 // let popUp_6 = document.querySelector(".popUp_6")
 btn__usa.addEventListener("click", function () {
-  
   btn__rus.classList.remove("btn_active");
   btn__usa.classList.add("btn_active");
   meter.innerHTML = ``;
@@ -263,6 +270,6 @@ btn__usa.addEventListener("click", function () {
             <div class="head__right-btn popUp_7">Узнать Подробнее</div>
           </div>
   `;
-  let popUp_7 = document.querySelector(".popUp_7")
+  let popUp_7 = document.querySelector(".popUp_7");
   autoPup(popUp_7);
 });
