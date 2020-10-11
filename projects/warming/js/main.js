@@ -69,16 +69,16 @@ $(function () {
 
   let changeSize = function(){
     //debugger
-    if (+g > 1100) {
-      //debugger
-      document.documentElement.clientWidth = 1900;
-      window.screen.width = 1900;
-      document.querySelector(".meta_").content = "width=1920";
-      document.body.style.minWidth = "1900px";
-      // document.body.style.overflow = 'hidden'
+    // if (+g > 1100) {
+    //   //debugger
+    //   document.documentElement.clientWidth = 1900;
+    //   window.screen.width = 1900;
+    //   document.querySelector(".meta_").content = "width=1920";
+    //   document.body.style.minWidth = "1900px";
+    //   // document.body.style.overflow = 'hidden'
   
-      // $("body").css({ zoom: 0.75, transform: "scale(1,1)", transformOrigin: "0 0" })
-    }
+    //   // $("body").css({ zoom: 0.75, transform: "scale(1,1)", transformOrigin: "0 0" })
+    // }
   }
 
 
