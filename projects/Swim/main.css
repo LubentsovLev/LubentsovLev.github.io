@@ -350,11 +350,13 @@
     visibility: visible;
 }
 }
-@media only screen and (max-width: 767px){
+/* @media only screen and (max-width: 767px) */
+@media only screen and (max-width: 915px){
 #wb_Text160 {
     padding: 10px 0px 145px 0px;
 }
-@media only screen and (max-width: 767px){
+/* @media only screen and (max-width: 767px) */
+@media only screen and (max-width: 915px){
 #wb_Text161 {
     padding: 25px 0px 161px 0px;
 }
@@ -374,7 +376,8 @@
     border: 0;
     margin-top: -8px;
 }
-@media only screen and (max-width: 767px) and (min-width: 480px){
+/* @media only screen and (max-width: 767px) and (min-width: 480px) */
+@media only screen and (max-width: 915px) and (min-width: 320px){
 #Shape159_text {
     left: -10px;
     top: 35px;
