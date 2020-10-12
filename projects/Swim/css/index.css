@@ -48873,10 +48873,10 @@ body
    }
 
 }
-@media only screen and (min-width: 480px) and (max-width: 767px){
+@media only screen and (min-width: 100px) and (max-width: 767px){
 
 }
-@media only screen and (min-width: 320px) and (max-width: 915px)
+@media only screen and (min-width: 100px) and (max-width: 915px)
 {
    #wb_Carousel4{
       display: none !important;
@@ -48886,7 +48886,7 @@ body
    background-color: #FFFFFF;
    background-image: none;
    position: relative;
-   min-width: 480px;
+   max-width: 480px;
    margin: 0 auto;
 }
 
@@ -63314,8 +63314,7 @@ body
    display: inline;
 }
 }
-/* @media only screen and (max-width: 479px) */
-@media only screen and (max-width: 100px)
+@media only screen and (max-width: 479px)
 {
 body
 {

@@ -350,13 +350,11 @@
     visibility: visible;
 }
 }
-/* @media only screen and (max-width: 767px) */
-@media only screen and (max-width: 915px){
+@media only screen and (max-width: 767px){
 #wb_Text160 {
     padding: 10px 0px 145px 0px;
 }
-/* @media only screen and (max-width: 767px) */
-@media only screen and (max-width: 915px){
+@media only screen and (max-width: 767px){
 #wb_Text161 {
     padding: 25px 0px 161px 0px;
 }
@@ -376,8 +374,7 @@
     border: 0;
     margin-top: -8px;
 }
-/* @media only screen and (max-width: 767px) and (min-width: 480px) */
-@media only screen and (max-width: 915px) and (min-width: 320px){
+@media only screen and (max-width: 767px) and (min-width: 480px){
 #Shape159_text {
     left: -10px;
     top: 35px;
@@ -470,4 +467,53 @@
 #LayoutGrid32 > .col-1 {
     text-align: center;
 }
+}
+@media (max-width: 480px){
+    body{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    #wb_Carousel8{
+        left: 0;
+        top: 9722px;
+    }
+    
+}
+@media (max-width: 915px){
+    #wb_Shape97{
+        display: block;
+        visibility:visible;
+    }
+    #wb_Carousel3 {
+        left: 0px;
+        top: 7751px;
+    }
+    .col-1{
+        overflow: hidden;
+    }
+    .ui-slider .ui-slider-handle{
+        width: 20px;
+    }
+    #wb_Carousel2 {
+        left: 14px;
+        top: 2679px;
+    }
+}
+@media only screen and (max-width: 915px) and (min-width: 100px){
+    #Editbox12{
+        display: block !important;
+        visibility: visible !important;
+    }
+}
+/* @media (max-width: 420px){body{max-width: 420px}}
+@media (max-width: 400px){body{max-width: 400px}}
+@media (max-width: 375px){body{max-width: 375px}}
+@media (max-width: 411px){body{max-width: 411px}}
+@media (max-width: 540px){body{max-width: 540px}}
+@media (max-width: 400px){body{max-width: 400px}} */
+@media (max-width: 340px){
+    #Layer2 .modal-body{
+        height: 400px !important;
+        overflow-y: scroll;
+    }
 }
