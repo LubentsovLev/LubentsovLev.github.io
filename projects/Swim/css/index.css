@@ -4773,7 +4773,7 @@ body
    background-color: transparent;
    background-image: url(../images/fpodv.png);
    background-repeat: no-repeat;
-   background-position: center top;
+   background-position: center bottom;
    flex-basis: 50%;
    max-width: 50%;
    -webkit-align-self: flex-start;
@@ -10887,7 +10887,7 @@ outline: none !important;
    display: block;
    width: 100%;
    height: auto;
-   max-width: 260px;
+   max-width: 220px;
    margin-left: auto;
    margin-right: auto;
    vertical-align: top;
@@ -18606,7 +18606,7 @@ outline: none !important;
 }
 #Label5
 {
-   display: none;
+   /* display: none; */
    width: 346px;
    height: 23px;
    line-height: 23px;
@@ -30666,8 +30666,8 @@ body
 {
    width: 346px;
    height: 23px;
-   visibility: hidden;
-   display: none;
+   /* visibility: hidden;
+   display: none; */
    color: #000000;
    font-size: 13px;
    font-family: "Muller Regular";
@@ -45056,8 +45056,8 @@ body
 {
    width: 346px;
    height: 23px;
-   visibility: hidden;
-   display: none;
+   /* visibility: hidden;
+   display: none; */
    color: #000000;
    font-size: 13px;
    font-family: "Muller Regular";
@@ -48878,6 +48878,9 @@ body
 }
 @media only screen and (min-width: 100px) and (max-width: 915px)
 {
+   #Layer1 .modal-body{
+      background-color: #fff;
+   }
    #wb_Carousel4{
       display: none !important;
    }
@@ -48886,7 +48889,8 @@ body
    background-color: #FFFFFF;
    background-image: none;
    position: relative;
-   max-width: 480px;
+   /* max-width: 480px; */
+   max-width: 320px;
    margin: 0 auto;
 }
 
@@ -53175,6 +53179,7 @@ body
 {
    width: 560px;
    height: 661px;
+   background-color:transparent;
 }
 #wb_Text65
 {
@@ -62691,8 +62696,8 @@ body
 }
 #wb_Carousel8
 {
-   left: 82px;
-   top: 9808px;
+   left: 0 ;
+        top: 9722px;
    width: 320px;
    height: 312px;
    visibility: visible;
@@ -63314,8 +63319,13 @@ body
    display: inline;
 }
 }
-@media only screen and (max-width: 479px)
+/* @media only screen and (max-width: 479px) */
+@media only screen and (max-width: 915px)
 {
+   #LayoutGrid21 > .col-2{
+      background-size: 104% !important;
+      background-position: bottom;
+   }
 body
 {
    background-color: #FFFFFF;

@@ -480,6 +480,7 @@
     
 }
 @media (max-width: 915px){
+   
     #wb_Shape97{
         display: block;
         visibility:visible;
@@ -500,6 +501,10 @@
     }
 }
 @media only screen and (max-width: 915px) and (min-width: 100px){
+    #wb_Carousel8{
+        left: 0 !important;
+        top: 9722px;
+    }
     #Editbox12{
         display: block !important;
         visibility: visible !important;
@@ -516,4 +521,7 @@
         height: 400px !important;
         overflow-y: scroll;
     }
+}
+#Layer3 .modal-dialog{
+    background-color: #fff;
 }
