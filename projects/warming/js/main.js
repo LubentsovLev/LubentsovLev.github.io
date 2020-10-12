@@ -7,7 +7,7 @@ $(function () {
       url: "mail.php", //Change
       data: th.serialize(),
     }).done(function () {
-      alert("Спасибо за отправку");
+      alert("Спасибо. Ваша заявка принята. Мы свяжемся с вами в ближайшее время.");
       setTimeout(function () {
         // Done Functions
         th.trigger("reset");
