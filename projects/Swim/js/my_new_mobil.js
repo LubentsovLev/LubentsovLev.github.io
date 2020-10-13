@@ -5,6 +5,7 @@ $(function () {
   let invest = document.querySelector("#Editbox14");
   let profitM = document.querySelector("#Editbox16");
   let profitY = document.querySelector("#Editbox17");
+  let monthC = document.querySelector('#Editbox15')
   let howManyNum = howMany.value;
   let popCoef = 1;
   let frType = "";
@@ -42,11 +43,12 @@ $(function () {
     populationNum = +population.value;
     howManyNum = +howMany.value;
     chaekCoef();
-    console.log(frType, populationNum, howManyNum, popCoef);
   };
   let opOneMoun = [1];
   let opOneMounPlus = [1];
   let option1Count = function () {
+    opOneMoun = [1];
+    opOneMounPlus = [1];
     let proc = 0.15;
     for (let i = 0; i < 12; i++) {
       opOneMoun[i] = Math.floor((defProf + defProfMass) * popCoef * proc);
@@ -57,6 +59,8 @@ $(function () {
   let opTwoMoun = [1];
   let opTwoMounPlus = [1];
   let option2Count = function () {
+    opTwoMoun = [1];
+    opTwoMounPlus = [1];
     let proc = 0.15;
     for (let i = 0; i < 12; i++) {
       opTwoMoun[i] = Math.floor(
@@ -67,16 +71,28 @@ $(function () {
       proc = proc + 0.05;
     }
   };
-  let monthOneCountArr = [];
+  let monthOne = 0;
   function monthCountOne() {
     for (let i = 0; i < 12; i++) {
-      monthOneCountArr[i] = opOneMounPlus[i] > 1500000 ? i : i > 5 ? i : 5;
+      //debugger;
+      if (opOneMounPlus[i] > 1500000) {
+        monthOne = i;
+        break;
+      }
     }
   }
-  let monthtwoCountArr = [];
+  let monthTwo = 0;
   function mounthCountTwo() {
     for (let i = 0; i < 12; i++) {
-      monthtwoCountArr[i] = monthtwoCountArr[i] > 2200000 ? i : i > 5 ? i : 5;
+      if (opTwoMounPlus[i] > 2200000) {
+        monthTwo = i;
+        break;
+      }
+
+      // monthtwoCountArr[i] =
+      //   monthtwoCountArr[i] > 2200000
+      //     ? (monthTwo = monthtwoCountArr.length)
+      //     : i;
     }
   }
   let whileM = function (arr) {
@@ -87,10 +103,12 @@ $(function () {
   function changeInnerCounter() {
     if (frType == "type_1") {
       invest.placeholder = "1 500 000 ₽";
+      monthC.placeholder = monthOne  + ' месяцев'
       profitM.placeholder = Math.floor(whileM(opOneMoun) / 12) * howManyNum;
       profitY.placeholder = Math.floor(whileM(opOneMoun)) * howManyNum;
     } else if (frType == "type_2") {
       invest.placeholder = "2 200 000 ₽";
+      monthC.placeholder = monthTwo + ' месяцев'
       profitM.placeholder = Math.floor(whileM(opTwoMoun) / 12) * howManyNum;
       profitY.placeholder = Math.floor(whileM(opTwoMoun)) * howManyNum;
     }
@@ -101,10 +119,9 @@ $(function () {
     option2Count();
     monthCountOne();
     mounthCountTwo();
-
     changeInnerCounter();
-    console.log(monthOneCountArr);
-    console.log(monthtwoCountArr);
+    console.log(monthOne);
+    console.log(monthTwo);
     //     console.log(opOneMoun);
     //  console.log(opTwoMoun);
   });

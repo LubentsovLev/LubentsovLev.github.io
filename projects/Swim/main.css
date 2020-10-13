@@ -475,7 +475,7 @@
     }
     #wb_Carousel8{
         left: 0;
-        top: 9722px;
+        top: 9700px;
     }
     
 }
@@ -501,9 +501,10 @@
     }
 }
 @media only screen and (max-width: 915px) and (min-width: 100px){
+
     #wb_Carousel8{
         left: 0 !important;
-        top: 9722px;
+        top: 9700px !important;
     }
     #Editbox12{
         display: block !important;
