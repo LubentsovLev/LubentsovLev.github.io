@@ -27,14 +27,21 @@ $(function () {
     }
   });
   function chaekCoef() {
-    //debugger
+  // debugger
+     if (population.value == "2000000 и более") {
+      popCoef = 1.2;
+    }
     if (250000 > populationNum) {
       popCoef = 0.6;
-    } else if (populationNum < 500001) {
+    }
+    else if (populationNum < 500001) {
       popCoef = 0.8;
     } else if (populationNum <= 1000000) {
       popCoef = 1;
     } else if (populationNum >= 1000000) {
+      popCoef = 1.2;
+    }
+    else if (populationNum == 2000000) {
       popCoef = 1.2;
     }
   }
@@ -82,11 +89,11 @@ $(function () {
     // }
     if (popCoef === 0.6) {
       monthOne = 5;
-    } else if ((popCoef === 0.8)) {
+    } else if (popCoef == 0.8) {
       monthOne = 5;
-    } else if ((popCoef === 1)) {
+    } else if (popCoef == 1) {
       monthOne = 4;
-    } else if ((popCoef === 1.2)) {
+    } else if (popCoef == 1.2) {
       monthOne = 4;
     }
   }
@@ -99,7 +106,7 @@ $(function () {
     //     break;
     //   }
     // }
-   //debugger;
+   // debugger;
     switch (popCoef) {
       case 0.6:
         monthTwo = 6;
@@ -137,6 +144,10 @@ $(function () {
     });
   };
   function changeInnerCounter() {
+    //debugger
+    population.value == "2000000"
+      ? (population.value = "2000000 и более")
+      : (population.placeholder = population.placeholder);
     if (frType == "type_1") {
       invest.placeholder = "1 500 000 ₽";
       monthC.placeholder = monthOne + " месяцев";
@@ -157,12 +168,17 @@ $(function () {
     monthCountOne();
     mounthCountTwo();
     changeInnerCounter();
-    console.log(monthOne);
-    console.log(monthTwo);
     //     console.log(opOneMoun);
     //  console.log(opTwoMoun);
   });
+  document.addEventListener('mousemove', function(){
+    changeInnerCounter();
+  })
+  document.addEventListener('touchmove', function(){
+    changeInnerCounter();
+  })
 });
+
 
 // document.addEventListener("mousemove", function () {
 //     //debugger

@@ -27,7 +27,10 @@ $(function () {
     }
   });
   function chaekCoef_1() {
-    //debugger
+   // debugger
+   if (population_1.value == "2000000 и более") {
+    popCoef_1 = 1.2;
+  }
     if (250000 > populationNum_1) {
       popCoef_1 = 0.6;
     } else if (populationNum_1 < 500001) {
@@ -37,6 +40,10 @@ $(function () {
     } else if (populationNum_1 > 1000000) {
       popCoef_1 = 1.2;
     }
+    else if (populationNum_1 > NaN) {
+      popCoef_1 = 1.2;
+    }
+    
   }
 
   let updateCount_1 = function () {
@@ -128,6 +135,9 @@ $(function () {
     });
   };
   function changeInnerCounter_1() {
+    population_1.value === "2000000"
+      ? (population_1.value = "2000000 и более")
+      : (population_1.placeholder = population_1.placeholder);
     if (frType_1 == "type_1") {
       invest_3.placeholder = "1 500 000 ₽";
       monthC_1.placeholder = monthOne_1  + ' месяцев'

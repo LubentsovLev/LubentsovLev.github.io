@@ -126,7 +126,7 @@
   line-height: 15px;
 }
 #Button2 {
-  background-image: url(../images/button8.png);
+  background-image: url(../images/button8_1.png);
   background-color: transparent;
   cursor: pointer;
   outline: none;
@@ -694,13 +694,22 @@ padding: 0 8px !important;
           color: #000 !important;
           
       }
+      .sc_sl_1_img img{
+        height: auto !important;
+        max-height: 100% !important;
+        width: 250px !important;
+        max-height: 430px !important;
+        border-radius: 20px;
+    }
   }
 .sc_sl_1_img{
     max-height: 450px !important;
 }
 .sc_sl_1_img img{
-    height: 430px !important;
+    height: auto !important;
     max-height: 100% !important;
+    width: 530px;
+    max-height: 430px !important;
     border-radius: 20px;
 }
 .sc_sl_frar .carousel-indicators{
@@ -713,8 +722,9 @@ padding: 0 8px !important;
     padding-bottom: 30px !important;
 }
 .mob_sl_1 img{
-    height: 211px !important;
+    height: auto !important;
     border-radius:15px;
+    max-height: 200px !important;
 }
 .sc_main #Shape93_text{
     position: relative !important;
@@ -766,18 +776,84 @@ padding: 0 8px !important;
   border:none;
 }
 .beg_desc{
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   width: 260px;
   border: 1px solid #c5c5c5;
   border-radius:6px;
-  height: 12px;
+  height: 10px;
 }
 .beg_desc #jQuerySlider1{
-  width: 200px;
+  width: 192px;
   border:none;
   
 }
 .beg__desc__inn{
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+}
+#wb_uid75 ,#wb_uid74{
+  font-family: "Muller Bold";
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+}
+#wb_Text68{
+  padding-top: 173px;
+}
+#Editbox6{
+  width: 180px !important;
+  max-width: 180px !important;
+  background-size:  100% 40px;
+}
+@media (max-width: 1024px){
+  .beg__desc__inn{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #wb_Shape74{
+    display: none !important;
+  }
+}
+#RadioButton2 ,#RadioButton3{
+  cursor: pointer;
+}
+.th_1 #wb_Text3{
+  text-align: center;
+
+}
+
+.th_1 a{
+  text-align: center;
+  max-width: 300px;
+  margin:  0 auto;
+  display: flex;
+  align-items: center;
+justify-content: center;
+}
+.th_1 span{
+  text-align: center;
+  max-width: 300px;
+  margin:  0 auto;
+  display: flex;
+  align-items: center;
+justify-content: center;
+}
+.th_1{
+  min-height: 100vh;
+
+}
+.th_2{
+  min-height: 100vh;
+  align-items: center;
+}
+.wb_LayoutGrid2 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.wb_LayoutGrid1{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
