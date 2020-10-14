@@ -5,7 +5,7 @@ $(function () {
   let invest = document.querySelector("#Editbox14");
   let profitM = document.querySelector("#Editbox16");
   let profitY = document.querySelector("#Editbox17");
-  let monthC = document.querySelector('#Editbox15')
+  let monthC = document.querySelector("#Editbox15");
   let howManyNum = howMany.value;
   let popCoef = 1;
   let frType = "";
@@ -32,9 +32,9 @@ $(function () {
       popCoef = 0.6;
     } else if (populationNum < 500001) {
       popCoef = 0.8;
-    } else if (populationNum < 1000000) {
+    } else if (populationNum <= 1000000) {
       popCoef = 1;
-    } else if (populationNum > 1000000) {
+    } else if (populationNum >= 1000000) {
       popCoef = 1.2;
     }
   }
@@ -73,27 +73,63 @@ $(function () {
   };
   let monthOne = 0;
   function monthCountOne() {
-    for (let i = 0; i < 12; i++) {
-      //debugger;
-      if (opOneMounPlus[i] > 1500000) {
-        monthOne = i;
-        break;
-      }
+    // for (let i = 0; i < 12; i++) {
+    //   //debugger;
+    //   if (opOneMounPlus[i] > 1500000) {
+    //     monthOne = i;
+    //     break;
+    //   }
+    // }
+    if (popCoef === 0.6) {
+      monthOne = 5;
+    } else if ((popCoef === 0.8)) {
+      monthOne = 5;
+    } else if ((popCoef === 1)) {
+      monthOne = 4;
+    } else if ((popCoef === 1.2)) {
+      monthOne = 4;
     }
   }
   let monthTwo = 0;
   function mounthCountTwo() {
-    for (let i = 0; i < 12; i++) {
-      if (opTwoMounPlus[i] > 2200000) {
-        monthTwo = i;
+    //debugger
+    // for (let i = 0; i < 12; i++) {
+    //   if (opTwoMounPlus[i] > 2200000) {
+    //     monthTwo = i;
+    //     break;
+    //   }
+    // }
+   //debugger;
+    switch (popCoef) {
+      case 0.6:
+        monthTwo = 6;
         break;
-      }
-
-      // monthtwoCountArr[i] =
-      //   monthtwoCountArr[i] > 2200000
-      //     ? (monthTwo = monthtwoCountArr.length)
-      //     : i;
+      case 0.8:
+        monthTwo = 5;
+        break;
+      case 1:
+        monthTwo = 4;
+        break;
+      case 1.2:
+        monthTwo = 4;
+        break;
     }
+    // if (popCoef = 1.2){
+    //   monthTwo = 4
+    //   break
+    // }
+    // else if (popCoef = 1){
+    //   monthTwo = 4
+    //   break
+    // }
+    // else if (popCoef = 0.8){
+    //   monthTwo = 5
+    //   break
+    // }
+    // else if(popCoef = 0.6){
+    //   monthTwo = 6
+    //   break
+    // }
   }
   let whileM = function (arr) {
     return arr.reduce(function (a, b) {
@@ -103,17 +139,18 @@ $(function () {
   function changeInnerCounter() {
     if (frType == "type_1") {
       invest.placeholder = "1 500 000 ₽";
-      monthC.placeholder = monthOne  + ' месяцев'
+      monthC.placeholder = monthOne + " месяцев";
       profitM.placeholder = Math.floor(whileM(opOneMoun) / 12) * howManyNum;
       profitY.placeholder = Math.floor(whileM(opOneMoun)) * howManyNum;
     } else if (frType == "type_2") {
       invest.placeholder = "2 200 000 ₽";
-      monthC.placeholder = monthTwo + ' месяцев'
+      monthC.placeholder = monthTwo + " месяцев";
       profitM.placeholder = Math.floor(whileM(opTwoMoun) / 12) * howManyNum;
       profitY.placeholder = Math.floor(whileM(opTwoMoun)) * howManyNum;
     }
   }
   document.addEventListener("click", function () {
+    chaekCoef();
     updateCount();
     option1Count();
     option2Count();

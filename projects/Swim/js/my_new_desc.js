@@ -77,28 +77,51 @@ $(function () {
   };
   let monthOne_1 = 0;
   function monthCountOne_1() {
-    for (let i = 0; i < 12; i++) {
-      //debugger;
-      if (opOneMounPlus_1[i] > 1500000) {
-        monthOne_1 = i;
+    // for (let i = 0; i < 12; i++) {
+    //   //debugger;
+    //   if (opOneMounPlus_1[i] > 1500000) {
+    //     monthOne_1 = i;
+    //     break;
+    //   }
+    // }
+    switch (popCoef_1) {
+      case 0.6:
+        monthOne_1 = 5;
         break;
-      }
+      case 0.8:
+        monthOne_1 = 5;
+        break;
+      case 1:
+        monthOne_1 = 4;
+        break;
+      case 1.2:
+        monthOne_1 = 4;
+        break;
     }
+    
   }
   let monthTwo_1 = 0;
   function mounthCountTwo_1() {
-    for (let i = 0; i < 12; i++) {
-      if (opTwoMounPlus_1[i] > 2200000) {
-        monthTwo_1 = i;
+    // for (let i = 0; i < 12; i++) {
+    //   if (opTwoMounPlus_1[i] > 2200000) {
+    //     monthTwo_1 = i;
+    //     break;
+    //   }
+    switch (popCoef_1) {
+      case 0.6:
+        monthTwo_1 = 6;
         break;
-      }
-
-      // monthtwoCountArr[i] =
-      //   monthtwoCountArr[i] > 2200000
-      //     ? (monthTwo = monthtwoCountArr.length)
-      //     : i;
+      case 0.8:
+        monthTwo_1 = 5;
+        break;
+      case 1:
+        monthTwo_1 = 4;
+        break;
+      case 1.2:
+        monthTwo_1 = 4;
+        break;
     }
-  }
+    }
   let whileM_1 = function (arr) {
     return arr.reduce(function (a, b) {
       return a + b;
