@@ -27,10 +27,10 @@ $(function () {
     }
   });
   function chaekCoef_1() {
-   // debugger
-   if (population_1.value == "2000000 и более") {
-    popCoef_1 = 1.2;
-  }
+    // debugger
+    if (population_1.value == "2000000 и более") {
+      popCoef_1 = 1.2;
+    }
     if (250000 > populationNum_1) {
       popCoef_1 = 0.6;
     } else if (populationNum_1 < 500001) {
@@ -39,11 +39,9 @@ $(function () {
       popCoef_1 = 1;
     } else if (populationNum_1 > 1000000) {
       popCoef_1 = 1.2;
-    }
-    else if (populationNum_1 > NaN) {
+    } else if (populationNum_1 > NaN) {
       popCoef_1 = 1.2;
     }
-    
   }
 
   let updateCount_1 = function () {
@@ -105,7 +103,6 @@ $(function () {
         monthOne_1 = 4;
         break;
     }
-    
   }
   let monthTwo_1 = 0;
   function mounthCountTwo_1() {
@@ -128,28 +125,29 @@ $(function () {
         monthTwo_1 = 4;
         break;
     }
-    }
+  }
   let whileM_1 = function (arr) {
     return arr.reduce(function (a, b) {
       return a + b;
     });
   };
+  function spaceDigits(number){
+    return number.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+  }
   function changeInnerCounter_1() {
     population_1.value === "2000000"
       ? (population_1.value = "2000000 и более")
       : (population_1.placeholder = population_1.placeholder);
     if (frType_1 == "type_1") {
       invest_3.placeholder = "1 500 000 ₽";
-      monthC_1.placeholder = monthOne_1  + ' месяцев'
-      profitM_1.placeholder =
-        Math.floor(whileM_1(opOneMoun_1) / 12) * howManyNum_1;
-      profitY_1.placeholder = Math.floor(whileM_1(opOneMoun_1)) * howManyNum_1;
+      monthC_1.placeholder = monthOne_1 + " месяцев";
+      profitM_1.placeholder = spaceDigits(Math.floor(whileM_1(opOneMoun_1) / 12) * howManyNum_1) + ' ₽'
+      profitY_1.placeholder = spaceDigits(Math.floor(whileM_1(opOneMoun_1)) * howManyNum_1)  + ' ₽'
     } else if (frType_1 == "type_2") {
       invest_3.placeholder = "2 200 000 ₽";
-      monthC_1.placeholder = monthTwo_1  + ' месяцев'
-      profitM_1.placeholder =
-        Math.floor(whileM_1(opTwoMoun_1) / 12) * howManyNum_1;
-      profitY_1.placeholder = Math.floor(whileM_1(opTwoMoun_1)) * howManyNum_1;
+      monthC_1.placeholder = monthTwo_1 + " месяцев";
+      profitM_1.placeholder = spaceDigits(Math.floor(whileM_1(opTwoMoun_1) / 12) * howManyNum_1) + ' ₽'
+      profitY_1.placeholder = spaceDigits(Math.floor(whileM_1(opTwoMoun_1)) * howManyNum_1) + ' ₽'
     }
   }
   document.addEventListener("click", function () {

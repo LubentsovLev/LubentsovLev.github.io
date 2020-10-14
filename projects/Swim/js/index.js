@@ -2,7 +2,7 @@ $(function () {
   var input = $("#Editbox12"),
     begunok = $("#jQuerySlider2");
   begunok.slider({
-    step: 100000,
+    step: 50000,
     change: function (begunok, pi) {
       input.val(pi.value);
     },
@@ -31,7 +31,7 @@ $(function () {
   var input = $("#Editbox6"),
     begunok = $("#jQuerySlider1");
   begunok.slider({
-    step: 100000,
+    step: 50000,
     change: function (begunok, pi) {
       input.val(pi.value);
     },

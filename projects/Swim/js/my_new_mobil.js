@@ -138,6 +138,9 @@ $(function () {
     //   break
     // }
   }
+  function spaceDigits(number){
+    return number.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+  }
   let whileM = function (arr) {
     return arr.reduce(function (a, b) {
       return a + b;
@@ -151,13 +154,13 @@ $(function () {
     if (frType == "type_1") {
       invest.placeholder = "1 500 000 ₽";
       monthC.placeholder = monthOne + " месяцев";
-      profitM.placeholder = Math.floor(whileM(opOneMoun) / 12) * howManyNum;
-      profitY.placeholder = Math.floor(whileM(opOneMoun)) * howManyNum;
+      profitM.placeholder = spaceDigits( Math.floor(whileM(opOneMoun) / 12) * howManyNum) + ' ₽'
+      profitY.placeholder = spaceDigits(Math.floor(whileM(opOneMoun)) * howManyNum)  + ' ₽'
     } else if (frType == "type_2") {
       invest.placeholder = "2 200 000 ₽";
-      monthC.placeholder = monthTwo + " месяцев";
-      profitM.placeholder = Math.floor(whileM(opTwoMoun) / 12) * howManyNum;
-      profitY.placeholder = Math.floor(whileM(opTwoMoun)) * howManyNum;
+      monthC.placeholder = monthTwo + " месяцев"
+      profitM.placeholder = spaceDigits(Math.floor(whileM(opTwoMoun) / 12) * howManyNum) + ' ₽'
+      profitY.placeholder = spaceDigits(Math.floor(whileM(opTwoMoun)) * howManyNum) + ' ₽'
     }
   }
   document.addEventListener("click", function () {
@@ -170,6 +173,7 @@ $(function () {
     changeInnerCounter();
     //     console.log(opOneMoun);
     //  console.log(opTwoMoun);
+    
   });
   document.addEventListener('mousemove', function(){
     changeInnerCounter();
