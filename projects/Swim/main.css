@@ -857,3 +857,9 @@ justify-content: center;
   justify-content: center;
   text-align: center;
 }
+#LayoutGrid24 > .col-2{
+  padding: 0;
+}
+.sh_mob{
+  /* background-color: rgba(0, 0, 0, 0.3); */
+}
