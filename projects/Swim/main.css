@@ -126,14 +126,14 @@
   line-height: 15px;
 }
 #Button2 {
-  background-image: url(../images/button8_1.png);
+  background-image: url(images/button8_1.png) !important;
   background-color: transparent;
   cursor: pointer;
   outline: none;
   border: none;
 }
 #Button1 {
-  background-image: url(../images/button7.png);
+  background-image: url(images/button7.png) !important;
   background-color: transparent;
   cursor: pointer;
   outline: none;
@@ -698,7 +698,7 @@ padding: 0 8px !important;
         height: auto !important;
         max-height: 100% !important;
         width: 250px !important;
-        max-height: 430px !important;
+        height: 290px !important;
         border-radius: 20px;
     }
   }
@@ -709,7 +709,7 @@ padding: 0 8px !important;
     height: auto !important;
     max-height: 100% !important;
     width: 530px;
-    max-height: 430px !important;
+    max-height: 320px !important;
     border-radius: 20px;
 }
 .sc_sl_frar .carousel-indicators{
@@ -724,7 +724,7 @@ padding: 0 8px !important;
 .mob_sl_1 img{
     height: auto !important;
     border-radius:15px;
-    max-height: 200px !important;
+    max-height: 190px !important;
 }
 .sc_main #Shape93_text{
     position: relative !important;

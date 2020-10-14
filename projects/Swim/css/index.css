@@ -6228,10 +6228,11 @@ input, textarea, select {outline:none;box-shadow:none;}
    font-family: "Muller Regular";
    font-weight: normal;
    font-size: 16px;
+   background-image: url(../images/button8_1.png) !important;
 }
 #Button2:hover
 {
-   background-image: url(../images/button8_1.png);;
+   background-image: url(../images/button8_1.png);
    -webkit-transition: background-image 500ms linear 0ms;
    -moz-transition: background-image 500ms linear 0ms;
    transition: background-image 500ms linear 0ms;
