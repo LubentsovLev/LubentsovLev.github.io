@@ -48880,21 +48880,7 @@ body
 }
 @media only screen and (min-width: 100px) and (max-width: 915px)
 {
-   #Layer1 .modal-body{
-      background-color: #fff;
-   }
-   #wb_Carousel4{
-      display: none !important;
-   }
-body
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   position: relative;
-   /* max-width: 480px; */
-   max-width: 320px;
-   margin: 0 auto;
-}
+  
 
 #wb_Text170
 {
