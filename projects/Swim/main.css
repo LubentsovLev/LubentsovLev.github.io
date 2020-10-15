@@ -993,5 +993,35 @@
 .sc_main #LayoutGrid24{
 max-width: 320px;
 }
+#wb_Text160{
+  padding-bottom: 90px;
+}
+#wb_Text161{
+  padding-bottom: 100px;
+}
+#wb_Text162{
+  padding-bottom: 132px;
+}
+#wb_Image91{
+  background-image: url(images/map_m.png);
+  background-repeat: no-repeat;
+  background-size: 119%;
+  height: 387px;
+  width: 500px;
+  margin-left: -117px;
+
+}
+/* #wb_Shape107{
+  margin-top: 60px;
+} */
+#wb_Carousel2{
+  top: 2681px;
+}
+#wb_Text94{
+  padding-top: 40px;
+}
+#wb_Text158 ,#wb_Text159{
+padding: 0;
+}
 }
 @media (max-width: 915px){}
