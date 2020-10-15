@@ -139,12 +139,12 @@ $(function () {
       ? (population_1.value = "2000000 и более")
       : (population_1.placeholder = population_1.placeholder);
     if (frType_1 == "type_1") {
-      invest_3.placeholder = "1 500 000 ₽";
+      invest_3.placeholder = "1 556 725 ₽";
       monthC_1.placeholder = monthOne_1 + " месяцев";
       profitM_1.placeholder = spaceDigits(Math.floor(whileM_1(opOneMoun_1) / 12) * howManyNum_1) + ' ₽'
       profitY_1.placeholder = spaceDigits(Math.floor(whileM_1(opOneMoun_1)) * howManyNum_1)  + ' ₽'
     } else if (frType_1 == "type_2") {
-      invest_3.placeholder = "2 200 000 ₽";
+      invest_3.placeholder = "2 234 435 ₽";
       monthC_1.placeholder = monthTwo_1 + " месяцев";
       profitM_1.placeholder = spaceDigits(Math.floor(whileM_1(opTwoMoun_1) / 12) * howManyNum_1) + ' ₽'
       profitY_1.placeholder = spaceDigits(Math.floor(whileM_1(opTwoMoun_1)) * howManyNum_1) + ' ₽'
