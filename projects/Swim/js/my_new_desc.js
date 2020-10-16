@@ -134,6 +134,74 @@ $(function () {
   function spaceDigits(number){
     return number.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
   }
+  let ls_m_s_1_g = 1
+  function ls_m_1_g (){
+    switch (popCoef_1) {
+      case 0.6:
+        ls_m_s_1_g = 430920
+        break;
+      case 0.8:
+        ls_m_s_1_g = 574560;
+        break;
+      case 1:
+        ls_m_s_1_g = 615600;
+        break;
+      case 1.2:
+        ls_m_s_1_g = 738720;
+        break;
+    }
+  }
+  let ls_y_s_1_g = 1
+  function ls_y_1_g (){
+    switch (popCoef_1) {
+      case 0.6:
+        ls_y_s_1_g = 861840
+        break;
+      case 0.8:
+        ls_y_s_1_g = 1149120;
+        break;
+      case 1:
+        ls_y_s_1_g = 1436400;
+        break;
+      case 1.2:
+        ls_y_s_1_g = 1723680;
+        break;
+    }
+  }
+  let ls_m_s_2_g = 1
+  function ls_m_2_g (){
+    switch (popCoef_1) {
+      case 0.6:
+        ls_m_s_2_g = 601344
+        break;
+      case 0.8:
+        ls_m_s_2_g = 701568;
+        break;
+      case 1:
+        ls_m_s_2_g = 751680;
+        break;
+      case 1.2:
+        ls_m_s_2_g = 902016;
+        break;
+    }
+  }
+  let ls_y_s_2_g = 1
+  function ls_y_2_g (){
+    switch (popCoef_1) {
+      case 0.6:
+        ls_y_s_2_g = 1052352
+        break;
+      case 0.8:
+        ls_y_s_2_g = 1403136;
+        break;
+      case 1:
+        ls_y_s_2_g = 1753920;
+        break;
+      case 1.2:
+        ls_y_s_2_g = 2104704;
+        break;
+    }
+  }
   function changeInnerCounter_1() {
     population_1.value === "2000000"
       ? (population_1.value = "2000000 и более")
@@ -141,13 +209,17 @@ $(function () {
     if (frType_1 == "type_1") {
       invest_3.placeholder = "1 556 725 ₽";
       monthC_1.placeholder = monthOne_1 + " месяцев";
-      profitM_1.placeholder = spaceDigits(Math.floor(whileM_1(opOneMoun_1) / 12) * howManyNum_1) + ' ₽'
-      profitY_1.placeholder = spaceDigits(Math.floor(whileM_1(opOneMoun_1)) * howManyNum_1)  + ' ₽'
+      // profitM_1.placeholder = spaceDigits(Math.floor(whileM_1(opOneMoun_1) / 12) * howManyNum_1) + ' ₽'
+      // profitY_1.placeholder = spaceDigits(Math.floor(whileM_1(opOneMoun_1)) * howManyNum_1)  + ' ₽'
+      profitM_1.placeholder = spaceDigits(ls_m_s_1_g *howManyNum_1)+ ' ₽'
+      profitY_1.placeholder = spaceDigits(ls_y_s_1_g *howManyNum_1)+ ' ₽'
     } else if (frType_1 == "type_2") {
       invest_3.placeholder = "2 234 435 ₽";
       monthC_1.placeholder = monthTwo_1 + " месяцев";
-      profitM_1.placeholder = spaceDigits(Math.floor(whileM_1(opTwoMoun_1) / 12) * howManyNum_1) + ' ₽'
-      profitY_1.placeholder = spaceDigits(Math.floor(whileM_1(opTwoMoun_1)) * howManyNum_1) + ' ₽'
+      // profitM_1.placeholder = spaceDigits(Math.floor(whileM_1(opTwoMoun_1) / 12) * howManyNum_1) + ' ₽'
+      // profitY_1.placeholder = spaceDigits(Math.floor(whileM_1(opTwoMoun_1)) * howManyNum_1) + ' ₽'
+      profitM_1.placeholder = spaceDigits(ls_m_s_2_g *howManyNum_1)+ ' ₽'
+      profitY_1.placeholder = spaceDigits(ls_y_s_2_g *howManyNum_1)+ ' ₽'
     }
   }
   document.addEventListener("click", function () {
@@ -156,6 +228,10 @@ $(function () {
     option2Count_1();
     monthCountOne_1();
     mounthCountTwo_1();
+    ls_y_1_g()
+    ls_m_1_g()
+    ls_m_2_g()
+    ls_y_2_g()
 
     changeInnerCounter_1();
     //     console.log(opOneMoun);

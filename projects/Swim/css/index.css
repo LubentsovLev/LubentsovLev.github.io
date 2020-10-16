@@ -2860,6 +2860,7 @@ body
 {
    background-color: transparent;
    background-image: url(../images/fslider.png);
+   background-image: url(../images/fslider1.png);
    background-repeat: no-repeat;
    background-position: center top;
    flex-basis: 50%;
@@ -2868,6 +2869,7 @@ body
    align-self: flex-start;
    text-align: center;
 }
+#
 @media (max-width: 480px)
 {
 #LayoutGrid13
