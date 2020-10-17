@@ -220,14 +220,14 @@ $(function () {
       ? (population.value = "2000000 и более")
       : (population.placeholder = population.placeholder);
     if (frType == "type_1") {
-      invest.placeholder = "1 556 725 ₽";
+      invest.placeholder = spaceDigits(1556725 * howManyNum) + ' ₽'
       monthC.placeholder = monthOne + " месяцев";
       // profitM.placeholder = spaceDigits( Math.floor(whileM(opOneMoun) / 12) * howManyNum) + ' ₽'
       // profitY.placeholder = spaceDigits(Math.floor(whileM(opOneMoun)) * howManyNum)  + ' ₽'
       profitM.placeholder = spaceDigits(ls_m_s_1 *howManyNum)+ ' ₽'
       profitY.placeholder = spaceDigits(ls_y_s_1 *howManyNum)+ ' ₽'
     } else if (frType == "type_2") {
-      invest.placeholder = "2 234 435 ₽";
+      invest.placeholder = spaceDigits(2234435 * howManyNum) + ' ₽'
       monthC.placeholder = monthTwo + " месяцев"
       // profitM.placeholder = spaceDigits(Math.floor(whileM(opTwoMoun) / 12) * howManyNum) + ' ₽'
       // profitY.placeholder = spaceDigits(Math.floor(whileM(opTwoMoun)) * howManyNum) + ' ₽'

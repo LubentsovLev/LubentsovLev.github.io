@@ -14,8 +14,10 @@
   background-image: url(../images/arrowleft_mob.png);
   font-size: 0;
   z-index: 20;
+  cursor: pointer;
 }
 .slick-next {
+  cursor: pointer;
  z-index: 20;
   position: absolute;
   right: 10px;
