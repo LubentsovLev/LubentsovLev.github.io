@@ -708,7 +708,7 @@ a,button,div,input{
 }
 @media (max-width: 500px) {
   .sc_main #wb_Text74 {
-    padding-top: 45px;
+    padding-top: 100px;
   }
   .sc_main {
     background-image: url(images/new/new_bg_m.png);
@@ -1095,5 +1095,8 @@ left: 10px;
   }
   #wb_uid238{
     color: #4a657f;
+  }
+  #LayoutGrid24 > .col-1{
+    background-color: #fff;
   }
 }
