@@ -1,4 +1,20 @@
 $(function () {
+  $("form").submit(function () {
+    //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize(),
+    }).done(function () {
+      alert("Thank you!");
+      setTimeout(function () {
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
+  });
   $(".about__right").slick({
     infinite: true,
     slidesToShow: 1,
@@ -47,20 +63,49 @@ let ln_5 = document.querySelector(".ln_5");
 let openPop = function () {
   popup__container.classList.add("pop_act");
   popup__inner_inner.classList.add("pop_act-inn");
-  document.body.style.overflow = 'hidden'
+  document.body.style.overflow = "hidden";
 };
 function ln_pop(ln) {
   ln.addEventListener("click", function () {
     openPop();
   });
 }
-ln_pop(ln_1)
-ln_pop(ln_2)
-ln_pop(ln_3)
-ln_pop(ln_4)
-ln_pop(ln_5)
+ln_pop(ln_1);
+ln_pop(ln_2);
+ln_pop(ln_3);
+ln_pop(ln_4);
+ln_pop(ln_5);
 x.addEventListener("click", function () {
-  document.body.style.overflow = 'visible '
+  document.body.style.overflow = "visible ";
   popup__container.classList.remove("pop_act");
   popup__inner_inner.classList.remove("pop_act-inn");
 });
+let tts1 = document.querySelector(".team__item-title .tts1");
+let tts2 = document.querySelector(".team__item-title .tts2");
+let tts3 = document.querySelector(".team__item-title .tts3");
+let tts4 = document.querySelector(".team__item-title .tts4");
+
+let team__item_text_1 = document.querySelector(".team__item-text_1");
+let team__item_text_2 = document.querySelector(".team__item-text_2");
+let team__item_text_3 = document.querySelector(".team__item-text_3");
+let team__item_text_4 = document.querySelector(".team__item-text_4");
+
+let team__item1 = document.querySelector(".team__item1");
+let team__item2 = document.querySelector(".team__item2");
+let team__item3 = document.querySelector(".team__item3");
+let team__item4 = document.querySelector(".team__item4");
+
+
+function textG(tx, tess,item) {
+  tx.addEventListener("click", function () {
+    //debugger;
+    tx.classList.toggle('tx')
+    item.classList.toggle('ti__a')
+    tess.classList.toggle("textUp");
+  });
+}
+
+textG(tts1 ,team__item_text_1 ,team__item1);
+textG(tts2 ,team__item_text_2,team__item2);
+textG(tts3 ,team__item_text_3,team__item3);
+textG(tts4 ,team__item_text_4,team__item4);
