@@ -1000,7 +1000,7 @@
             <div class="team__item-title">
               <b>Жданов Алексей</b>
               <p>Генеральный директор</p>
-              <span class="tts1" ></span>
+              <span class="tts1"></span>
             </div>
             <div class="team__item-text team__item-text_1">
               <p>
@@ -1019,7 +1019,7 @@
             <div class="team__item-title">
               <b>Филлипс Мария </b>
               <p>ГАП</p>
-              <span class="tts2" ></span>
+              <span class="tts2"></span>
             </div>
             <div class="team__item-text team__item-text_2">
               <p>
@@ -1057,7 +1057,7 @@
             <div class="team__item-title">
               <b>Беляев Денис </b>
               <p>Директор по строительству</p>
-              <span class="tts4" ></span>
+              <span class="tts4"></span>
             </div>
             <div class="team__item-text team__item-text_4">
               <p>
@@ -1316,10 +1316,16 @@
             <input type="hidden" name="form_subject" value="Заказать_звонок" />
             <div class="footer__form-l">
               <div class="innn innn_1">
-                <input type="text" placeholder="Введите имя" required />
+                <input
+                  type="text"
+                  placeholder="Введите имя"
+                  required
+                  name="name"
+                />
               </div>
               <div class="innn innn_2">
                 <input
+                  name="Phone"
                   type="tel"
                   pattern="\+79[0-9]{9}|8[0-9]{10}"
                   placeholder="Введите номер телефона"
@@ -1330,10 +1336,10 @@
             </div>
             <div class="footer__form-r">
               <div class="innn innn_3">
-                <input type="text" placeholder="Введите E-Mail" />
+                <input type="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Введите E-Mail"  name="E-Mail"/>
               </div>
               <div class="innn innn_4">
-                <textarea placeholder="Введите сообщение"></textarea>
+                <textarea name="message" placeholder="Введите сообщение"></textarea>
               </div>
               <button class="bn2" type="submit">Отправить</button>
             </div>
@@ -1369,13 +1375,14 @@
               <input
                 type="hidden"
                 name="form_subject"
-                value="Заказать_звонок"
+                value="form_popUp"
               />
               <div class="innn innn_1">
-                <input type="text" placeholder="Имя" required="" />
+                <input type="text" placeholder="Имя" required="" name="name" />
               </div>
               <div class="innn innn_2">
                 <input
+                  name="phone"
                   type="tel"
                   placeholder="Контактный телефон"
                   pattern="\+79[0-9]{9}|8[0-9]{10}"
