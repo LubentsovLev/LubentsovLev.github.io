@@ -84,13 +84,7 @@
               Рассчитайте стоимость охраны вашего объекта
             </div>
             <div class="head__form-inputs">
-              <!-- <input
-                type="hidden"
-                name="object"
-                class="sel_input"
-                placeholder="Выберите объект"
-              /> -->
-              <select name="object_s" class="sel" type="text">
+              <select name="object" class="sel" type="text">
                 <option>Выберите объект</option>
                 <option>Дом/коттедж</option>
                 <option>Квартира</option>
@@ -658,6 +652,101 @@
           <div class="head__form-title">
             ОТВЕТЬ НА НЕСКОЛЬКО ПРОСТЫХ ВОПРОСОВ И ПОЛУЧИ УСЛУГУ В ПОДАРОК
           </div>
+          <div class="q-main">
+            <div class="quiz__inputs-inner">
+              <div class="head__form-inputs quiz_i quiz_i_1">
+                <h6 class="qz__title">Укажите ваше имя</h6>
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Ваше имя"
+                  required=""
+                />
+              </div>
+              <div class="head__form-inputs quiz_i quiz_i_2">
+                <h6 class="qz__title">Выберите из списка</h6>
+                <select name="object" class="sel" type="text">
+                  <option>Выберите объект</option>
+                  <option>Дом/коттедж</option>
+                  <option>Квартира</option>
+                  <option>Офис/офисное здание</option>
+                  <option>АЗС</option>
+                  <option>Аптека</option>
+                  <option>Склад</option>
+                  <option>Банк</option>
+                  <option>Медицинское учреждение</option>
+                  <option>Гостиница</option>
+                  <option>Развлекательное заведение (клуб)</option>
+                  <option>Торговый центр</option>
+                  <option>Магазин</option>
+                  <option>Ресторан/кафе/бар</option>
+                  <option>Производство</option>
+                  <option>Автостоянка</option>
+                  <option>Школа</option>
+                  <option>Детский сад</option>
+                  <option>Кинотеатр</option>
+                  <option>Спортивный объект</option>
+                  <option>Фермерское хозяйство</option>
+                  <option>Производственная база</option>
+                  <option>Стройплощадка</option>
+                </select>
+              </div>
+              <div class="head__form-inputs quiz_i quiz_i_3">
+                <h6 class="qz__title">Введите площадь м2 *</h6>
+                <input
+                  type="number"
+                  name="Примерная площадь объекта"
+                  placeholder="Примерная площадь объекта"
+                  required
+                />
+              </div>
+              <div class="head__form-inputs quiz_i quiz_i_4">
+                <h6 class="qz__title">Введите Номер телефонa *</h6>
+                <input
+                  type="tel"
+                  name="Phone"
+                  placeholder="Номер телефонa"
+                  required=""
+                  pattern="\+79[0-9]{9}|8[0-9]{10}"
+                />
+              </div>
+
+              <div class="head__form-inputs quiz_i quiz_i_5">
+                <h6 class="qz__title">Введите электронную почту</h6>
+                <input
+                  type="text"
+                  name="Mail"
+                  placeholder="Эл. почта"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                  required
+                />
+              </div>
+            </div>
+            <div class="q_btns">
+              <div class="q_prev btn">назад</div>
+              <div class="q_next btn">далее</div>
+            </div>
+            <div class="q_err"></div>
+            <div class="q__countttt"><span></span> / 5</div>
+          </div>
+          <button class="btn q_subm q_subm-b">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+    </div>
+    <!-- <div class="popup popup_6">
+      <div class="popup__container">
+        <form class="head__form">
+          <div class="x x_6"><img src="img/x_2.svg" alt="" /></div>
+          <input type="hidden" name="project_name" value="охрана" />
+          <input
+            type="hidden"
+            name="admin_email"
+            value="levchill2017l@gmail.com"
+          />
+          <input type="hidden" name="form_subject" value="Подарок" />
+          <div class="head__form-title">
+            ОТВЕТЬ НА НЕСКОЛЬКО ПРОСТЫХ ВОПРОСОВ И ПОЛУЧИ УСЛУГУ В ПОДАРОК
+          </div>
           <div class="head__form-inputs">
             <input type="text" name="Name" placeholder="Ваше имя" required="" />
             <input
@@ -666,7 +755,7 @@
               class="sel_input"
               placeholder="Выберите объект"
             />
-            <select name="object_s" class="sel" type="text">
+            <select name="object" class="sel" type="text">
               <option>Выберите объект</option>
               <option>Дом/коттедж</option>
               <option>Квартира</option>
@@ -707,16 +796,9 @@
             <input type="text" name="Mail" placeholder="Почта" />
             <button class="btn">ОТПРАВИТЬ</button>
           </div>
-          <!-- <div class="head__form-but">
-            Наш менеджер свяжется с вами в ближайшее рабочее время
-          </div>
-          <div class="head__form-but-2">
-            Нажимая на кнопку вы соглашаетесь с нашей «политикой
-            конфиденциальности»
-          </div> -->
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>

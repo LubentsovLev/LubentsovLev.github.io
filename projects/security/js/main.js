@@ -25,9 +25,9 @@ let openPop = function (btn, pop) {
   });
 };
 document.addEventListener("click", function () {
-    //debugger
-    gg = event.target
-  if (gg.classList[0] === 'popup') {
+  //debugger
+  gg = event.target;
+  if (gg.classList[0] === "popup") {
     gg.classList.remove("pop_active");
     document.body.style.overflow = "visible ";
   }
@@ -49,16 +49,6 @@ closePop(x_2, popup_2);
 closePop(x_3, popup_3);
 closePop(x_4, popup_4);
 closePop(x_5, popup_5);
-
-// let sel = document.querySelector(".sel");
-// let sel_input = document.querySelector(".sel_input");
-
-// document.addEventListener("click", function () {
-//   sel_input.value = sel.value;
-
-//   console.log("sel:", sel.value);
-//   console.log("sel_input:", sel_input.value);
-// });
 
 $(function () {
   $("form").submit(function () {
@@ -83,4 +73,130 @@ $(function () {
     $("body").toggleClass("lock");
     $("body").toggleClass("lock");
   });
+});
+
+//quiz
+//quiz
+//quiz
+let q_prev = document.querySelector(".q_prev");
+let q_next = document.querySelector(".q_next");
+let q_subm = document.querySelector(".q_subm");
+
+let q_count = 0;
+
+function q_swipe_next() {
+  if (q_count === 4) {
+    q_count = 4;
+  } else {
+    q_count = q_count + 1;
+  }
+}
+function q_swipe_prev() {
+  if (q_count === 0) {
+    q_count = 0;
+  } else {
+    q_count = q_count - 1;
+  }
+}
+
+let quiz_i_1 = document.querySelector(".quiz_i_1");
+let quiz_i_2 = document.querySelector(".quiz_i_2");
+let quiz_i_3 = document.querySelector(".quiz_i_3");
+let quiz_i_4 = document.querySelector(".quiz_i_4");
+let quiz_i_5 = document.querySelector(".quiz_i_5");
+
+let quiz_i_1__in = document.querySelector(".quiz_i_1 input");
+let quiz_i_2__in = document.querySelector(".quiz_i_2 select");
+let quiz_i_3__in = document.querySelector(".quiz_i_3 input");
+let quiz_i_4__in = document.querySelector(".quiz_i_4 input");
+let quiz_i_5__in = document.querySelector(".quiz_i_5 input");
+
+let q_err = document.querySelector(".q_err");
+let q__countttt = document.querySelector(".q__countttt span");
+
+function check_in(input, mess) {
+  //debugger
+  if (input.value === "") {
+    q_err.innerHTML = q_err.innerHTML + `<div>${mess}</div>`;
+  }
+}
+
+function main_qqq() {
+  q_subm.classList.add("q_subm-b");
+  let qixii = [quiz_i_1, quiz_i_2, quiz_i_3, quiz_i_4, quiz_i_5];
+  for (let i = 0; i < qixii.length; i++) {
+    qixii[i].classList.remove("quiz_open");
+  }
+  setTimeout(() => {
+    switch (q_count) {
+      case 0:
+        quiz_i_1.classList.add("quiz_open");
+        break;
+      case 1:
+        quiz_i_2.classList.add("quiz_open");
+        break;
+      case 2:
+        quiz_i_3.classList.add("quiz_open");
+        break;
+      case 3:
+        quiz_i_4.classList.add("quiz_open");
+        break;
+      case 4:
+        quiz_i_5.classList.add("quiz_open");
+        q_subm.classList.remove("q_subm-b");
+
+        break;
+    }
+  }, 350);
+}
+let ffff = false;
+let gggg = false;
+
+document.addEventListener("click", function () {
+  if (event.target.classList[0] == "q_next") {
+    q_swipe_next();
+    main_qqq();
+  }
+  if (event.target.classList[0] == "q_prev") {
+    q_swipe_prev();
+    main_qqq();
+  }
+  //   q_err.innerHTML = "";
+
+  //   q_subm.classList.add("q_subm-b");
+  //   let qixii = [quiz_i_1, quiz_i_2, quiz_i_3, quiz_i_4, quiz_i_5];
+  //   for (let i = 0; i < qixii.length; i++) {
+  //     qixii[i].classList.remove("quiz_open");
+  //   }
+
+  q__countttt.innerHTML = q_count +1;
+
+  console.log(q_count);
+  if (gggg === false) {
+    ch_1();
+  }
+  if (ffff === false) {
+    kef();
+  }
+  function ch_1() {
+    q_next.addEventListener("click", function () {
+      q_err.innerHTML = "";
+      if (q_count === 4) {
+        check_in(quiz_i_1__in, "1 Укажите ваше имя");
+        check_in(quiz_i_2__in, "2 Выберите из списка");
+        check_in(quiz_i_3__in, "3 Введите площадь м2");
+        check_in(quiz_i_4__in, "4 Введите Номер телефонa в правильном формате");
+        check_in(
+          quiz_i_5__in,
+          "5 Введите электронную почту в правильном формате"
+        );
+      }
+    });
+    gggg = true;
+  }
+
+  function kef() {
+    main_qqq();
+    ffff = true;
+  }
 });
