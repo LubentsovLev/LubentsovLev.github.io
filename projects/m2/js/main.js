@@ -26,6 +26,8 @@ $(function () {
     slidesToShow: 1,
     dots: true,
     slidesToScroll: 1,
+    touchMove: false,
+    swipe: false,
   });
   $(".rev__items").slick({
     infinite: true,
@@ -45,6 +47,12 @@ $(function () {
     dots: true,
     slidesToScroll: 1,
   });
+  $(".port__item-img-slider").slick({
+    infinite: true,
+    slidesToShow: 1,
+    dots: false,
+    slidesToScroll: 1,
+  });
 
   $(".burger__burger").click(function (event) {
     $(".burger__burger,.header__left-bottom").toggleClass("active");
@@ -58,6 +66,7 @@ let ln_1 = document.querySelector(".ln_1");
 let ln_2 = document.querySelector(".ln_2");
 let ln_3 = document.querySelector(".ln_3");
 let ln_4 = document.querySelector(".ln_4");
+let ln_g = document.querySelector(".ln_g");
 let ln_5 = document.querySelector(".ln_5");
 
 let openPop = function () {
@@ -75,6 +84,7 @@ ln_pop(ln_2);
 ln_pop(ln_3);
 ln_pop(ln_4);
 ln_pop(ln_5);
+ln_pop(ln_g);
 x.addEventListener("click", function () {
   document.body.style.overflow = "visible ";
   popup__container.classList.remove("pop_act");
