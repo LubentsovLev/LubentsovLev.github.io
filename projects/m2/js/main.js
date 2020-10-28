@@ -59,9 +59,9 @@ $(function () {
       $("body").toggleClass("lock");
     });
   }
-  $(".burger__burger").click(function (event) {
-    $(".burger__burger").toggleClass("active");
-  });
+  // $(".burger__burger").click(function (event) {
+  //   $(".burger__burger").toggleClass("active");
+  // });
 });
 let x = document.querySelector(".x");
 let popup__container = document.querySelector(".popup__container");
@@ -142,11 +142,13 @@ let menu_up = function () {
             document
               .querySelector(".header__left-bottom")
               .classList.add("header__left-bottom_act");
+              this.classList.add('active')
             ggg = false;
           } else if (ggg === false) {
             document
               .querySelector(".header__left-bottom")
               .classList.remove("header__left-bottom_act");
+              this.classList.remove('active')
             ggg = true;
           }
         });
