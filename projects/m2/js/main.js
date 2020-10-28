@@ -176,6 +176,5 @@ let menu_up = function () {
 };
 
 document.addEventListener("scroll", function () {
-  console.log(window.pageYOffset);
   menu_up();
 });
