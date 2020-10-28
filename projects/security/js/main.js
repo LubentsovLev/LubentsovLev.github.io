@@ -114,11 +114,13 @@ let quiz_i_5__in = document.querySelector(".quiz_i_5 input");
 let q_err = document.querySelector(".q_err");
 let q__countttt = document.querySelector(".q__countttt span");
 
-function check_in(input, mess) {
-  //debugger
-  if (input.value === "") {
-    q_err.innerHTML = q_err.innerHTML + `<div>${mess}</div>`;
-  }
+function show_btn() {
+  quiz_i_1__in.value,
+    quiz_i_2__in.value,
+    quiz_i_3__in.value,
+    quiz_i_4__in.value != ""
+      ? q_subm.classList.remove("q_subm-b")
+      : q_subm.classList.add("q_subm-b");
 }
 
 function main_qqq() {
@@ -144,13 +146,55 @@ function main_qqq() {
       case 4:
         quiz_i_5.classList.add("quiz_open");
         q_subm.classList.remove("q_subm-b");
+        show_btn();
 
         break;
     }
   }, 350);
 }
+function check_in(input, mess, num) {
+  //debugger
+  if (input.value === "") {
+    q_err.innerHTML =
+      q_err.innerHTML +
+      `<div onclick="q_count = ${+num} , main_qqq()" > <span>${
+        num + 1
+      }</span> ${mess}</div>`;
+  }
+}
 let ffff = false;
 let gggg = false;
+
+function check_inn_v() {
+  if (q_count === 4) {
+    switch (q_count) {
+      case 0:
+        check_in(quiz_i_1__in, "1 Укажите ваше имя", 0);
+        break;
+      case 1:
+        check_in(quiz_i_2__in, "2 Выберите из списка", 1);
+        break;
+      case 2:
+        check_in(quiz_i_3__in, "3 Введите площадь м2", 2);
+        break;
+      case 3:
+        check_in(
+          quiz_i_4__in,
+          "4 Введите электронную почту в правильном формате",
+          3
+        );
+        break;
+      case 4:
+        check_in(
+          quiz_i_5__in,
+          "5 Введите Номер телефонa в правильном формате",
+          4
+        );
+
+        break;
+    }
+  }
+}
 
 document.addEventListener("click", function () {
   if (event.target.classList[0] == "q_next") {
@@ -161,15 +205,7 @@ document.addEventListener("click", function () {
     q_swipe_prev();
     main_qqq();
   }
-  //   q_err.innerHTML = "";
-
-  //   q_subm.classList.add("q_subm-b");
-  //   let qixii = [quiz_i_1, quiz_i_2, quiz_i_3, quiz_i_4, quiz_i_5];
-  //   for (let i = 0; i < qixii.length; i++) {
-  //     qixii[i].classList.remove("quiz_open");
-  //   }
-
-  q__countttt.innerHTML = q_count +1;
+  q__countttt.innerHTML = q_count + 1;
 
   console.log(q_count);
   if (gggg === false) {
@@ -181,14 +217,33 @@ document.addEventListener("click", function () {
   function ch_1() {
     q_next.addEventListener("click", function () {
       q_err.innerHTML = "";
-      if (q_count === 4) {
-        check_in(quiz_i_1__in, "1 Укажите ваше имя");
-        check_in(quiz_i_2__in, "2 Выберите из списка");
-        check_in(quiz_i_3__in, "3 Введите площадь м2");
-        check_in(quiz_i_4__in, "4 Введите Номер телефонa в правильном формате");
+      if (q_count === 3) {
+        check_in(quiz_i_1__in, "Укажите ваше имя", 0);
+        check_in(quiz_i_2__in, "Выберите из списка", 1);
+        check_in(quiz_i_3__in, "Введите площадь м2", 2);
+        check_in(
+          quiz_i_4__in,
+          "Введите электронную почту в правильном формате",
+          3
+        );
+        // check_in(
+        //   quiz_i_5__in,
+        //   "5 Введите Номер телефонa в правильном формате",
+        //   4
+        // );
+      } else if (q_count === 4) {
+        check_in(quiz_i_1__in, "Укажите ваше имя", 0);
+        check_in(quiz_i_2__in, "Выберите из списка", 1);
+        check_in(quiz_i_3__in, "Введите площадь м2", 2);
+        check_in(
+          quiz_i_4__in,
+          "Введите электронную почту в правильном формате",
+          3
+        );
         check_in(
           quiz_i_5__in,
-          "5 Введите электронную почту в правильном формате"
+          "Введите Номер телефонa в правильном формате",
+          4
         );
       }
     });
