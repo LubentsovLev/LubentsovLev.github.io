@@ -34,54 +34,31 @@ function enableScroll() {
   document.onkeydown = null;
 }
 
-// trash
-// function findScrollDirectionOtherBrowsers(event) {
-//   setTimeout(() => {
-//     var delta;
-
-//     if (event.wheelDelta) {
-//       delta = event.wheelDelta;
-//     } else {
-//       delta = -1 * event.deltaY;
-//     }
-
-//     if (delta < 0) {
-//       count__wheels__plus = count__wheels__plus + 1;
-//       if (content__counter === 6) {
-//         // content__counter = content__counter;
-//         content__counter = 0;
-//         setTimeout(() => {
-//           one__wheel__plus = one__wheel__plus + 1;
-//         }, 500);
-//       } else {
-//         setTimeout(() => {
-//           one__wheel__plus = one__wheel__plus + 1;
-//           if (one__wheel__plus < count__wheels__plus) {
-//           } else {
-//             content__counter = content__counter + 1;
-//           }
-//           console.log("plus", one__wheel__plus, count__wheels__plus);
-//         }, 500);
-//       }
-//     } else if (delta > 0) {
-//       count__wheels__min = count__wheels__min + 1;
-//       if (content__counter === 0) {
-//         setTimeout(() => {
-//           one__wheel__min = one__wheel__min + 1;
-//         }, 500);
-//         // content__counter = content__counter + 0;
-//         content__counter = 6;
-//       } else {
-//         setTimeout(() => {
-//           one__wheel__min = one__wheel__min + 1;
-//           if (one__wheel__min < count__wheels__min) {
-//           } else {
-//             content__counter = content__counter - 1;
-//           }
-//           console.log("minus", one__wheel__min, count__wheels__min);
-//         }, 500);
-//       }
-//     }
-//     console.log(content__counter);
-//   }, 0);
-// }
+content.innerHTML = `<section class="page page-3">
+          <div class="page-3__container container">
+            <h6 class="title">Рост доходов</h6>
+            <h4 class="page-3__text text">
+              Наши инструменты позволяют увеличить доходы от майнинга за счет
+              оптимизации твоего железа
+            </h4>
+            <div class="page-3__items">
+              <div class="page-3__item">
+                <p class="text">
+                  Данные из блока отклонения показывают некорректно работающие риги.
+                </p>
+              </div>
+              <div class="page-3__item">
+                <p class="text">
+                  Уровень отклонения говорит о необходимости проверки оборудования или
+                  подключения.
+                </p>
+              </div>
+            </div>
+            <div class="page-3__img">
+              <img src="img/third.png" alt="" />
+            </div>
+            <div class="page-3__img-mob">
+              <img src="img/mobil/3_3svg.svg" alt="" />
+            </div>
+          </div>
+        </section>`;

@@ -299,7 +299,7 @@ $(function () {
     menuDelete();
     changeMenuArr();
 
-    if (content__counter != 3) {
+    if (content__counter != 2) {
       //debugger;
       slider__hidden__reverse();
       document.querySelector(".slider__hidden").style.opacity = "0";
@@ -343,11 +343,11 @@ $(function () {
         Подключиться к пулу могут как владельцы одной видеокарты, так и целые
         майнинг фермы
       </h4>
-      <div class="page-2__arrow">
+      <a class="page-2__arrow"  href="https://whalesburg.com/start_mining">
         <img class="arrow1 page_2_arr-desc" src="img/icons/arr_left.svg" alt="" />
         <img class="arrow1 page_2_arr-mob" src="img/icons/arr_left_mob.svg" alt="" />
         <p>Получи инструкцию и помощь в подключении</p>
-      </div>
+      </a>
       <div class="page-2__items">
         <div class="page-2__item">
           <div class="page-2__item-img">
@@ -373,6 +373,10 @@ $(function () {
           `;
         break;
       case 2:
+        slider__hidden();
+        document.querySelector(".slider__hidden").style.opacity = "1";
+        break;
+      case 3:
         content.innerHTML = `<section class="page page-3">
           <div class="page-3__container container">
             <h6 class="title">Рост доходов</h6>
@@ -395,6 +399,7 @@ $(function () {
             </div>
             <div class="page-3__img">
               <img src="img/third.png" alt="" />
+              <a href="img/third.png" data-fancybox="1"></a>
             </div>
             <div class="page-3__img-mob">
               <img src="img/mobil/3_3svg.svg" alt="" />
@@ -402,10 +407,7 @@ $(function () {
           </div>
         </section>`;
         break;
-      case 3:
-        slider__hidden();
-        document.querySelector(".slider__hidden").style.opacity = "1";
-        break;
+
       case 4:
         content.innerHTML = `<section class="page page-5">
           <div class="page-5__container container">
@@ -418,8 +420,8 @@ $(function () {
                   таких же майнеров
                 </p>
                 <div class="page-5__item-imgs">
-                  <div class="page-5__item-img page-5__item-img-1"><img src="img/fifth/1.png" alt="" /></div>
-                  <div class="page-5__item-img page-5__item-img-1"><img src="img/fifth/2.png" alt="" /></div>
+                  <div class="page-5__item-img page-5__item-img-1">  <a href="img/fifth/1.png" data-fancybox="1"></a> <img src="img/fifth/1.png" alt="" /></div>
+                  <div class="page-5__item-img page-5__item-img-1">  <a href="img/fifth/2.png" data-fancybox="1"></a> <img src="img/fifth/2.png" alt="" /></div>
                 </div>
               </div>
               <div class="page-5__item">
@@ -429,8 +431,8 @@ $(function () {
                   поддержки, говорящей на одном с тобой языке
                 </p>
                 <div class="page-5__item-imgs">
-                  <div class="page-5__item-img page-5__item-img-2"><img src="img/fifth/3.png" alt="" /></div>
-                  <div class="page-5__item-img page-5__item-img-2"><img src="img/fifth/4.png" alt="" /></div>
+                  <div class="page-5__item-img page-5__item-img-2">  <a href="img/fifth/3.png" data-fancybox="1"></a> <img src="img/fifth/3.png" alt="" /></div>
+                  <div class="page-5__item-img page-5__item-img-2">  <a href="img/fifth/4.png" data-fancybox="1"></a> <img src="img/fifth/4.png" alt="" /></div>
                 </div>
               </div>
             </div>
@@ -516,9 +518,10 @@ $(function () {
                 <a href="social/telegram.html" class="page-7__info-item">
                   <img src="img/seventh__social/1.svg" alt="" />
                 </a>
-                <a href="social/whatsApp.html" class="page-7__info-item">
+                <!-- <a href="social/whatsApp.html" class="page-7__info-item">
                   <img src="img/seventh__social/2.svg" alt="" />
                 </a>
+                -->
                 <a href="social/viber.html" class="page-7__info-item">
                   <img src="img/seventh__social/3.svg" alt="" />
                 </a>
@@ -537,24 +540,28 @@ $(function () {
   }
   if (document.documentElement.clientWidth > 613) {
     window.addEventListener("wheel", function () {
-      content.classList.add("animat");
-      document.querySelector(".slider__hidden").style.opacity = "0";
-      if (content__counter === 6 || 0) {
-        content.style.opacity = "1";
-      }
-      content.style.opacity = "0";
-      setTimeout(
-        () => {
-          content.innerHTML = "";
-          change__inner();
-          content.classList.remove("animat");
-          // document.querySelector(".slider__hidden").style.opacity = "1";
+      if (document.body.classList.contains("fancybox-active")) {
+        content__counter = content__counter;
+      } else {
+        content.classList.add("animat");
+        document.querySelector(".slider__hidden").style.opacity = "0";
+        if (content__counter === 6 || 0) {
           content.style.opacity = "1";
-        },
-        document.documentElement.clientWidth < 613 ? 900 : 500
-      );
-      if (document.documentElement.clientWidth > 768) {
-        document.querySelector(".section__inner").style.transition = "0.5s";
+        }
+        content.style.opacity = "0";
+        setTimeout(
+          () => {
+            content.innerHTML = "";
+            change__inner();
+            content.classList.remove("animat");
+            // document.querySelector(".slider__hidden").style.opacity = "1";
+            content.style.opacity = "1";
+          },
+          document.documentElement.clientWidth < 613 ? 900 : 500
+        );
+        if (document.documentElement.clientWidth > 768) {
+          document.querySelector(".section__inner").style.transition = "0.5s";
+        }
       }
     });
   }
@@ -613,4 +620,17 @@ $(function () {
     sl.classList.remove("slider__hidden");
     sl.style.opacity = "1";
   }
+  document.addEventListener("click", function () {
+    if (document.body.classList.contains("fancybox-active")) {
+      document.body.style.overflow = "hidden";
+    }
+    setTimeout(() => {
+      document
+    .querySelector(".fancybox-button--close")
+    .addEventListener("click", function () {
+      document.body.style.overflow = "visible";
+    });
+    }, 0);
+  });
+  
 });

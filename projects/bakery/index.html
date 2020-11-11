@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/fontawesome1/fontawesome/all.min.css">
+  <script 
+    src="https://api-maps.yandex.ru/2.1/?apikey=e1a0f728-dca2-48e3-ad0c-9baba0d66aa1&lang=ru_RU" >
+  </script>
+</head>
+<body>
+
+  <div class="head-img" style="background-image: url(img/head-img.jpg);">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__inner">
+          <img src="img/logo.svg" alt="" class="header__logo">
+          <nav class="header__nav">
+            <a href="#" class="header__nav-item">Акции</a>
+            <a href="#" class="header__nav-item">О пекарне </a>
+            <a href="#" class="header__nav-item">Продукция</a>
+            <a href="#" class="header__nav-item">Контакты</a>
+          </nav>
+          <div class="burger__burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="head">
+      <div class="head__container container">
+        <div class="head__inner">
+          <h2 class="head__uptitle">Лучшая пекарня в твоем городе!</h2>
+          <h1 class="head__title">TASTY-WORLD</h1>
+          <h2 class="head__subtitle">Только самая свежая выпечка</h2>
+        </div>
+        <button class="head__btn">Заказать</button>
+      </div>
+    </section>
+  </div>
+  <section class="slider">
+    <div class="slider__container container">
+      <h2 class="slider__title title">
+        <span class="title-yell">Новые вкусы</span>
+        <span class="title-black">уже ждут тебя!</span>
+      </h2>
+      <div class="slider__slider">
+          
+        <div class="slider__item">
+          <div class="slider__item-hide ">
+            <div class="slider__item-hide-head">
+              <h6 class="slider__item-hide-title">
+                Пирог с яблоком и ежевикой
+              </h6>
+              <div class="close"><img src="img/x.svg" alt="" /></div>
+            </div>
+            <p class="slider__item-hide-text text">
+              Предлагаем Вам отведать пирог с полезной ягодой брусникой .
+              Очень вкусный, начинки более чем достаточно. Применяется только
+              свежая или свежезамороженная ягода.
+            </p>
+            <button class="slider__item-hide-btn">Заказать</button>
+          </div>
+          <div class="slider__item-inner">
+            <img src="img/pieq.png" alt="pie#1" class="slider__item-img" />
+            <div class="slider__item-descr">
+              <h6 class="slider__item-descr-title">
+                Пирог с яблоком и ежевикой
+              </h6>
+              <span
+                ><img
+                  src="img/cart.svg"
+                  alt=""
+                  class="slider__item-descr-cart"
+              /></span>
+            </div>
+            <div class="slider__item-prices">
+              <p class="slider__item-prices-price">760р.</p>
+              <p class="slider__item-prices-about">О товаре</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-hide">
+            <div class="slider__item-hide-head">
+              <h6 class="slider__item-hide-title">
+                Пирог с брусникой и шоколадом
+              </h6>
+              <div class="close"><img src="img/x.svg" alt="" /></div>
+            </div>
+            <p class="slider__item-hide-text text">
+              Предлагаем Вам отведать пирог с полезной ягодой брусникой .
+              Очень вкусный, начинки более чем достаточно. Применяется только
+              свежая или свежезамороженная ягода.
+            </p>
+            <button class="slider__item-hide-btn">Заказать</button>
+          </div>
+          <div class="slider__item-inner">
+            <img src="img/pie2.png" alt="pie#1" class="slider__item-img" />
+            <div class="slider__item-descr">
+              <h6 class="slider__item-descr-title">
+                Пирог с брусникой и шоколадом
+              </h6>
+              <span
+                ><img
+                  src="img/cart.svg"
+                  alt=""
+                  class="slider__item-descr-cart"
+              /></span>
+            </div>
+            <div class="slider__item-prices">
+              <p class="slider__item-prices-price">630р.</p>
+              <p class="slider__item-prices-about">О товаре</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-hide">
+            <div class="slider__item-hide-head">
+              <h6 class="slider__item-hide-title">Пирог с лесными ягодами</h6>
+              <div class="close"><img src="img/x.svg" alt="" /></div>
+            </div>
+            <p class="slider__item-hide-text text">
+              Предлагаем Вам отведать пирог с полезной ягодой брусникой .
+              Очень вкусный, начинки более чем достаточно. Применяется только
+              свежая или свежезамороженная ягода.
+            </p>
+            <button class="slider__item-hide-btn">Заказать</button>
+          </div>
+          <div class="slider__item-inner">
+            <img src="img/pie3.png" alt="pie#1" class="slider__item-img" />
+            <div class="slider__item-descr">
+              <h6 class="slider__item-descr-title">
+                Пирог с лесными ягодами
+              </h6>
+              <span
+                ><img
+                  src="img/cart.svg"
+                  alt=""
+                  class="slider__item-descr-cart"
+              /></span>
+            </div>
+            <div class="slider__item-prices">
+              <p class="slider__item-prices-price">920р.</p>
+              <p class="slider__item-prices-about">О товаре</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-hide">
+            <div class="slider__item-hide-head">
+              <h6 class="slider__item-hide-title">Пирог с лесными ягодами</h6>
+              <div class="close"><img src="img/x.svg" alt="" /></div>
+            </div>
+            <p class="slider__item-hide-text text">
+              Предлагаем Вам отведать пирог с полезной ягодой брусникой .
+              Очень вкусный, начинки более чем достаточно. Применяется только
+              свежая или свежезамороженная ягода.
+            </p>
+            <button class="slider__item-hide-btn">Заказать</button>
+          </div>
+          <div class="slider__item-inner">
+            <img src="img/pie3.png" alt="pie#1" class="slider__item-img" />
+            <div class="slider__item-descr">
+              <h6 class="slider__item-descr-title">
+                Пирог с лесными ягодами
+              </h6>
+              <span
+                ><img
+                  src="img/cart.svg"
+                  alt=""
+                  class="slider__item-descr-cart"
+              /></span>
+            </div>
+            <div class="slider__item-prices">
+              <p class="slider__item-prices-price">920р.</p>
+              <p class="slider__item-prices-about">О товаре</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-hide">
+            <div class="slider__item-hide-head">
+              <h6 class="slider__item-hide-title">Пирог с лесными ягодами</h6>
+              <div class="close"><img src="img/x.svg" alt="" /></div>
+            </div>
+            <p class="slider__item-hide-text text">
+              Предлагаем Вам отведать пирог с полезной ягодой брусникой .
+              Очень вкусный, начинки более чем достаточно. Применяется только
+              свежая или свежезамороженная ягода.
+            </p>
+            <button class="slider__item-hide-btn">Заказать</button>
+          </div>
+          <div class="slider__item-inner">
+            <img src="img/pie3.png" alt="pie#1" class="slider__item-img" />
+            <div class="slider__item-descr">
+              <h6 class="slider__item-descr-title">
+                Пирог с лесными ягодами
+              </h6>
+              <span
+                ><img
+                  src="img/cart.svg"
+                  alt=""
+                  class="slider__item-descr-cart"
+              /></span>
+            </div>
+            <div class="slider__item-prices">
+              <p class="slider__item-prices-price">920р.</p>
+              <p class="slider__item-prices-about">О товаре</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-hide">
+            <div class="slider__item-hide-head">
+              <h6 class="slider__item-hide-title">Пирог с лесными ягодами</h6>
+              <div class="close"><img src="img/x.svg" alt="" /></div>
+            </div>
+            <p class="slider__item-hide-text text">
+              Предлагаем Вам отведать пирог с полезной ягодой брусникой .
+              Очень вкусный, начинки более чем достаточно. Применяется только
+              свежая или свежезамороженная ягода.
+            </p>
+            <button class="slider__item-hide-btn">Заказать</button>
+          </div>
+          <div class="slider__item-inner">
+            <img src="img/pie3.png" alt="pie#1" class="slider__item-img" />
+            <div class="slider__item-descr">
+              <h6 class="slider__item-descr-title">
+                Пирог с лесными ягодами
+              </h6>
+              <span
+                ><img
+                  src="img/cart.svg"
+                  alt=""
+                  class="slider__item-descr-cart"
+              /></span>
+            </div>
+            <div class="slider__item-prices">
+              <p class="slider__item-prices-price">920р.</p>
+              <p class="slider__item-prices-about">О товаре</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="head__btn">Заказать</div>
+    </div>
+  </section>
+  <section class="quality">
+    <div class="quality__container container">
+      <h2 class="slider__title title">
+        <span class="title-yell">Забота и качество</span>
+        <span class="title-black">в кождом кусочке</span>
+      </h2>
+      <div class="quality__inner">
+        <div class="quality__item">
+          <img src="img/qimg1.svg" alt="" class="quality__img">
+          <h6 class="quality__title">
+            Натутально и качественно
+          </h6>
+          <p class="quality__text text">
+            Мы сотрудничаем с надежными фермами,
+             закупаем только проверенный и товар
+            </p>
+        </div>
+        <div class="quality__item">
+          <img src="img/qimg2.svg" alt="" class="quality__img">
+          <h6 class="quality__title">
+            От поставщика к вам на стол
+          </h6>
+          <p class="quality__text text">
+            Наша система выработана таким образом, 
+            что покупатель получает наисвежайший продукт
+            </p>
+        </div>
+        <div class="quality__item">
+          <img src="img/qimg3.svg" alt="" class="quality__img">
+          <h6 class="quality__title">
+            Неповторимый вкус
+          </h6>
+          <p class="quality__text text">
+            Только в нашей пекарне вы сможете 
+            ощутить вкус настоящей выпечки
+            </p>
+        </div>
+        <div class="quality__item">
+          <img src="img/qimg4.svg" alt="" class="quality__img">
+          <h6 class="quality__title">
+            Мы заботимся о природе 
+          </h6>
+          <p class="quality__text text">
+            Наша компания очень серьезно 
+            относятся к вопросам о защите природы
+            </p>
+        </div>
+        <div class="quality__item">
+          <img src="img/qimg5.svg" alt="" class="quality__img">
+          <h6 class="quality__title">
+            Проверенные рецепты
+          </h6>
+          <p class="quality__text text">
+            Традиционные рецепты являются основой 
+            нашего меню,ими пользовались еще в древности
+            </p>
+        </div>
+        <div class="quality__item">
+          <img src="img/qimg6.svg" alt="" class="quality__img">
+          <h6 class="quality__title">
+            Уютное кафе для вас 
+          </h6>
+          <p class="quality__text text">
+            Удобное расположение и домашний 
+            уют сделают тебя счастливее 
+            </p>
+        </div>
+      </div>
+      <div class="head__btn">Подробнее</div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about__container container">
+      <h2 class="slider__title title">
+        <span class="title-yell">Пару слов</span>
+        <span class="title-black">о нас</span>
+      </h2>
+      <div class="about__inner">
+        <div class="about__text text">
+          <p class="text">Мы вкладываем душу в нашу работу, используя 
+            только лучшие ингредиенты, потому что все, 
+            что мы делаем, мы делаем с любовью! Порадуйте себя, 
+            своих родных и близких, ведь вы дарите им не только вкусную выпечку, 
+            приготовленную из натуральных продуктов, вы дарите им любовь, 
+            здоровье и радость.
+          </p>
+          <p class="text">
+            Предлагаемая в пекарнях продукция 
+            готовится исключительно из натуральных
+            продуктов без использования красителей, 
+            ароматизаторов, маргарина, усилителей вкуса. 
+            Поэтому вкус изделий из Хлебницы — это вкус
+            настоящей домашней выпечки. 
+          </p>
+          <p class="text">
+            Философия нашей кухни – превращать простые ингредиенты
+            в невероятно вкусную еду. Эта кухня в первую очередь 
+            строится на исключительной привязанности к местным
+             уникальным продуктам.  
+          </p>
+        </div>
+        <img  alt="gg"  src="img/about-img.jpg" class="about__img"/>
+      </div>
+    </div>
+  </section>
+  <section class="work">
+    <div class="work__container container">
+      <h2 class="work__title title">
+        <span class="title-yell">Пару слов</span>
+        <span class="title-black">о нас</span>
+      </h2>
+      <div class="work__inner">
+        <div class="work__item">
+          <img alt="work" src="img/work-1.svg" class="work__item-img">
+          <div class="work__item-descr">
+            <div class="work__item-number">1</div>
+            <div class="work__item-chooce">
+              <h6 class="work__item-title">
+                Выбор
+              </h6>
+              <p class="work__item-text text">
+                Выберите выпечку из нашего меню  
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="work__item">
+          <img alt="gg"  src="img/work-2.svg" class="work__item-img">
+          <div class="work__item-descr">
+            <div class="work__item-number">2</div>
+            <div class="work__item-chooce">
+              <h6 class="work__item-title">
+                Заказ и детали
+              </h6>
+              <p class="work__item-text text">
+                Закажите выбранные товары и укжите адрес 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="work__item">
+          <img alt="gg" src="img/work-3.svg" class="work__item-img">
+          <div class="work__item-descr">
+            <div class="work__item-number">3</div>
+            <div class="work__item-chooce">
+              <h6 class="work__item-title">
+                Мы уже мчимся
+              </h6>
+              <p class="work__item-text text">
+                Ожидайте ваш заказ в течение 1 часа 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="head__btn">Перейти в каталог</button>
+    </div>
+  </section>
+  <section class="map">
+    <div class="map__container container">
+      <div class="map__map">
+        <div id="map" style="width: 100%; height: 500px;"></div>
+      </div>
+      <div class="map__content">
+        <h2 class="map__title title">
+          <span class="title-yell">Приходите,</span>
+          <span class="title-black">мы ждем вас</span>
+        </h2>
+        <div class="map__list">
+          <div class="map__item">
+            <img src="img/map-poi.svg" alt="" class="map__item-img">
+            <address class="map__item-text map__item-text--address text">Большая Садовая ул., 5, корп. 1-2</address>
+          </div>
+          <div class="map__item">
+            <img src="img/clock.svg" alt="" class="map__item-img">
+            <div class="map__item-inner">
+              <p  class="map__item-text text">Работаем с 9.00 до 23.00</p>
+              <p  class="map__item-text text">Вс: с 12.00 до 21.00</p>
+            </div>
+          </div>
+          <div class="map__item">
+            <img src="img/phone.svg" alt="" class="map__item-img">
+            <div class="map__item-inner">
+              <a href="mailto:TASTY-WORLD@gmail.com" class="map__item-text text">TASTY-WORLD@gmail.com</a>
+              <a href="callto:+79008908090" class="map__item-text text">+7 900 890 80 90</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__container container">
+      <img src="img/logo.svg" alt="" class="footer__logo">
+      <div class="footer__rights">
+        <p class="footer__reserved">
+          © 2020 All rights reserved
+        </p>
+        <a href="#" class="footer__privacy">
+          Политика конфиденциальности
+        </a>
+      </div>
+        <div class="footer__social">
+          <a href="" class="footer__social-link">
+            <i class="fab fa-vk"></i>
+          </a>
+          <a href="" class="footer__social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="footer__social-link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="footer__social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

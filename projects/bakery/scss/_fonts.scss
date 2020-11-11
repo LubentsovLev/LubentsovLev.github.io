@@ -1,0 +1,36 @@
+@font-face { 
+    font-family: "SegoePrintRegular";
+    src: url("../fonts/SegoePrintRegular/SegoePrintRegular.eot");
+    src: url("../fonts/SegoePrintRegular/SegoePrintRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoePrintRegular/SegoePrintRegular.woff") format("woff"),
+    url("../fonts/SegoePrintRegular/SegoePrintRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face { 
+    font-family: "SegoePrintBold";
+    src: url("../fonts/SegoePrintBold/SegoePrintBold.eot");
+    src: url("../fonts/SegoePrintBold/SegoePrintBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoePrintBold/SegoePrintBold.woff") format("woff"),
+    url("../fonts/SegoePrintBold/SegoePrintBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face { 
+    font-family: "Amalfi";
+    src: url("../fonts/Amalfi/Amalfi-Regular.eot");
+    src: url("../fonts/Amalfi/Amalfi-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Amalfi/Amalfi-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face { 
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.eot");
+    src: url("../fonts/Roboto/Roboto-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Roboto/Roboto.woff") format("woff"),
+    url("../fonts/Roboto/Roboto.woff") format("woff2"),
+    url("../fonts/Roboto/Roboto.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}

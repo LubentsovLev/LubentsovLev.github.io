@@ -7,8 +7,32 @@
     <title>WHALESBURG</title>
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="shortcut icon" href="img/fav.svg" type="image/svg" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TCZMJV3");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TCZMJV3"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="main-inner">
       <nav class="side-nav">
         <a href="index.html" class="side-nav__logo">
@@ -45,10 +69,10 @@
             <img src="img/icons/telegram.svg" alt="Telegram" />
             <p>Telegram</p>
           </a>
-          <a href="social/whatsApp.html" class="side-nav__social-item">
+          <!-- <a href="social/whatsApp.html" class="side-nav__social-item">
             <img src="img/icons/what's_up.svg" alt="WhatsApp" />
             <p>WhatsApp</p>
-          </a>
+          </a> -->
           <a href="social/viber.html" class="side-nav__social-item">
             <img src="img/icons/viber.svg" alt="Viber" />
             <p>Viber</p>
@@ -63,7 +87,7 @@
           </a>
         </div>
         <div class="side-nav__under-text">
-          <a href="#"> Политика конфиденциальности </a>
+          <a href="https://whalesburg.com/privacy_policy"> Политика конфиденциальности </a>
         </div>
       </nav>
       <div class="content-container">
@@ -82,9 +106,9 @@
             <a href="social/telegram.html" class="social__mobil-item">
               <img src="img/mobil_social/1.svg" alt="" />
             </a>
-            <a href="social/whatsApp.html" class="social__mobil-item">
+            <!-- <a href="social/whatsApp.html" class="social__mobil-item">
               <img src="img/mobil_social/2.svg" alt="" />
-            </a>
+            </a> -->
             <a href="social/viber.html" class="social__mobil-item">
               <img src="img/mobil_social/3.svg" alt="" />
             </a>
@@ -165,7 +189,10 @@
                 Подключиться к пулу могут как владельцы одной видеокарты, так и
                 целые майнинг фермы
               </h4>
-              <div class="page-2__arrow">
+              <a
+                class="page-2__arrow"
+                href="https://whalesburg.com/start_mining"
+              >
                 <img
                   class="arrow1 page_2_arr-desc"
                   src="img/icons/arr_left.svg"
@@ -177,7 +204,7 @@
                   alt=""
                 />
                 <p>Получи инструкцию и помощь в подключении</p>
-              </div>
+              </a>
               <div class="page-2__items">
                 <div class="page-2__item">
                   <div class="page-2__item-img">
@@ -200,54 +227,28 @@
               </div>
               <div class="page-7__info-items">
                 <a href="social/telegram.html" class="page-7__info-item">
-                  <img src="img/seventh__social/1.svg" alt="">
+                  <img src="img/seventh__social/1.svg" alt="" />
                 </a>
-                <a href="social/whatsApp.html" class="page-7__info-item">
-                  <img src="img/seventh__social/2.svg" alt="">
-                </a>
+                <!-- <a href="social/whatsApp.html" class="page-7__info-item">
+                  <img src="img/seventh__social/2.svg" alt="" />
+                </a> -->
                 <a href="social/viber.html" class="page-7__info-item">
-                  <img src="img/seventh__social/3.svg" alt="">
+                  <img src="img/seventh__social/3.svg" alt="" />
                 </a>
                 <a href="social/vk.html" class="page-7__info-item">
-                  <img src="img/seventh__social/5.svg" alt="">
+                  <img src="img/seventh__social/5.svg" alt="" />
                 </a>
                 <a href="social/facebook.html" class="page-7__info-item">
-                  <img src="img/seventh__social/4.svg" alt="">
+                  <img src="img/seventh__social/4.svg" alt="" />
                 </a>
-              </div>
-            </div>
-          </section>
-          <section class="page page-3" id="section_3">
-            <div class="page-3__container container">
-              <h6 class="title">Рост доходов</h6>
-              <h4 class="page-3__text text">
-                Наши инструменты позволяют увеличить доходы от майнинга за счет
-                оптимизации твоего железа
-              </h4>
-              <div class="page-3__items">
-                <div class="page-3__item">
-                  <p class="text">
-                    Данные из блока отклонения показывают некорректно работающие
-                    риги.
-                  </p>
-                </div>
-                <div class="page-3__item">
-                  <p class="text">
-                    Уровень отклонения говорит о необходимости проверки
-                    оборудования или подключения.
-                  </p>
-                </div>
-              </div>
-              <div class="page-3__img">
-                <img src="img/third.png" alt="" />
-              </div>
-              <div class="page-3__img-mob">
-                <img src="img/mobil/3_3svg.svg" alt="" />
               </div>
             </div>
           </section>
         </div>
-        <section class="slider__hidden slider__hidden_1 hidden page page-4" id="section_4">
+        <section
+          class="slider__hidden slider__hidden_1 hidden page page-4"
+          id="section_3"
+        >
           <div class="page-4__container container">
             <h6 class="title">Основные возможности Whalesburg</h6>
             <div class="page-4__texts">
@@ -393,7 +394,37 @@
           </div>
         </section>
         <div class="phone__after-slider__inner">
-
+          <section class="page page-3" id="section_4">
+            <div class="page-3__container container">
+              <h6 class="title">Рост доходов</h6>
+              <h4 class="page-3__text text">
+                Наши инструменты позволяют увеличить доходы от майнинга за счет
+                оптимизации твоего железа
+              </h4>
+              <div class="page-3__items">
+                <div class="page-3__item">
+                  <p class="text">
+                    Данные из блока отклонения показывают некорректно работающие
+                    риги.
+                  </p>
+                </div>
+                <div class="page-3__item">
+                  <p class="text">
+                    Уровень отклонения говорит о необходимости проверки
+                    оборудования или подключения.
+                  </p>
+                </div>
+              </div>
+              <div class="page-3__img">
+                <img src="img/third.png" alt="" />
+                <a href="img/third.png" data-fancybox="1ggg"></a>
+              </div>
+              <div class="page-3__img-mob">
+                <img src="img/mobil/3_3svg.svg" alt="" />
+                <a href="img/mobil/3_3svg.svg" data-fancybox="1gr"></a>
+              </div>
+            </div>
+          </section>
           <section class="page page-5" id="section_5">
             <div class="page-5__container container">
               <div class="title">Русскоговорящее комьюнити</div>
@@ -409,9 +440,11 @@
                   <div class="page-5__item-imgs">
                     <div class="page-5__item-img page-5__item-img-1">
                       <img src="img/fifth/1.png" alt="" />
+                      <a href="img/fifth/1.png" data-fancybox="5__galerry"></a>
                     </div>
                     <div class="page-5__item-img page-5__item-img-1">
                       <img src="img/fifth/2.png" alt="" />
+                      <a href="img/fifth/2.png" data-fancybox="5__galerry"></a>
                     </div>
                   </div>
                 </div>
@@ -424,9 +457,11 @@
                   <div class="page-5__item-imgs">
                     <div class="page-5__item-img page-5__item-img-2">
                       <img src="img/fifth/3.png" alt="" />
+                      <a href="img/fifth/3.png" data-fancybox="5__galerry"></a>
                     </div>
                     <div class="page-5__item-img page-5__item-img-2">
                       <img src="img/fifth/4.png" alt="" />
+                      <a href="img/fifth/4.png" data-fancybox="5__galerry"></a>
                     </div>
                   </div>
                 </div>
@@ -517,9 +552,9 @@
                   <a href="social/telegram.html" class="page-7__info-item">
                     <img src="img/seventh__social/1.svg" alt="" />
                   </a>
-                  <a href="social/whatsApp.html" class="page-7__info-item">
+                  <!-- <a href="social/whatsApp.html" class="page-7__info-item">
                     <img src="img/seventh__social/2.svg" alt="" />
-                  </a>
+                  </a> -->
                   <a href="social/viber.html" class="page-7__info-item">
                     <img src="img/seventh__social/3.svg" alt="" />
                   </a>
@@ -539,6 +574,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/main.js"></script>
   </body>
