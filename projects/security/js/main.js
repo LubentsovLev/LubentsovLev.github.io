@@ -46,7 +46,7 @@ openPop(pop_order_2, popup_3);
 openPop(pop_order_3, popup_4);
 openPop(footer__call, popup_1);
 openPop(present__main_btn, popup_5);
-openPop(which__bottom, popup_6);
+// openPop(which__bottom, popup_6);
 
 closePop(x_1, popup_1);
 closePop(x_2, popup_2);
