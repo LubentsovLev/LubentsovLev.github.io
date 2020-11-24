@@ -277,4 +277,43 @@ document.addEventListener("click", function () {
     main_qqq();
     ffff = true;
   }
+  let inputPres = document.querySelector(".inputPres");
+  let selectPres = document.querySelector(".sel");
+  let option = document.querySelectorAll("option");
+  // debugger;
+  document.addEventListener("click", (e) => {
+    if (
+      e.target.classList[0] === "sel" &&
+      e.target.value !== "Выберите объект"
+    ) {
+      q_prev.removeAttribute("disabled", "");
+      q_next.removeAttribute("disabled", "");
+    } else if (
+      e.target.classList[0] === "sel1" &&
+      e.target.value !== "Выберите услугу"
+    ) {
+      q_prev.removeAttribute("disabled", "");
+      q_next.removeAttribute("disabled", "");
+    } else if (e.target.classList[0] === "sel1") {
+      q_next.setAttribute("disabled", "");
+    } else if (e.target.classList[0] === "sel") {
+      q_next.setAttribute("disabled", "");
+    }
+  });
+  document.addEventListener("input", (e) => {
+    if (e.target.value !== "") {
+      // q_prev.setAttribute("disabled");
+      q_next.removeAttribute("disabled", "");
+    } else {
+      q_next.setAttribute("disabled", "");
+    }
+    // q_next.removeAttribute("disabled");
+  });
+  q_next.addEventListener("click", () => {
+    q_next.setAttribute("disabled", "");
+  });
+  q_prev.addEventListener("click", () => {
+    debugger;
+    q_next.removeAttribute("disabled", "");
+  });
 });
