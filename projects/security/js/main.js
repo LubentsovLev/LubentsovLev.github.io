@@ -313,7 +313,8 @@ document.addEventListener("click", function () {
     q_next.setAttribute("disabled", "");
   });
   q_prev.addEventListener("click", () => {
-    debugger;
-    q_next.removeAttribute("disabled", "");
+    if (q_count !== 0) {
+      q_next.removeAttribute("disabled", "");
+    }
   });
 });
